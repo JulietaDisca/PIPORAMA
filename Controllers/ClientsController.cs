@@ -40,18 +40,47 @@ namespace TP_ProgramaciónII_PIPORAMA.Controllers
             
         }
 
-        
-        [HttpPost]
-        public async Task<IActionResult> PostClient([FromBody] Cliente  client)
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetClientByIdAsync(int id)
         {
             try
             {
-                var result = await _service.AddClientAsync(client);
-                if (result)
+                var client =  await _service.GetClientByIdAsync(id);
+                if (client != null)
                 {
-                    return Ok("Cliente agregado exitosamente.");
+                    return Ok(client);
                 }
-                return BadRequest("No se pudo agregar el cliente.");
+                return NotFound("Cliente no encontrado.");
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Error interno del servidor: {ex.Message}");
+            }
+        }
+
+
+        [HttpPost]
+        public async Task<IActionResult> PostClient([FromBody] ClientDTO clientdto)
+        {
+            try
+            {
+                
+                var client = new Cliente
+                {
+                    IdCliente = clientdto.Codigo,
+                    NomCliente = clientdto.Nombre,
+                    ApeCliente = clientdto.Apellido,
+                    IdBarrio = clientdto.IdBarrio,
+                    IdContacto = clientdto.IdContacto,
+                    IdTipoCliente = clientdto.IdTipoCliente
+                };
+
+                var result = await _service.AddClientAsync(client);
+                if (result != null)
+                {
+                    return Ok("Cliente insertado exitosamente");
+                }
+                return BadRequest("No se pudo insertar el cliente.");
             }
             catch (Exception ex)
             {
@@ -62,12 +91,21 @@ namespace TP_ProgramaciónII_PIPORAMA.Controllers
 
         
         [HttpPut]
-        public async Task<IActionResult> PutClient([FromBody] Cliente client)
+        public async Task<IActionResult> PutClient([FromBody] ClientDTO clientDTO)
         {
             try
             {
+                var client = new Cliente
+                {
+                    IdCliente = clientDTO.Codigo,
+                    NomCliente = clientDTO.Nombre,
+                    ApeCliente = clientDTO.Apellido,
+                    IdBarrio = clientDTO.IdBarrio,
+                    IdContacto = clientDTO.IdContacto,
+                    IdTipoCliente = clientDTO.IdTipoCliente
+                };
                 var result = await _service.UpdateClientAsync(client);
-                if(result)
+                if (result != null)
                 {
                     return Ok("Cliente actualizado exitosamente.");
                 }

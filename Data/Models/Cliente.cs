@@ -22,9 +22,9 @@ public partial class Cliente
     
     public virtual ICollection<Factura> Facturas { get; set; } = new List<Factura>();
 
-    public virtual Barrio IdBarrioNavigation { get; set; }
+    public virtual Barrio IdBarrioNavigation { get; set; } 
 
-    public virtual Contacto IdContactoNavigation { get; set; }
+    public virtual Contacto IdContactoNavigation { get; set; } 
 
     public virtual TiposCliente IdTipoClienteNavigation { get; set; }
 }

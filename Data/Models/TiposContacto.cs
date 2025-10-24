@@ -2,6 +2,7 @@
 #nullable disable
 using System;
 using System.Collections.Generic;
+using System.Text.Json.Serialization;
 
 namespace TP_ProgramaciónII_PIPORAMA.Data.Models;
 
@@ -10,6 +11,6 @@ public partial class TiposContacto
     public int IdTipoContacto { get; set; }
 
     public string Descripcion { get; set; }
-
+    
     public virtual ICollection<Contacto> Contactos { get; set; } = new List<Contacto>();
 }

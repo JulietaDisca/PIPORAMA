@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using TP_ProgramaciónII_PIPORAMA.Data.Models;
+using TP_ProgramaciónII_PIPORAMA.DTOs;
 using TP_ProgramaciónII_PIPORAMA.Interfaces;
 
 namespace TP_ProgramaciónII_PIPORAMA.Repositories
@@ -14,16 +16,20 @@ namespace TP_ProgramaciónII_PIPORAMA.Repositories
         {
             _context = context;
         }
-        public async Task<bool> AddClientAsync(Cliente client)
+        public async Task<Cliente> AddClientAsync(Cliente client)
         {
-            if(client != null)
+            if (client == null)
             {
-                _context.Clientes.Add(client);
-                return  await _context.SaveChangesAsync()>0;
-
+                throw new ArgumentNullException(nameof(client));
             }
-            return false;
+
+            await _context.Clientes.AddAsync(client);
+            await _context.SaveChangesAsync();
+            return client;
+
         }
+
+        
 
         public async Task<bool> DeleteClientAsync(int clientId)
         {
@@ -38,7 +44,8 @@ namespace TP_ProgramaciónII_PIPORAMA.Repositories
 
         public async Task<List<Cliente>> GetAllClientsAsync()
         {
-            var lst = await _context.Clientes.ToListAsync();
+            var lst = await _context.Clientes.Include(c=>c.IdBarrioNavigation)
+                .Include(c=>c.IdTipoClienteNavigation).Include(c=>c.IdContactoNavigation).ToListAsync();
             if(lst != null && lst.Count > 0)
             {
                 return lst;
@@ -47,20 +54,30 @@ namespace TP_ProgramaciónII_PIPORAMA.Repositories
             
         }
 
-        public async Task<bool> UpdateClientAsync(Cliente client)
+        public async Task<Cliente?> GetClientByIdAsync(int id)
+        {
+            var client = await _context.Clientes.Include(c=>c.IdBarrioNavigation).Include(c=>c.IdTipoClienteNavigation)
+                .Include(c=>c.IdContactoNavigation).FirstOrDefaultAsync(c=>c.IdCliente == id);
+            if (client != null)
+            {
+                return client;
+            }
+            return null;
+
+        }
+
+        public async Task<Cliente> UpdateClientAsync(Cliente client)
         {
             var clientToUpdate = _context.Clientes.Find(client.IdCliente);
-            if (clientToUpdate != null)
-            {
-                clientToUpdate.NomCliente = client.NomCliente;
-                clientToUpdate.ApeCliente = client.ApeCliente;
-                clientToUpdate.IdTipoCliente = client.IdTipoCliente;
-                clientToUpdate.IdBarrio = client.IdBarrio;
-                clientToUpdate.IdContacto = client.IdContacto;
-                _context.Clientes.Update(clientToUpdate);
-                return await _context.SaveChangesAsync()>0;
-            }
-            return false;
+            if (clientToUpdate == null) return null;
+            clientToUpdate.NomCliente = client.NomCliente;
+            clientToUpdate.ApeCliente = client.ApeCliente;
+            clientToUpdate.IdBarrio = client.IdBarrio;
+            clientToUpdate.IdContacto = client.IdContacto;
+            clientToUpdate.IdTipoCliente = client.IdTipoCliente;
+            await _context.SaveChangesAsync();
+            return clientToUpdate;
+
         }
     }
 }

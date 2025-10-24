@@ -11,15 +11,15 @@
   },
   {
     "ContainingType": "TP_Programaci\u00F3nII_PIPORAMA.Controllers.ClientsController",
-    "Method": "Post",
+    "Method": "PostClient",
     "RelativePath": "api/Clients",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "client",
-        "Type": "TP_Programaci\u00F3nII_PIPORAMA.Data.Models.Cliente",
+        "Name": "clientdto",
+        "Type": "TP_Programaci\u00F3nII_PIPORAMA.DTOs.ClientDTO",
         "IsRequired": true
       }
     ],
@@ -27,9 +27,25 @@
   },
   {
     "ContainingType": "TP_Programaci\u00F3nII_PIPORAMA.Controllers.ClientsController",
-    "Method": "Put",
-    "RelativePath": "api/Clients/{id}",
+    "Method": "PutClient",
+    "RelativePath": "api/Clients",
     "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "clientDTO",
+        "Type": "TP_Programaci\u00F3nII_PIPORAMA.DTOs.ClientDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TP_Programaci\u00F3nII_PIPORAMA.Controllers.ClientsController",
+    "Method": "GetClientByIdAsync",
+    "RelativePath": "api/Clients/{id}",
+    "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
@@ -37,24 +53,13 @@
         "Name": "id",
         "Type": "System.Int32",
         "IsRequired": true
-      },
-      {
-        "Name": "value",
-        "Type": "System.String",
-        "IsRequired": true
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "System.Void",
-        "MediaTypes": [],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   },
   {
     "ContainingType": "TP_Programaci\u00F3nII_PIPORAMA.Controllers.ClientsController",
-    "Method": "Delete",
+    "Method": "DeleteClient",
     "RelativePath": "api/Clients/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
@@ -66,12 +71,6 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "System.Void",
-        "MediaTypes": [],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   }
 ]
