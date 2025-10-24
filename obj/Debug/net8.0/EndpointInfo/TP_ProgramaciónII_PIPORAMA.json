@@ -1,0 +1,1133 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "TP_ProgramaciónII_PIPORAMA",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/Clients": {
+      "get": {
+        "tags": [
+          "Clients"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Clients"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Cliente"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Cliente"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Cliente"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Clients/{id}": {
+      "put": {
+        "tags": [
+          "Clients"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "string"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "type": "string"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Clients"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Barrio": {
+        "type": "object",
+        "properties": {
+          "idBarrio": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "descripcion": {
+            "type": "string",
+            "nullable": true
+          },
+          "clientes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Cliente"
+            },
+            "nullable": true
+          },
+          "empleados": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Empleado"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Butaca": {
+        "type": "object",
+        "properties": {
+          "idButaca": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "numButaca": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "filaButaca": {
+            "type": "string",
+            "nullable": true
+          },
+          "activa": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "entrada": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Entrada"
+            },
+            "nullable": true
+          },
+          "salaButacas": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/SalaButaca"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Categoria": {
+        "type": "object",
+        "properties": {
+          "idCategoria": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "categoria1": {
+            "type": "string",
+            "nullable": true
+          },
+          "consumibles": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Consumible"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Clasificacion": {
+        "type": "object",
+        "properties": {
+          "idClasificacion": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "clasificacion1": {
+            "type": "string",
+            "nullable": true
+          },
+          "peliculas": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Pelicula"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Cliente": {
+        "type": "object",
+        "properties": {
+          "idCliente": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nomCliente": {
+            "type": "string",
+            "nullable": true
+          },
+          "apeCliente": {
+            "type": "string",
+            "nullable": true
+          },
+          "idTipoCliente": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idBarrio": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idContacto": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idBarrioNavigation": {
+            "$ref": "#/components/schemas/Barrio"
+          },
+          "idContactoNavigation": {
+            "$ref": "#/components/schemas/Contacto"
+          },
+          "idTipoClienteNavigation": {
+            "$ref": "#/components/schemas/TiposCliente"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Combo": {
+        "type": "object",
+        "properties": {
+          "idCombo": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nomCombo": {
+            "type": "string",
+            "nullable": true
+          },
+          "detallesCombos": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DetallesCombo"
+            },
+            "nullable": true
+          },
+          "detallesFacturas": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DetallesFactura"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Condicione": {
+        "type": "object",
+        "properties": {
+          "idCondicion": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "descripcion": {
+            "type": "string",
+            "nullable": true
+          },
+          "promocionesCondiciones": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/PromocionesCondicione"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Consumible": {
+        "type": "object",
+        "properties": {
+          "idConsumible": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idCategoria": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nomConsumible": {
+            "type": "string",
+            "nullable": true
+          },
+          "idMarca": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "preUnitario": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "detallesCombos": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DetallesCombo"
+            },
+            "nullable": true
+          },
+          "detallesFacturas": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DetallesFactura"
+            },
+            "nullable": true
+          },
+          "idCategoriaNavigation": {
+            "$ref": "#/components/schemas/Categoria"
+          },
+          "idMarcaNavigation": {
+            "$ref": "#/components/schemas/Marca"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Contacto": {
+        "type": "object",
+        "properties": {
+          "idContacto": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "descripcion": {
+            "type": "string",
+            "nullable": true
+          },
+          "idTipoContacto": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "clientes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Cliente"
+            },
+            "nullable": true
+          },
+          "empleados": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Empleado"
+            },
+            "nullable": true
+          },
+          "idTipoContactoNavigation": {
+            "$ref": "#/components/schemas/TiposContacto"
+          }
+        },
+        "additionalProperties": false
+      },
+      "DetallesCombo": {
+        "type": "object",
+        "properties": {
+          "idDetalle": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idCombo": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idConsumible": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "cantidad": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "preUnitario": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "idComboNavigation": {
+            "$ref": "#/components/schemas/Combo"
+          },
+          "idConsumibleNavigation": {
+            "$ref": "#/components/schemas/Consumible"
+          }
+        },
+        "additionalProperties": false
+      },
+      "DetallesFactura": {
+        "type": "object",
+        "properties": {
+          "idDetalle": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idFactura": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "precio": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "idConsumible": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "idCombo": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "idEntrada": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "idPromocion": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "idComboNavigation": {
+            "$ref": "#/components/schemas/Combo"
+          },
+          "idConsumibleNavigation": {
+            "$ref": "#/components/schemas/Consumible"
+          },
+          "idEntradaNavigation": {
+            "$ref": "#/components/schemas/Entrada"
+          },
+          "idFacturaNavigation": {
+            "$ref": "#/components/schemas/Factura"
+          },
+          "idPromocionNavigation": {
+            "$ref": "#/components/schemas/Promocione"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Empleado": {
+        "type": "object",
+        "properties": {
+          "idEmpleado": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nomEmpleado": {
+            "type": "string",
+            "nullable": true
+          },
+          "apeEmpleado": {
+            "type": "string",
+            "nullable": true
+          },
+          "idBarrio": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idContacto": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "facturas": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Factura"
+            },
+            "nullable": true
+          },
+          "idBarrioNavigation": {
+            "$ref": "#/components/schemas/Barrio"
+          },
+          "idContactoNavigation": {
+            "$ref": "#/components/schemas/Contacto"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Entrada": {
+        "type": "object",
+        "properties": {
+          "idEntrada": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idFuncion": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idButaca": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "detallesFacturas": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DetallesFactura"
+            },
+            "nullable": true
+          },
+          "idButacaNavigation": {
+            "$ref": "#/components/schemas/Butaca"
+          },
+          "idFuncionNavigation": {
+            "$ref": "#/components/schemas/Funcione"
+          }
+        },
+        "additionalProperties": false
+      },
+      "EstadoPelicula": {
+        "type": "object",
+        "properties": {
+          "idEstadoPeli": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "estadoPelicula1": {
+            "type": "string",
+            "nullable": true
+          },
+          "peliculas": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Pelicula"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "EstadosCompra": {
+        "type": "object",
+        "properties": {
+          "idEstadoCompra": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "descripcion": {
+            "type": "string",
+            "nullable": true
+          },
+          "facturas": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Factura"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Factura": {
+        "type": "object",
+        "properties": {
+          "idFactura": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idCliente": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idEmpleado": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "fecha": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "idMedioPago": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idEstadoCompra": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idFormaCompra": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "detallesFacturas": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DetallesFactura"
+            },
+            "nullable": true
+          },
+          "idClienteNavigation": {
+            "$ref": "#/components/schemas/Cliente"
+          },
+          "idEmpleadoNavigation": {
+            "$ref": "#/components/schemas/Empleado"
+          },
+          "idEstadoCompraNavigation": {
+            "$ref": "#/components/schemas/EstadosCompra"
+          },
+          "idFormaCompraNavigation": {
+            "$ref": "#/components/schemas/FormaCompra"
+          },
+          "idMedioPagoNavigation": {
+            "$ref": "#/components/schemas/MediosPago"
+          }
+        },
+        "additionalProperties": false
+      },
+      "FormaCompra": {
+        "type": "object",
+        "properties": {
+          "idFormaCompra": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "formaCompra1": {
+            "type": "string",
+            "nullable": true
+          },
+          "facturas": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Factura"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Formato": {
+        "type": "object",
+        "properties": {
+          "idFormato": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "formato1": {
+            "type": "string",
+            "nullable": true
+          },
+          "funciones": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Funcione"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Funcione": {
+        "type": "object",
+        "properties": {
+          "idFuncion": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idPelicula": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "horario": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "idTipoProyeccion": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idSala": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idFormato": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idIdioma": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "entrada": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Entrada"
+            },
+            "nullable": true
+          },
+          "idFormatoNavigation": {
+            "$ref": "#/components/schemas/Formato"
+          },
+          "idIdiomaNavigation": {
+            "$ref": "#/components/schemas/Idioma"
+          },
+          "idPeliculaNavigation": {
+            "$ref": "#/components/schemas/Pelicula"
+          },
+          "idSalaNavigation": {
+            "$ref": "#/components/schemas/Sala"
+          },
+          "idTipoProyeccionNavigation": {
+            "$ref": "#/components/schemas/TiposProyeccion"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Genero": {
+        "type": "object",
+        "properties": {
+          "idGenero": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "genero1": {
+            "type": "string",
+            "nullable": true
+          },
+          "peliculas": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Pelicula"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Idioma": {
+        "type": "object",
+        "properties": {
+          "idIdioma": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idioma1": {
+            "type": "string",
+            "nullable": true
+          },
+          "funciones": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Funcione"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Marca": {
+        "type": "object",
+        "properties": {
+          "idMarca": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "marca1": {
+            "type": "string",
+            "nullable": true
+          },
+          "consumibles": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Consumible"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "MediosPago": {
+        "type": "object",
+        "properties": {
+          "idMedioPago": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "medioPago": {
+            "type": "string",
+            "nullable": true
+          },
+          "facturas": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Factura"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Pelicula": {
+        "type": "object",
+        "properties": {
+          "idPelicula": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nomPelicula": {
+            "type": "string",
+            "nullable": true
+          },
+          "idGenero": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idClasificacion": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idEstadoPeli": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "funciones": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Funcione"
+            },
+            "nullable": true
+          },
+          "idClasificacionNavigation": {
+            "$ref": "#/components/schemas/Clasificacion"
+          },
+          "idEstadoPeliNavigation": {
+            "$ref": "#/components/schemas/EstadoPelicula"
+          },
+          "idGeneroNavigation": {
+            "$ref": "#/components/schemas/Genero"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Promocione": {
+        "type": "object",
+        "properties": {
+          "idPromocion": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "descripcion": {
+            "type": "string",
+            "nullable": true
+          },
+          "vigenciaDesde": {
+            "type": "string",
+            "format": "date",
+            "nullable": true
+          },
+          "vigenciaHasta": {
+            "type": "string",
+            "format": "date",
+            "nullable": true
+          },
+          "valorDescuento": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "activo": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "idTipoPromo": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "detallesFacturas": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DetallesFactura"
+            },
+            "nullable": true
+          },
+          "idTipoPromoNavigation": {
+            "$ref": "#/components/schemas/TiposPromocion"
+          },
+          "promocionesCondiciones": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/PromocionesCondicione"
+            },
+            "nullable": true
+          },
+          "promocionesEntrada": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/PromocionesEntrada"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "PromocionesCondicione": {
+        "type": "object",
+        "properties": {
+          "idPromoCond": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idPromocion": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idCondicion": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idCondicionNavigation": {
+            "$ref": "#/components/schemas/Condicione"
+          },
+          "idPromocionNavigation": {
+            "$ref": "#/components/schemas/Promocione"
+          }
+        },
+        "additionalProperties": false
+      },
+      "PromocionesEntrada": {
+        "type": "object",
+        "properties": {
+          "idPromoEntrada": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idPromocion": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idTipoProyeccion": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idPromocionNavigation": {
+            "$ref": "#/components/schemas/Promocione"
+          },
+          "idTipoProyeccionNavigation": {
+            "$ref": "#/components/schemas/TiposProyeccion"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Sala": {
+        "type": "object",
+        "properties": {
+          "idSala": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nomSala": {
+            "type": "string",
+            "nullable": true
+          },
+          "cantButacas": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "funciones": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Funcione"
+            },
+            "nullable": true
+          },
+          "salaButacas": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/SalaButaca"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "SalaButaca": {
+        "type": "object",
+        "properties": {
+          "idSalaButacas": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idButaca": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idSala": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idButacaNavigation": {
+            "$ref": "#/components/schemas/Butaca"
+          },
+          "idSalaNavigation": {
+            "$ref": "#/components/schemas/Sala"
+          }
+        },
+        "additionalProperties": false
+      },
+      "TiposCliente": {
+        "type": "object",
+        "properties": {
+          "idTipoCliente": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "tipoCliente": {
+            "type": "string",
+            "nullable": true
+          },
+          "clientes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Cliente"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TiposContacto": {
+        "type": "object",
+        "properties": {
+          "idTipoContacto": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "descripcion": {
+            "type": "string",
+            "nullable": true
+          },
+          "contactos": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Contacto"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TiposPromocion": {
+        "type": "object",
+        "properties": {
+          "idTipoPromo": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nombre": {
+            "type": "string",
+            "nullable": true
+          },
+          "promociones": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Promocione"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TiposProyeccion": {
+        "type": "object",
+        "properties": {
+          "idTipoProyeccion": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "tipoProyeccion": {
+            "type": "string",
+            "nullable": true
+          },
+          "funciones": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Funcione"
+            },
+            "nullable": true
+          },
+          "promocionesEntrada": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/PromocionesEntrada"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

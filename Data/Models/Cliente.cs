@@ -2,6 +2,7 @@
 #nullable disable
 using System;
 using System.Collections.Generic;
+using System.Text.Json.Serialization;
 
 namespace TP_ProgramaciónII_PIPORAMA.Data.Models;
 
@@ -18,7 +19,7 @@ public partial class Cliente
     public int IdBarrio { get; set; }
 
     public int IdContacto { get; set; }
-
+    
     public virtual ICollection<Factura> Facturas { get; set; } = new List<Factura>();
 
     public virtual Barrio IdBarrioNavigation { get; set; }
