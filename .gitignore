@@ -1,0 +1,106 @@
+﻿# ===========================================
+# 👩‍💻 .NET / Visual Studio Git Ignore
+# Proyecto: TP_ProgramaciónII_PIPORAMA
+# ===========================================
+
+# Archivos de usuario y configuración local
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Configuración temporal de Visual Studio
+.vs/
+.vscode/
+*.code-workspace
+
+# Compilados
+bin/
+obj/
+[Bb]uild/
+[Ll]og/
+*.dll
+*.exe
+*.pdb
+*.cache
+*.log
+*.tmp
+*.dbmdl
+
+# Archivos generados por dependencias o herramientas
+*.bak
+*.swp
+*.sln.GhostDoc.xml
+*.pri
+*.xsd
+*.psess
+*.vsp
+*.vspx
+*.ncb
+*.opensdf
+*.sdf
+*.tlog
+
+# Archivos de publicación o paquete
+*.publish.xml
+*.pubxml
+*.pubxml.user
+PublishProfiles/
+*.appx
+*.appxbundle
+*.appxupload
+
+# Archivos generados por NuGet
+*.nupkg
+*.snupkg
+*.nuspec
+packages/
+project.lock.json
+project.fragment.lock.json
+artifacts/
+.nuget/
+*.nuget.props
+*.nuget.targets
+
+# Archivos de compilación temporal de MSBuild
+*.metaproj
+*.tlog
+*.FileListAbsolute.txt
+*.AssemblyInfoInputs.cache
+
+# Archivos de IDE de JetBrains Rider / ReSharper
+.idea/
+*.DotSettings.user
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings
+
+# Archivos de test / cobertura / profiling
+TestResult*/
+TestResults/
+*.coverage
+*.coveragexml
+*.testresults
+*.VisualState.xml
+
+# Archivos de herramientas externas
+*.db
+*.sqlite
+*.bak
+*.mdf
+*.ldf
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# Archivos de publicación o depuración locales
+launchSettings.json
+appsettings.Development.json
+
+# ===========================================
+# Fin del archivo
+# ===========================================
