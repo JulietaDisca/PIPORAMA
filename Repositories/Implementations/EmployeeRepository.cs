@@ -12,8 +12,18 @@ namespace TP_ProgramaciónII_PIPORAMA.Repositories.Implementations
             _context = context;
         }
 
-        public async Task AddEmployee(Empleado employee)
+        public async Task AddEmployee(Empleado employee, string barrioNombre, Contacto contacto)
         {
+            // insertar contacto y obtener su id
+            _context.Contactos.Add(contacto);
+            await _context.SaveChangesAsync();
+            employee.IdContacto = contacto.IdContacto;
+
+            // encontrar barrio con ese nombre y asignar id a empleado
+            var barrio = await _context.Barrios.FirstOrDefaultAsync(b => b.Descripcion == barrioNombre);   
+            employee.IdBarrio = barrio.IdBarrio;
+
+            // insertar empleado
             _context.Empleados.Add(employee);
             await _context.SaveChangesAsync();
         }
@@ -23,7 +33,8 @@ namespace TP_ProgramaciónII_PIPORAMA.Repositories.Implementations
             var employee = await _context.Empleados.FindAsync(id);
             if (employee != null)
             {
-                _context.Empleados.Remove(employee);
+                employee.Activo = false;
+                _context.Empleados.Update(employee);
                 await _context.SaveChangesAsync();
             }
         }
@@ -31,6 +42,7 @@ namespace TP_ProgramaciónII_PIPORAMA.Repositories.Implementations
         public async Task<IEnumerable<Empleado>> GetAllEmployees()
         {
             return await _context.Empleados
+                .Where(e => e.Activo)
                 .Include(e => e.IdBarrioNavigation)
                 .Include(e => e.IdContactoNavigation)
                 .ToListAsync();
