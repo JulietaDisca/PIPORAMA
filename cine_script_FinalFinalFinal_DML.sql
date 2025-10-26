@@ -1,5 +1,5 @@
 
-USE CineDB5;
+USE PIPORAMA;
 GO
 
 GO
@@ -340,22 +340,22 @@ INSERT INTO contactos (descripcion, id_tipo_contacto) VALUES
 GO
 
 -- 20 CLIENTES
-INSERT INTO clientes (nom_cliente, ape_cliente, id_tipo_cliente, id_barrio, id_contacto, activo) VALUES
-('Juan', 'Perez', 2, 1, 1,1), ('Maria', 'Gomez', 1, 3, 3,1), ('Lucas', 'Diaz', 1, 2, 5,1), ('Ana', 'Fernandez', 2, 1, 6,1,1),
-('Martin', 'Suarez', 1, 5, 8,1), ('Carla', 'Gonzalez', 3, 7, 9,1), ('Roberto', 'Lopez', 1, 4, 11,1), ('Lucia', 'Martinez', 2, 6, 12,1),
-('Diego', 'Sanchez', 4, 10, 13,1), ('Florencia', 'Romero', 1, 12, 14,1), ('Valeria', 'Torres', 4, 9, 16,1), ('Matias', 'Ruiz', 1, 11, 17,1),
-('Jorge', 'Alvarez', 2, 15, 18,1), ('Gabriela', 'Ramirez', 1, 18, 19,1), ('Agustin', 'Benitez', 1, 20, 2,1),
-('Sofia', 'Acosta', 2, 1, 4,1), ('Micaela', 'Medina', 1, 3, 7,1), ('Pedro', 'Castro', 3, 8, 10,1), ('Julieta', 'Herrera', 1, 14, 15,1),
-('Pablo', 'Gimenez', 1, 17, 20,1);
+INSERT INTO clientes (dni_cliente, nom_cliente, ape_cliente, id_tipo_cliente, id_barrio, id_contacto, activo) VALUES
+('44948403','Juan', 'Perez', 2, 1, 1,1), ('12345678','Maria', 'Gomez', 1, 3, 3,1), ('43427843','Lucas', 'Diaz', 1, 2, 5,1), ('13475246','Ana', 'Fernandez', 2, 1, 6,1),
+('71420647','Martin', 'Suarez', 1, 5, 8,1), ('20733765','Carla', 'Gonzalez', 3, 7, 9,1), ('23754165','Roberto', 'Lopez', 1, 4, 11,1), ('11427346','Lucia', 'Martinez', 2, 6, 12,1),
+('30457214','Diego', 'Sanchez', 4, 10, 13,1), ('71246547','Florencia', 'Romero', 1, 12, 14,1), ('14253678','Valeria', 'Torres', 4, 9, 16,1), ('12045714','Matias', 'Ruiz', 1, 11, 17,1),
+('12345679','Jorge', 'Alvarez', 2, 15, 18,1), ('12345675','Gabriela', 'Ramirez', 1, 18, 19,1), ('12345674','Agustin', 'Benitez', 1, 20, 2,1),
+('12345670','Sofia', 'Acosta', 2, 1, 4,1), ('12345676','Micaela', 'Medina', 1, 3, 7,1), ('12345673','Pedro', 'Castro', 3, 8, 10,1), ('12345672','Julieta', 'Herrera', 1, 14, 15,1),
+('12345677','Pablo', 'Gimenez', 1, 17, 20,1);
 GO
 
 -- 20 EMPLEADOS
-INSERT INTO empleados (nom_empleado, ape_empleado, id_barrio, id_contacto, activo) VALUES
-('Carlos', 'Sanchez', 7, 21,1), ('Romina', 'Alvarez', 8, 22,1), ('Mariano', 'Gutierrez', 1, 23,1), ('Javier', 'Perez', 2, 24,1),
-('Silvia', 'Lopez', 3, 25,1), ('Adrian', 'Diaz', 5, 26,1), ('Marcela', 'Fernandez', 6, 27,1), ('Daniel', 'Gonzalez', 10, 28,1),
-('Paola', 'Rodriguez', 11, 29,1), ('Lucas', 'Garcia', 13, 30,1), ('Esteban', 'Fernandez', 14, 31,1), ('Juana', 'Torres', 16, 32,1),
-('Victor', 'Ruiz', 18, 33,1), ('Hernan', 'Ramirez', 19, 34,1), ('Natalia', 'Alvarez', 20, 35,1), ('Facundo', 'Moreno', 4, 36,1),
-('Lorena', 'Gimenez', 9, 37,1), ('Sebastian', 'Romero', 12, 38,1), ('Ricardo', 'Castro', 15, 39,1), ('Monica', 'Medina', 17, 40,1);
+INSERT INTO empleados (dni_empleado, nom_empleado, ape_empleado, id_barrio, id_contacto, activo) VALUES
+('98765432','Carlos', 'Sanchez', 7, 21,1), ('98765437','Romina', 'Alvarez', 8, 22,1), ('88765432','Mariano', 'Gutierrez', 1, 23,1), ('20765432','Javier', 'Perez', 2, 24,1),
+('98765433','Silvia', 'Lopez', 3, 25,1), ('98765438','Adrian', 'Diaz', 5, 26,1), ('78765432','Marcela', 'Fernandez', 6, 27,1), ('19765432','Daniel', 'Gonzalez', 10, 28,1),
+('98765434','Paola', 'Rodriguez', 11, 29,1), ('98765439','Lucas', 'Garcia', 13, 30,1), ('68765432','Esteban', 'Fernandez', 14, 31,1), ('18765432','Juana', 'Torres', 16, 32,1),
+('98765435','Victor', 'Ruiz', 18, 33,1), ('98765430','Hernan', 'Ramirez', 19, 34,1), ('58765432','Natalia', 'Alvarez', 20, 35,1), ('28765432','Facundo', 'Moreno', 4, 36,1),
+('98765436','Lorena', 'Gimenez', 9, 37,1), ('98765431','Sebastian', 'Romero', 12, 38,1), ('48765432','Ricardo', 'Castro', 15, 39,1), ('38765432','Monica', 'Medina', 17, 40,1);
 GO
 
 
