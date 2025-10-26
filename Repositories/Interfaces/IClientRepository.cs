@@ -6,7 +6,7 @@ namespace TP_ProgramaciónII_PIPORAMA.Repositories.Interfaces
     {
         Task<IEnumerable<Cliente>> GetAllClientsAsync();
         Task<Cliente?> GetClientByIdAsync(int id);
-        Task<Cliente> AddClientAsync(Cliente client);
+        Task<Cliente> AddClientAsync(Cliente client, string barrio, Contacto contacto);
         Task<Cliente> UpdateClientAsync(Cliente client);
         Task<bool> DeleteClientAsync(int clientId);
     }
