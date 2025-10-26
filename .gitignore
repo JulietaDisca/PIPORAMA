@@ -1,0 +1,4 @@
+# Archivos temporales y de compilación
+bin/
+obj/
+.vs/
