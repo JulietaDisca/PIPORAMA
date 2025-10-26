@@ -7,6 +7,8 @@ namespace TP_ProgramaciónII_PIPORAMA.Data.DTOs.Invoice
     {
         public int IdEmpleado { get; set; }
 
+        public string DniEmpleado { get; set; }
+
         public string NomEmpleado { get; set; }
 
         public string ApeEmpleado { get; set; }

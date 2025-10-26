@@ -21,6 +21,7 @@ namespace TP_ProgramaciónII_PIPORAMA.Services.Implementations
                 var newEmployee = new Empleado
                 {
                     IdEmpleado = employee.IdEmpleado,
+                    DniEmpleado = employee.DniEmpleado,
                     NomEmpleado = employee.NomEmpleado,
                     ApeEmpleado = employee.ApeEmpleado,
                     IdBarrio = employee.Barrio.IdBarrio,
@@ -66,6 +67,7 @@ namespace TP_ProgramaciónII_PIPORAMA.Services.Implementations
                 return employees.Select(e => new EmployeeDTO
                 {
                     IdEmpleado = e.IdEmpleado,
+                    DniEmpleado = e.DniEmpleado,
                     NomEmpleado = e.NomEmpleado,
                     ApeEmpleado = e.ApeEmpleado,
                     IdBarrio = e.IdBarrio,
@@ -103,6 +105,7 @@ namespace TP_ProgramaciónII_PIPORAMA.Services.Implementations
                 return new EmployeeDTO
                 {
                     IdEmpleado = employee.IdEmpleado,
+                    DniEmpleado = employee.DniEmpleado,
                     NomEmpleado = employee.NomEmpleado,
                     ApeEmpleado = employee.ApeEmpleado,
                     IdBarrio = employee.IdBarrio,
@@ -138,6 +141,7 @@ namespace TP_ProgramaciónII_PIPORAMA.Services.Implementations
                 var updatedEmployee = new Empleado
                 {
                     IdEmpleado = employee.IdEmpleado,
+                    DniEmpleado = employee.DniEmpleado,
                     NomEmpleado = employee.NomEmpleado,
                     ApeEmpleado = employee.ApeEmpleado,
                     IdBarrio = employee.IdBarrio,

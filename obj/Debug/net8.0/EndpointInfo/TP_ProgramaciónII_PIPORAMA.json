@@ -450,6 +450,10 @@
             "type": "integer",
             "format": "int32"
           },
+          "dniEmpleado": {
+            "type": "string",
+            "nullable": true
+          },
           "nomEmpleado": {
             "type": "string",
             "nullable": true

@@ -517,3 +517,4 @@ C:\Users\marti\Desktop\piporama cine\obj\Debug\net8.0\refint\TP_ProgramaciónII_
 C:\Users\marti\Desktop\piporama cine\obj\Debug\net8.0\TP_ProgramaciónII_PIPORAMA.pdb
 C:\Users\marti\Desktop\piporama cine\obj\Debug\net8.0\TP_ProgramaciónII_PIPORAMA.genruntimeconfig.cache
 C:\Users\marti\Desktop\piporama cine\obj\Debug\net8.0\ref\TP_ProgramaciónII_PIPORAMA.dll
+C:\Users\marti\Desktop\piporama cine\obj\Debug\net8.0\TP_ProgramaciónII_PIPORAMA.sourcelink.json

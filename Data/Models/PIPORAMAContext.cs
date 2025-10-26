@@ -147,6 +147,11 @@ public partial class PIPORAMAContext : DbContext
                 .HasMaxLength(40)
                 .IsUnicode(false)
                 .HasColumnName("ape_cliente");
+            entity.Property(e => e.DniCliente)
+                .IsRequired()
+                .HasMaxLength(8)
+                .IsUnicode(false)
+                .HasColumnName("dni_cliente");
             entity.Property(e => e.IdBarrio).HasColumnName("id_barrio");
             entity.Property(e => e.IdContacto).HasColumnName("id_contacto");
             entity.Property(e => e.IdTipoCliente).HasColumnName("id_tipo_cliente");
@@ -313,6 +318,11 @@ public partial class PIPORAMAContext : DbContext
                 .HasMaxLength(40)
                 .IsUnicode(false)
                 .HasColumnName("ape_empleado");
+            entity.Property(e => e.DniEmpleado)
+                .IsRequired()
+                .HasMaxLength(8)
+                .IsUnicode(false)
+                .HasColumnName("dni_empleado");
             entity.Property(e => e.IdBarrio).HasColumnName("id_barrio");
             entity.Property(e => e.IdContacto).HasColumnName("id_contacto");
             entity.Property(e => e.NomEmpleado)
