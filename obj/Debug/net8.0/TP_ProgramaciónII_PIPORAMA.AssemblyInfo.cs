@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TP_ProgramaciónII_PIPORAMA")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+792926436f252114d6ada840232dc202a44fdf2e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ed75e75c7bed37c789026b95d05effec3e42c3ff")]
 [assembly: System.Reflection.AssemblyProductAttribute("TP_ProgramaciónII_PIPORAMA")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TP_ProgramaciónII_PIPORAMA")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

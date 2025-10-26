@@ -9,6 +9,8 @@ public partial class Empleado
 {
     public int IdEmpleado { get; set; }
 
+    public string DniEmpleado { get; set; }
+
     public string NomEmpleado { get; set; }
 
     public string ApeEmpleado { get; set; }

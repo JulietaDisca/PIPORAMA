@@ -450,6 +450,10 @@
             "type": "integer",
             "format": "int32"
           },
+          "dniEmpleado": {
+            "type": "string",
+            "nullable": true
+          },
           "nomEmpleado": {
             "type": "string",
             "nullable": true
@@ -465,6 +469,9 @@
           "idContacto": {
             "type": "integer",
             "format": "int32"
+          },
+          "activo": {
+            "type": "boolean"
           },
           "barrio": {
             "$ref": "#/components/schemas/NeighborhoodDTO"

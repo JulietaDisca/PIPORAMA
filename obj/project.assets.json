@@ -5159,23 +5159,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\jmtor\\.nuget\\packages\\": {},
+    "C:\\Users\\marti\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jmtor\\OneDrive\\Escritorio\\Programming\\2025\\ProgII\\PIPORAMA\\TP_ProgramaciónII_PIPORAMA.csproj",
+      "projectUniqueName": "C:\\Users\\marti\\Desktop\\piporama cine\\TP_ProgramaciónII_PIPORAMA.csproj",
       "projectName": "TP_ProgramaciónII_PIPORAMA",
-      "projectPath": "C:\\Users\\jmtor\\OneDrive\\Escritorio\\Programming\\2025\\ProgII\\PIPORAMA\\TP_ProgramaciónII_PIPORAMA.csproj",
-      "packagesPath": "C:\\Users\\jmtor\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jmtor\\OneDrive\\Escritorio\\Programming\\2025\\ProgII\\PIPORAMA\\obj\\",
+      "projectPath": "C:\\Users\\marti\\Desktop\\piporama cine\\TP_ProgramaciónII_PIPORAMA.csproj",
+      "packagesPath": "C:\\Users\\marti\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\marti\\Desktop\\piporama cine\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\jmtor\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\marti\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -5202,7 +5202,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.300"
+      "SdkAnalysisLevel": "9.0.200"
     },
     "frameworks": {
       "net8.0": {
@@ -5252,7 +5252,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
