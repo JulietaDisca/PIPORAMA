@@ -21,6 +21,8 @@ public partial class Factura
 
     public int IdFormaCompra { get; set; }
 
+    public bool Activo { get; set; }
+
     public virtual ICollection<DetallesFactura> DetallesFacturas { get; set; } = new List<DetallesFactura>();
 
     public virtual Cliente IdClienteNavigation { get; set; }

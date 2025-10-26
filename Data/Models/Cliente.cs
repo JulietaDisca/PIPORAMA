@@ -19,6 +19,8 @@ public partial class Cliente
 
     public int IdContacto { get; set; }
 
+    public bool Activo { get; set; }
+
     public virtual ICollection<Factura> Facturas { get; set; } = new List<Factura>();
 
     public virtual Barrio IdBarrioNavigation { get; set; }

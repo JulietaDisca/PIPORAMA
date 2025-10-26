@@ -28,6 +28,8 @@ namespace TP_ProgramaciónII_PIPORAMA.Repositories.Implementations
                 .Include(f => f.IdEmpleadoNavigation)
                 .Include(f => f.IdMedioPagoNavigation)
                 .Include(f => f.IdFormaCompraNavigation)
+                .Include(f => f.IdEstadoCompraNavigation)
+                .Include(f => f.DetallesFacturas)
                 .ToListAsync();
         }
 

@@ -2,7 +2,6 @@
 #nullable disable
 using System;
 using System.Collections.Generic;
-using System.Text.Json.Serialization;
 
 namespace TP_ProgramaciónII_PIPORAMA.Data.Models;
 
@@ -18,12 +17,11 @@ public partial class Empleado
 
     public int IdContacto { get; set; }
 
-    [JsonIgnore]
+    public bool Activo { get; set; }
+
     public virtual ICollection<Factura> Facturas { get; set; } = new List<Factura>();
 
-    [JsonIgnore]
     public virtual Barrio IdBarrioNavigation { get; set; }
 
-    [JsonIgnore]
     public virtual Contacto IdContactoNavigation { get; set; }
 }
