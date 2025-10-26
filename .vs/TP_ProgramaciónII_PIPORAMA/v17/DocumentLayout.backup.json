@@ -3,24 +3,136 @@
   "WorkspaceRootPath": "C:\\Users\\jmtor\\OneDrive\\Escritorio\\Programming\\2025\\ProgII\\PIPORAMA\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|c:\\users\\jmtor\\onedrive\\escritorio\\programming\\2025\\progii\\piporama\\services\\implementations\\invoiceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|solutionrelative:services\\implementations\\invoiceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|c:\\users\\jmtor\\onedrive\\escritorio\\programming\\2025\\progii\\piporama\\data\\dtos\\invoicedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|solutionrelative:data\\dtos\\invoicedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|c:\\users\\jmtor\\onedrive\\escritorio\\programming\\2025\\progii\\piporama\\data\\dtos\\detailinvoice\\seatdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|solutionrelative:data\\dtos\\detailinvoice\\seatdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|c:\\users\\jmtor\\onedrive\\escritorio\\programming\\2025\\progii\\piporama\\services\\implementations\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|solutionrelative:services\\implementations\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|c:\\users\\jmtor\\onedrive\\escritorio\\programming\\2025\\progii\\piporama\\data\\dtos\\detailinvoice\\promotiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|solutionrelative:data\\dtos\\detailinvoice\\promotiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|c:\\users\\jmtor\\onedrive\\escritorio\\programming\\2025\\progii\\piporama\\data\\dtos\\detailinvoice\\functiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|solutionrelative:data\\dtos\\detailinvoice\\functiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|c:\\users\\jmtor\\onedrive\\escritorio\\programming\\2025\\progii\\piporama\\repositories\\implementations\\clientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|solutionrelative:repositories\\implementations\\clientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|c:\\users\\jmtor\\onedrive\\escritorio\\programming\\2025\\progii\\piporama\\repositories\\implementations\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|solutionrelative:repositories\\implementations\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|c:\\users\\jmtor\\onedrive\\escritorio\\programming\\2025\\progii\\piporama\\data\\models\\funcione.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|solutionrelative:data\\models\\funcione.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|c:\\users\\jmtor\\onedrive\\escritorio\\programming\\2025\\progii\\piporama\\repositories\\implementations\\invoicerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|solutionrelative:repositories\\implementations\\invoicerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|c:\\users\\jmtor\\onedrive\\escritorio\\programming\\2025\\progii\\piporama\\data\\models\\contacto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|solutionrelative:data\\models\\contacto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|c:\\users\\jmtor\\onedrive\\escritorio\\programming\\2025\\progii\\piporama\\data\\dtos\\detailinvoice\\ticketdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|solutionrelative:data\\dtos\\detailinvoice\\ticketdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|c:\\users\\jmtor\\onedrive\\escritorio\\programming\\2025\\progii\\piporama\\data\\models\\entrada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|solutionrelative:data\\models\\entrada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|c:\\users\\jmtor\\onedrive\\escritorio\\programming\\2025\\progii\\piporama\\services\\implementations\\clientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|solutionrelative:services\\implementations\\clientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|c:\\users\\jmtor\\onedrive\\escritorio\\programming\\2025\\progii\\piporama\\data\\dtos\\detailinvoice\\combodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|solutionrelative:data\\dtos\\detailinvoice\\combodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|c:\\users\\jmtor\\onedrive\\escritorio\\programming\\2025\\progii\\piporama\\data\\models\\combo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|solutionrelative:data\\models\\combo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|c:\\users\\jmtor\\onedrive\\escritorio\\programming\\2025\\progii\\piporama\\data\\dtos\\invoice\\purchaseformdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|solutionrelative:data\\dtos\\invoice\\purchaseformdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|c:\\users\\jmtor\\onedrive\\escritorio\\programming\\2025\\progii\\piporama\\data\\dtos\\invoice\\purchasestatusdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|solutionrelative:data\\dtos\\invoice\\purchasestatusdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|c:\\users\\jmtor\\onedrive\\escritorio\\programming\\2025\\progii\\piporama\\data\\dtos\\invoice\\paymentmethoddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|solutionrelative:data\\dtos\\invoice\\paymentmethoddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|c:\\users\\jmtor\\onedrive\\escritorio\\programming\\2025\\progii\\piporama\\data\\dtos\\invoice\\neighborhooddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|solutionrelative:data\\dtos\\invoice\\neighborhooddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|c:\\users\\jmtor\\onedrive\\escritorio\\programming\\2025\\progii\\piporama\\data\\dtos\\invoice\\employeedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|solutionrelative:data\\dtos\\invoice\\employeedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|c:\\users\\jmtor\\onedrive\\escritorio\\programming\\2025\\progii\\piporama\\data\\dtos\\invoice\\contactdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|solutionrelative:data\\dtos\\invoice\\contactdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|c:\\users\\jmtor\\onedrive\\escritorio\\programming\\2025\\progii\\piporama\\data\\dtos\\invoice\\clienttypedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|solutionrelative:data\\dtos\\invoice\\clienttypedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|c:\\users\\jmtor\\onedrive\\escritorio\\programming\\2025\\progii\\piporama\\data\\dtos\\invoice\\clientdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|solutionrelative:data\\dtos\\invoice\\clientdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|c:\\users\\jmtor\\onedrive\\escritorio\\programming\\2025\\progii\\piporama\\data\\dtos\\detailinvoice\\roomdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|solutionrelative:data\\dtos\\detailinvoice\\roomdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|c:\\users\\jmtor\\onedrive\\escritorio\\programming\\2025\\progii\\piporama\\data\\dtos\\detailinvoice\\filmdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|solutionrelative:data\\dtos\\detailinvoice\\filmdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|c:\\users\\jmtor\\onedrive\\escritorio\\programming\\2025\\progii\\piporama\\data\\dtos\\detailinvoice\\consumabledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|solutionrelative:data\\dtos\\detailinvoice\\consumabledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|c:\\users\\jmtor\\onedrive\\escritorio\\programming\\2025\\progii\\piporama\\data\\models\\detallesfactura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|solutionrelative:data\\models\\detallesfactura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|c:\\users\\jmtor\\onedrive\\escritorio\\programming\\2025\\progii\\piporama\\data\\models\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|solutionrelative:data\\models\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|c:\\users\\jmtor\\onedrive\\escritorio\\programming\\2025\\progii\\piporama\\repositories\\implementations\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|solutionrelative:repositories\\implementations\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|c:\\users\\jmtor\\onedrive\\escritorio\\programming\\2025\\progii\\piporama\\data\\models\\mediospago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|solutionrelative:data\\models\\mediospago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|c:\\users\\jmtor\\onedrive\\escritorio\\programming\\2025\\progii\\piporama\\data\\models\\estadoscompra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|solutionrelative:data\\models\\estadoscompra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|c:\\users\\jmtor\\onedrive\\escritorio\\programming\\2025\\progii\\piporama\\data\\models\\formacompra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|solutionrelative:data\\models\\formacompra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|c:\\users\\jmtor\\onedrive\\escritorio\\programming\\2025\\progii\\piporama\\data\\models\\factura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|solutionrelative:data\\models\\factura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|c:\\users\\jmtor\\onedrive\\escritorio\\programming\\2025\\progii\\piporama\\data\\models\\contacto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|solutionrelative:data\\models\\contacto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|c:\\users\\jmtor\\onedrive\\escritorio\\programming\\2025\\progii\\piporama\\data\\models\\empleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -38,24 +150,362 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Combo.cs",
+              "DocumentMoniker": "C:\\Users\\jmtor\\OneDrive\\Escritorio\\Programming\\2025\\ProgII\\PIPORAMA\\Data\\Models\\Combo.cs",
+              "RelativeDocumentMoniker": "Data\\Models\\Combo.cs",
+              "ToolTip": "C:\\Users\\jmtor\\OneDrive\\Escritorio\\Programming\\2025\\ProgII\\PIPORAMA\\Data\\Models\\Combo.cs",
+              "RelativeToolTip": "Data\\Models\\Combo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T04:33:27.365Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "InvoiceDTO.cs",
+              "DocumentMoniker": "C:\\Users\\jmtor\\OneDrive\\Escritorio\\Programming\\2025\\ProgII\\PIPORAMA\\Data\\DTOs\\InvoiceDTO.cs",
+              "RelativeDocumentMoniker": "Data\\DTOs\\InvoiceDTO.cs",
+              "ToolTip": "C:\\Users\\jmtor\\OneDrive\\Escritorio\\Programming\\2025\\ProgII\\PIPORAMA\\Data\\DTOs\\InvoiceDTO.cs",
+              "RelativeToolTip": "Data\\DTOs\\InvoiceDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T03:19:26.636Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "InvoiceRepository.cs",
+              "DocumentMoniker": "C:\\Users\\jmtor\\OneDrive\\Escritorio\\Programming\\2025\\ProgII\\PIPORAMA\\Repositories\\Implementations\\InvoiceRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\Implementations\\InvoiceRepository.cs",
+              "ToolTip": "C:\\Users\\jmtor\\OneDrive\\Escritorio\\Programming\\2025\\ProgII\\PIPORAMA\\Repositories\\Implementations\\InvoiceRepository.cs",
+              "RelativeToolTip": "Repositories\\Implementations\\InvoiceRepository.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAswE8AAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T01:29:03.265Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "InvoiceService.cs",
+              "DocumentMoniker": "C:\\Users\\jmtor\\OneDrive\\Escritorio\\Programming\\2025\\ProgII\\PIPORAMA\\Services\\Implementations\\InvoiceService.cs",
+              "RelativeDocumentMoniker": "Services\\Implementations\\InvoiceService.cs",
+              "ToolTip": "C:\\Users\\jmtor\\OneDrive\\Escritorio\\Programming\\2025\\ProgII\\PIPORAMA\\Services\\Implementations\\InvoiceService.cs*",
+              "RelativeToolTip": "Services\\Implementations\\InvoiceService.cs*",
+              "ViewState": "AgIAAH4AAAAAAAAAAAAAAO0AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T03:19:22.088Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Entrada.cs",
+              "DocumentMoniker": "C:\\Users\\jmtor\\OneDrive\\Escritorio\\Programming\\2025\\ProgII\\PIPORAMA\\Data\\Models\\Entrada.cs",
+              "RelativeDocumentMoniker": "Data\\Models\\Entrada.cs",
+              "ToolTip": "C:\\Users\\jmtor\\OneDrive\\Escritorio\\Programming\\2025\\ProgII\\PIPORAMA\\Data\\Models\\Entrada.cs",
+              "RelativeToolTip": "Data\\Models\\Entrada.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T04:34:18.211Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Funcione.cs",
+              "DocumentMoniker": "C:\\Users\\jmtor\\OneDrive\\Escritorio\\Programming\\2025\\ProgII\\PIPORAMA\\Data\\Models\\Funcione.cs",
+              "RelativeDocumentMoniker": "Data\\Models\\Funcione.cs",
+              "ToolTip": "C:\\Users\\jmtor\\OneDrive\\Escritorio\\Programming\\2025\\ProgII\\PIPORAMA\\Data\\Models\\Funcione.cs",
+              "RelativeToolTip": "Data\\Models\\Funcione.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T04:36:00.845Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SeatDTO.cs",
+              "DocumentMoniker": "C:\\Users\\jmtor\\OneDrive\\Escritorio\\Programming\\2025\\ProgII\\PIPORAMA\\Data\\DTOs\\DetailInvoice\\SeatDTO.cs",
+              "RelativeDocumentMoniker": "Data\\DTOs\\DetailInvoice\\SeatDTO.cs",
+              "ToolTip": "C:\\Users\\jmtor\\OneDrive\\Escritorio\\Programming\\2025\\ProgII\\PIPORAMA\\Data\\DTOs\\DetailInvoice\\SeatDTO.cs",
+              "RelativeToolTip": "Data\\DTOs\\DetailInvoice\\SeatDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAYAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T04:17:41.567Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EmployeeService.cs",
+              "DocumentMoniker": "C:\\Users\\jmtor\\OneDrive\\Escritorio\\Programming\\2025\\ProgII\\PIPORAMA\\Services\\Implementations\\EmployeeService.cs",
+              "RelativeDocumentMoniker": "Services\\Implementations\\EmployeeService.cs",
+              "ToolTip": "C:\\Users\\jmtor\\OneDrive\\Escritorio\\Programming\\2025\\ProgII\\PIPORAMA\\Services\\Implementations\\EmployeeService.cs",
+              "RelativeToolTip": "Services\\Implementations\\EmployeeService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T04:39:14.829Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ComboDTO.cs",
+              "DocumentMoniker": "C:\\Users\\jmtor\\OneDrive\\Escritorio\\Programming\\2025\\ProgII\\PIPORAMA\\Data\\DTOs\\DetailInvoice\\ComboDTO.cs",
+              "RelativeDocumentMoniker": "Data\\DTOs\\DetailInvoice\\ComboDTO.cs",
+              "ToolTip": "C:\\Users\\jmtor\\OneDrive\\Escritorio\\Programming\\2025\\ProgII\\PIPORAMA\\Data\\DTOs\\DetailInvoice\\ComboDTO.cs",
+              "RelativeToolTip": "Data\\DTOs\\DetailInvoice\\ComboDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAUAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T04:06:48.985Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "ClientRepository.cs",
               "DocumentMoniker": "C:\\Users\\jmtor\\OneDrive\\Escritorio\\Programming\\2025\\ProgII\\PIPORAMA\\Repositories\\Implementations\\ClientRepository.cs",
               "RelativeDocumentMoniker": "Repositories\\Implementations\\ClientRepository.cs",
               "ToolTip": "C:\\Users\\jmtor\\OneDrive\\Escritorio\\Programming\\2025\\ProgII\\PIPORAMA\\Repositories\\Implementations\\ClientRepository.cs",
               "RelativeToolTip": "Repositories\\Implementations\\ClientRepository.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-26T01:33:16.832Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 11,
+              "Title": "ClientService.cs",
+              "DocumentMoniker": "C:\\Users\\jmtor\\OneDrive\\Escritorio\\Programming\\2025\\ProgII\\PIPORAMA\\Services\\Implementations\\ClientService.cs",
+              "RelativeDocumentMoniker": "Services\\Implementations\\ClientService.cs",
+              "ToolTip": "C:\\Users\\jmtor\\OneDrive\\Escritorio\\Programming\\2025\\ProgII\\PIPORAMA\\Services\\Implementations\\ClientService.cs",
+              "RelativeToolTip": "Services\\Implementations\\ClientService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T03:29:16.939Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "TicketDTO.cs",
+              "DocumentMoniker": "C:\\Users\\jmtor\\OneDrive\\Escritorio\\Programming\\2025\\ProgII\\PIPORAMA\\Data\\DTOs\\DetailInvoice\\TicketDTO.cs",
+              "RelativeDocumentMoniker": "Data\\DTOs\\DetailInvoice\\TicketDTO.cs",
+              "ToolTip": "C:\\Users\\jmtor\\OneDrive\\Escritorio\\Programming\\2025\\ProgII\\PIPORAMA\\Data\\DTOs\\DetailInvoice\\TicketDTO.cs",
+              "RelativeToolTip": "Data\\DTOs\\DetailInvoice\\TicketDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T04:07:35.769Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FunctionDTO.cs",
+              "DocumentMoniker": "C:\\Users\\jmtor\\OneDrive\\Escritorio\\Programming\\2025\\ProgII\\PIPORAMA\\Data\\DTOs\\DetailInvoice\\FunctionDTO.cs",
+              "RelativeDocumentMoniker": "Data\\DTOs\\DetailInvoice\\FunctionDTO.cs",
+              "ToolTip": "C:\\Users\\jmtor\\OneDrive\\Escritorio\\Programming\\2025\\ProgII\\PIPORAMA\\Data\\DTOs\\DetailInvoice\\FunctionDTO.cs",
+              "RelativeToolTip": "Data\\DTOs\\DetailInvoice\\FunctionDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAUAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T04:14:34.585Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PromotionDTO.cs",
+              "DocumentMoniker": "C:\\Users\\jmtor\\OneDrive\\Escritorio\\Programming\\2025\\ProgII\\PIPORAMA\\Data\\DTOs\\DetailInvoice\\PromotionDTO.cs",
+              "RelativeDocumentMoniker": "Data\\DTOs\\DetailInvoice\\PromotionDTO.cs",
+              "ToolTip": "C:\\Users\\jmtor\\OneDrive\\Escritorio\\Programming\\2025\\ProgII\\PIPORAMA\\Data\\DTOs\\DetailInvoice\\PromotionDTO.cs",
+              "RelativeToolTip": "Data\\DTOs\\DetailInvoice\\PromotionDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAQAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T04:05:48.935Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "PurchaseFormDTO.cs",
+              "DocumentMoniker": "C:\\Users\\jmtor\\OneDrive\\Escritorio\\Programming\\2025\\ProgII\\PIPORAMA\\Data\\DTOs\\Invoice\\PurchaseFormDTO.cs",
+              "RelativeDocumentMoniker": "Data\\DTOs\\Invoice\\PurchaseFormDTO.cs",
+              "ToolTip": "C:\\Users\\jmtor\\OneDrive\\Escritorio\\Programming\\2025\\ProgII\\PIPORAMA\\Data\\DTOs\\Invoice\\PurchaseFormDTO.cs",
+              "RelativeToolTip": "Data\\DTOs\\Invoice\\PurchaseFormDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T03:22:55.503Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "PurchaseStatusDTO.cs",
+              "DocumentMoniker": "C:\\Users\\jmtor\\OneDrive\\Escritorio\\Programming\\2025\\ProgII\\PIPORAMA\\Data\\DTOs\\Invoice\\PurchaseStatusDTO.cs",
+              "RelativeDocumentMoniker": "Data\\DTOs\\Invoice\\PurchaseStatusDTO.cs",
+              "ToolTip": "C:\\Users\\jmtor\\OneDrive\\Escritorio\\Programming\\2025\\ProgII\\PIPORAMA\\Data\\DTOs\\Invoice\\PurchaseStatusDTO.cs",
+              "RelativeToolTip": "Data\\DTOs\\Invoice\\PurchaseStatusDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T03:23:11.759Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "PaymentMethodDTO.cs",
+              "DocumentMoniker": "C:\\Users\\jmtor\\OneDrive\\Escritorio\\Programming\\2025\\ProgII\\PIPORAMA\\Data\\DTOs\\Invoice\\PaymentMethodDTO.cs",
+              "RelativeDocumentMoniker": "Data\\DTOs\\Invoice\\PaymentMethodDTO.cs",
+              "ToolTip": "C:\\Users\\jmtor\\OneDrive\\Escritorio\\Programming\\2025\\ProgII\\PIPORAMA\\Data\\DTOs\\Invoice\\PaymentMethodDTO.cs",
+              "RelativeToolTip": "Data\\DTOs\\Invoice\\PaymentMethodDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T03:23:37.738Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "NeighborhoodDTO.cs",
+              "DocumentMoniker": "C:\\Users\\jmtor\\OneDrive\\Escritorio\\Programming\\2025\\ProgII\\PIPORAMA\\Data\\DTOs\\Invoice\\NeighborhoodDTO.cs",
+              "RelativeDocumentMoniker": "Data\\DTOs\\Invoice\\NeighborhoodDTO.cs",
+              "ToolTip": "C:\\Users\\jmtor\\OneDrive\\Escritorio\\Programming\\2025\\ProgII\\PIPORAMA\\Data\\DTOs\\Invoice\\NeighborhoodDTO.cs",
+              "RelativeToolTip": "Data\\DTOs\\Invoice\\NeighborhoodDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T03:24:04.554Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "EmployeeDTO.cs",
+              "DocumentMoniker": "C:\\Users\\jmtor\\OneDrive\\Escritorio\\Programming\\2025\\ProgII\\PIPORAMA\\Data\\DTOs\\Invoice\\EmployeeDTO.cs",
+              "RelativeDocumentMoniker": "Data\\DTOs\\Invoice\\EmployeeDTO.cs",
+              "ToolTip": "C:\\Users\\jmtor\\OneDrive\\Escritorio\\Programming\\2025\\ProgII\\PIPORAMA\\Data\\DTOs\\Invoice\\EmployeeDTO.cs",
+              "RelativeToolTip": "Data\\DTOs\\Invoice\\EmployeeDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T03:24:09.831Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ContactDTO.cs",
+              "DocumentMoniker": "C:\\Users\\jmtor\\OneDrive\\Escritorio\\Programming\\2025\\ProgII\\PIPORAMA\\Data\\DTOs\\Invoice\\ContactDTO.cs",
+              "RelativeDocumentMoniker": "Data\\DTOs\\Invoice\\ContactDTO.cs",
+              "ToolTip": "C:\\Users\\jmtor\\OneDrive\\Escritorio\\Programming\\2025\\ProgII\\PIPORAMA\\Data\\DTOs\\Invoice\\ContactDTO.cs",
+              "RelativeToolTip": "Data\\DTOs\\Invoice\\ContactDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T03:24:11.131Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ClientTypeDTO.cs",
+              "DocumentMoniker": "C:\\Users\\jmtor\\OneDrive\\Escritorio\\Programming\\2025\\ProgII\\PIPORAMA\\Data\\DTOs\\Invoice\\ClientTypeDTO.cs",
+              "RelativeDocumentMoniker": "Data\\DTOs\\Invoice\\ClientTypeDTO.cs",
+              "ToolTip": "C:\\Users\\jmtor\\OneDrive\\Escritorio\\Programming\\2025\\ProgII\\PIPORAMA\\Data\\DTOs\\Invoice\\ClientTypeDTO.cs",
+              "RelativeToolTip": "Data\\DTOs\\Invoice\\ClientTypeDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T03:24:12.488Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ClientDTO.cs",
+              "DocumentMoniker": "C:\\Users\\jmtor\\OneDrive\\Escritorio\\Programming\\2025\\ProgII\\PIPORAMA\\Data\\DTOs\\Invoice\\ClientDTO.cs",
+              "RelativeDocumentMoniker": "Data\\DTOs\\Invoice\\ClientDTO.cs",
+              "ToolTip": "C:\\Users\\jmtor\\OneDrive\\Escritorio\\Programming\\2025\\ProgII\\PIPORAMA\\Data\\DTOs\\Invoice\\ClientDTO.cs",
+              "RelativeToolTip": "Data\\DTOs\\Invoice\\ClientDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T03:24:13.302Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "RoomDTO.cs",
+              "DocumentMoniker": "C:\\Users\\jmtor\\OneDrive\\Escritorio\\Programming\\2025\\ProgII\\PIPORAMA\\Data\\DTOs\\DetailInvoice\\RoomDTO.cs",
+              "RelativeDocumentMoniker": "Data\\DTOs\\DetailInvoice\\RoomDTO.cs",
+              "ToolTip": "C:\\Users\\jmtor\\OneDrive\\Escritorio\\Programming\\2025\\ProgII\\PIPORAMA\\Data\\DTOs\\DetailInvoice\\RoomDTO.cs",
+              "RelativeToolTip": "Data\\DTOs\\DetailInvoice\\RoomDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T04:18:09.302Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "FilmDTO.cs",
+              "DocumentMoniker": "C:\\Users\\jmtor\\OneDrive\\Escritorio\\Programming\\2025\\ProgII\\PIPORAMA\\Data\\DTOs\\DetailInvoice\\FilmDTO.cs",
+              "RelativeDocumentMoniker": "Data\\DTOs\\DetailInvoice\\FilmDTO.cs",
+              "ToolTip": "C:\\Users\\jmtor\\OneDrive\\Escritorio\\Programming\\2025\\ProgII\\PIPORAMA\\Data\\DTOs\\DetailInvoice\\FilmDTO.cs",
+              "RelativeToolTip": "Data\\DTOs\\DetailInvoice\\FilmDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T04:16:21.668Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "ConsumableDTO.cs",
+              "DocumentMoniker": "C:\\Users\\jmtor\\OneDrive\\Escritorio\\Programming\\2025\\ProgII\\PIPORAMA\\Data\\DTOs\\DetailInvoice\\ConsumableDTO.cs",
+              "RelativeDocumentMoniker": "Data\\DTOs\\DetailInvoice\\ConsumableDTO.cs",
+              "ToolTip": "C:\\Users\\jmtor\\OneDrive\\Escritorio\\Programming\\2025\\ProgII\\PIPORAMA\\Data\\DTOs\\DetailInvoice\\ConsumableDTO.cs",
+              "RelativeToolTip": "Data\\DTOs\\DetailInvoice\\ConsumableDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T03:27:01.533Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Categoria.cs",
+              "DocumentMoniker": "C:\\Users\\jmtor\\OneDrive\\Escritorio\\Programming\\2025\\ProgII\\PIPORAMA\\Data\\Models\\Categoria.cs",
+              "RelativeDocumentMoniker": "Data\\Models\\Categoria.cs",
+              "ToolTip": "C:\\Users\\jmtor\\OneDrive\\Escritorio\\Programming\\2025\\ProgII\\PIPORAMA\\Data\\Models\\Categoria.cs",
+              "RelativeToolTip": "Data\\Models\\Categoria.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T03:46:30.424Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "DetallesFactura.cs",
+              "DocumentMoniker": "C:\\Users\\jmtor\\OneDrive\\Escritorio\\Programming\\2025\\ProgII\\PIPORAMA\\Data\\Models\\DetallesFactura.cs",
+              "RelativeDocumentMoniker": "Data\\Models\\DetallesFactura.cs",
+              "ToolTip": "C:\\Users\\jmtor\\OneDrive\\Escritorio\\Programming\\2025\\ProgII\\PIPORAMA\\Data\\Models\\DetallesFactura.cs",
+              "RelativeToolTip": "Data\\Models\\DetallesFactura.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T03:24:31.618Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
               "Title": "EmployeeRepository.cs",
               "DocumentMoniker": "C:\\Users\\jmtor\\OneDrive\\Escritorio\\Programming\\2025\\ProgII\\PIPORAMA\\Repositories\\Implementations\\EmployeeRepository.cs",
               "RelativeDocumentMoniker": "Repositories\\Implementations\\EmployeeRepository.cs",
@@ -68,7 +518,59 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 28,
+              "Title": "MediosPago.cs",
+              "DocumentMoniker": "C:\\Users\\jmtor\\OneDrive\\Escritorio\\Programming\\2025\\ProgII\\PIPORAMA\\Data\\Models\\MediosPago.cs",
+              "RelativeDocumentMoniker": "Data\\Models\\MediosPago.cs",
+              "ToolTip": "C:\\Users\\jmtor\\OneDrive\\Escritorio\\Programming\\2025\\ProgII\\PIPORAMA\\Data\\Models\\MediosPago.cs",
+              "RelativeToolTip": "Data\\Models\\MediosPago.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T03:23:39.797Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "EstadosCompra.cs",
+              "DocumentMoniker": "C:\\Users\\jmtor\\OneDrive\\Escritorio\\Programming\\2025\\ProgII\\PIPORAMA\\Data\\Models\\EstadosCompra.cs",
+              "RelativeDocumentMoniker": "Data\\Models\\EstadosCompra.cs",
+              "ToolTip": "C:\\Users\\jmtor\\OneDrive\\Escritorio\\Programming\\2025\\ProgII\\PIPORAMA\\Data\\Models\\EstadosCompra.cs",
+              "RelativeToolTip": "Data\\Models\\EstadosCompra.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T03:23:14.471Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "FormaCompra.cs",
+              "DocumentMoniker": "C:\\Users\\jmtor\\OneDrive\\Escritorio\\Programming\\2025\\ProgII\\PIPORAMA\\Data\\Models\\FormaCompra.cs",
+              "RelativeDocumentMoniker": "Data\\Models\\FormaCompra.cs",
+              "ToolTip": "C:\\Users\\jmtor\\OneDrive\\Escritorio\\Programming\\2025\\ProgII\\PIPORAMA\\Data\\Models\\FormaCompra.cs",
+              "RelativeToolTip": "Data\\Models\\FormaCompra.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T03:22:50.999Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Factura.cs",
+              "DocumentMoniker": "C:\\Users\\jmtor\\OneDrive\\Escritorio\\Programming\\2025\\ProgII\\PIPORAMA\\Data\\Models\\Factura.cs",
+              "RelativeDocumentMoniker": "Data\\Models\\Factura.cs",
+              "ToolTip": "C:\\Users\\jmtor\\OneDrive\\Escritorio\\Programming\\2025\\ProgII\\PIPORAMA\\Data\\Models\\Factura.cs",
+              "RelativeToolTip": "Data\\Models\\Factura.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T01:33:03.87Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
               "Title": "Contacto.cs",
               "DocumentMoniker": "C:\\Users\\jmtor\\OneDrive\\Escritorio\\Programming\\2025\\ProgII\\PIPORAMA\\Data\\Models\\Contacto.cs",
               "RelativeDocumentMoniker": "Data\\Models\\Contacto.cs",
@@ -76,25 +578,11 @@
               "RelativeToolTip": "Data\\Models\\Contacto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-26T01:33:08.03Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-26T01:33:08.03Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Factura.cs",
-              "DocumentMoniker": "C:\\Users\\jmtor\\OneDrive\\Escritorio\\Programming\\2025\\ProgII\\PIPORAMA\\Data\\Models\\Factura.cs",
-              "RelativeDocumentMoniker": "Data\\Models\\Factura.cs",
-              "ToolTip": "C:\\Users\\jmtor\\OneDrive\\Escritorio\\Programming\\2025\\ProgII\\PIPORAMA\\Data\\Models\\Factura.cs",
-              "RelativeToolTip": "Data\\Models\\Factura.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-26T01:33:03.87Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 33,
               "Title": "Empleado.cs",
               "DocumentMoniker": "C:\\Users\\jmtor\\OneDrive\\Escritorio\\Programming\\2025\\ProgII\\PIPORAMA\\Data\\Models\\Empleado.cs",
               "RelativeDocumentMoniker": "Data\\Models\\Empleado.cs",
@@ -102,25 +590,11 @@
               "RelativeToolTip": "Data\\Models\\Empleado.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-26T01:32:20.676Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-26T01:32:20.676Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "InvoiceRepository.cs",
-              "DocumentMoniker": "C:\\Users\\jmtor\\OneDrive\\Escritorio\\Programming\\2025\\ProgII\\PIPORAMA\\Repositories\\Implementations\\InvoiceRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\Implementations\\InvoiceRepository.cs",
-              "ToolTip": "C:\\Users\\jmtor\\OneDrive\\Escritorio\\Programming\\2025\\ProgII\\PIPORAMA\\Repositories\\Implementations\\InvoiceRepository.cs",
-              "RelativeToolTip": "Repositories\\Implementations\\InvoiceRepository.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB8AAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-26T01:29:03.265Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 34,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\jmtor\\OneDrive\\Escritorio\\Programming\\2025\\ProgII\\PIPORAMA\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -128,8 +602,7 @@
               "RelativeToolTip": "appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-10-26T01:26:25.943Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-26T01:26:25.943Z"
             }
           ]
         }

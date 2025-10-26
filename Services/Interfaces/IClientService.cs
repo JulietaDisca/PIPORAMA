@@ -1,4 +1,4 @@
-﻿using TP_ProgramaciónII_PIPORAMA.Data.DTOs;
+﻿using TP_ProgramaciónII_PIPORAMA.Data.DTOs.Invoice;
 using TP_ProgramaciónII_PIPORAMA.Data.Models;
 
 namespace TP_ProgramaciónII_PIPORAMA.Services.Interfaces

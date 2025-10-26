@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using TP_ProgramaciónII_PIPORAMA.Data.Models;
-using TP_ProgramaciónII_PIPORAMA.Data.DTOs;
 using TP_ProgramaciónII_PIPORAMA.Services.Interfaces;
+using TP_ProgramaciónII_PIPORAMA.Data.DTOs.Invoice;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 

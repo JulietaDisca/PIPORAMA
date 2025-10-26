@@ -1,7 +1,9 @@
-﻿using TP_ProgramaciónII_PIPORAMA.Data.DTOs;
+﻿using TP_ProgramaciónII_PIPORAMA.Data.DTOs.Invoice;
 using TP_ProgramaciónII_PIPORAMA.Data.Models;
 using TP_ProgramaciónII_PIPORAMA.Repositories.Interfaces;
 using TP_ProgramaciónII_PIPORAMA.Services.Interfaces;
+using TP_ProgramaciónII_PIPORAMA.Data.DTOs;
+using TP_ProgramaciónII_PIPORAMA.Data.DTOs.DetailInvoice;
 
 namespace TP_ProgramaciónII_PIPORAMA.Services.Implementations
 {
@@ -28,7 +30,7 @@ namespace TP_ProgramaciónII_PIPORAMA.Services.Implementations
             {
                 IEnumerable<Factura> invoices = await _repository.GetAllInvoices();
                 return invoices.Select(f => new InvoiceDTO
-                {
+                { 
                     InvoiceId = f.IdFactura,
                     Client = new ClientDTO
                     {
@@ -48,9 +50,86 @@ namespace TP_ProgramaciónII_PIPORAMA.Services.Implementations
                         IdContacto = f.IdEmpleadoNavigation.IdContacto
                     },
                     InvoiceDate = f.Fecha,
-                    PaymentMethod = f.IdMedioPagoNavigation.MedioPago,
-                    InvoiceOrigin = f.IdFormaCompraNavigation.FormaCompra1
-                }).ToList();
+                    PaymentMethod = new PaymentMethodDTO
+                    {
+                        IdPaymentMethod = f.IdMedioPagoNavigation!.IdMedioPago,
+                        PaymentMethod = f.IdMedioPagoNavigation.MedioPago
+                    },
+                    PurchaseForm = new PurchaseFormDTO
+                    {
+                        IdFPurchaseForm= f.IdFormaCompraNavigation!.IdFormaCompra,
+                        PurchaseForm =  f.IdFormaCompraNavigation.FormaCompra1
+                    },
+                    PurchaseStatus = new PurchaseStatusDTO
+                    {
+                        IdPurchaseStatus = f.IdEstadoCompraNavigation!.IdEstadoCompra,
+                        Description = f.IdEstadoCompraNavigation.Descripcion
+                    },
+                    DetailInvoices = f.DetallesFacturas.Select(df => new DetailInvoiceDTO
+                    {
+                        DetailInvoiceId = df.IdDetalle,
+                        Price = df.Precio,
+                        Consumable = df.IdConsumibleNavigation is not null ? new ConsumableDTO
+                        {
+                            IdConsumable = df.IdConsumibleNavigation.IdConsumible,
+                            Name = df.IdConsumibleNavigation.NomConsumible,
+                            Price = df.IdConsumibleNavigation.PreUnitario
+                        } : null,
+                        Combo = df.IdComboNavigation is not null ? new ComboDTO
+                        {
+                            IdCombo = df.IdComboNavigation.IdCombo,
+                            Name = df.IdComboNavigation.NomCombo,
+                            Consumables = df.IdComboNavigation.DetallesCombos.Select(dc => new ConsumableDTO
+                            {
+                                IdConsumable = dc.IdConsumibleNavigation.IdConsumible,
+                                Name = dc.IdConsumibleNavigation.NomConsumible,
+                                Price = dc.IdConsumibleNavigation.PreUnitario
+                            }).ToList()
+                        } : null,
+                        Ticket = df.IdEntradaNavigation is not null ? new TicketDTO
+                        {
+                            TicketID = df.IdEntradaNavigation.IdEntrada,
+                            FunctionID = df.IdEntradaNavigation.IdFuncion,
+                            SeatID = df.IdEntradaNavigation.IdButaca,
+                            Seat = new SeatDTO
+                            {
+                                SeatId = df.IdEntradaNavigation.IdButaca,
+                                SeatNumber = df.IdEntradaNavigation.IdButacaNavigation.NumButaca,
+                                SeatRow = df.IdEntradaNavigation.IdButacaNavigation.FilaButaca
+                            }
+                            ,
+                            Function = new FunctionDTO
+                            {
+                                FunctionId = df.IdEntradaNavigation.IdFuncionNavigation.IdFuncion,
+                                FilmId = df.IdEntradaNavigation.IdFuncionNavigation.IdPelicula,
+                                RoomId = df.IdEntradaNavigation.IdFuncionNavigation.IdSala,
+                                FunctionDate = df.IdEntradaNavigation.IdFuncionNavigation.Horario,
+                                Film = new FilmDTO
+                                {
+                                    FilmId = df.IdEntradaNavigation.IdFuncionNavigation.IdPeliculaNavigation.IdPelicula,
+                                    Title = df.IdEntradaNavigation.IdFuncionNavigation.IdPeliculaNavigation.NomPelicula
+                                },
+                                Room = new RoomDTO
+                                {
+                                    RoomId = df.IdEntradaNavigation.IdFuncionNavigation.IdSalaNavigation.IdSala,
+                                    RoomName = df.IdEntradaNavigation.IdFuncionNavigation.IdSalaNavigation.NomSala
+                                }
+                            },
+                        } : null,
+                        Promotion = df.IdPromocionNavigation is not null ? new PromotionDTO
+                        {
+                            IdPromotion = df.IdPromocionNavigation.IdPromocion,
+                            Description = df.IdPromocionNavigation.Descripcion,
+                            DiscountPercentage = df.IdPromocionNavigation.ValorDescuento,
+                            StartDate = df.IdPromocionNavigation.VigenciaDesde,
+                            EndDate = df.IdPromocionNavigation.VigenciaHasta
+                        } : null
+                    }).ToList()
+                    ,
+                    IsActive = f.Activo
+                }
+                ).ToList();
+
             }
         
             catch (Exception ex)
@@ -69,7 +148,7 @@ namespace TP_ProgramaciónII_PIPORAMA.Services.Implementations
                     return null;
                 }
                 return new InvoiceDTO
-                {
+                { 
                     InvoiceId = invoice.IdFactura,
                     Client = new ClientDTO
                     {
@@ -89,8 +168,83 @@ namespace TP_ProgramaciónII_PIPORAMA.Services.Implementations
                         IdContacto = invoice.IdEmpleadoNavigation.IdContacto
                     },
                     InvoiceDate = invoice.Fecha,
-                    PaymentMethod = invoice.IdMedioPagoNavigation.MedioPago,
-                    InvoiceOrigin = invoice.IdFormaCompraNavigation.FormaCompra1
+                    PaymentMethod = new PaymentMethodDTO
+                    {
+                        IdPaymentMethod = invoice.IdMedioPagoNavigation!.IdMedioPago,
+                        PaymentMethod = invoice.IdMedioPagoNavigation.MedioPago
+                    },
+                    PurchaseForm = new PurchaseFormDTO
+                    {
+                        IdFPurchaseForm= invoice.IdFormaCompraNavigation!.IdFormaCompra,
+                        PurchaseForm =  invoice.IdFormaCompraNavigation.FormaCompra1
+                    },
+                    PurchaseStatus = new PurchaseStatusDTO
+                    {
+                        IdPurchaseStatus = invoice.IdEstadoCompraNavigation!.IdEstadoCompra,
+                        Description = invoice.IdEstadoCompraNavigation.Descripcion
+                    },
+                    DetailInvoices = invoice.DetallesFacturas.Select(df => new DetailInvoiceDTO
+                    {
+                        DetailInvoiceId = df.IdDetalle,
+                        Price = df.Precio,
+                        Consumable = df.IdConsumibleNavigation is not null ? new ConsumableDTO
+                        {
+                            IdConsumable = df.IdConsumibleNavigation.IdConsumible,
+                            Name = df.IdConsumibleNavigation.NomConsumible,
+                            Price = df.IdConsumibleNavigation.PreUnitario
+                        } : null,
+                        Combo = df.IdComboNavigation is not null ? new ComboDTO
+                        {
+                            IdCombo = df.IdComboNavigation.IdCombo,
+                            Name = df.IdComboNavigation.NomCombo,
+                            Consumables = df.IdComboNavigation.DetallesCombos.Select(dc => new ConsumableDTO
+                            {
+                                IdConsumable = dc.IdConsumibleNavigation.IdConsumible,
+                                Name = dc.IdConsumibleNavigation.NomConsumible,
+                                Price = dc.IdConsumibleNavigation.PreUnitario
+                            }).ToList()
+                        } : null,
+                        Ticket = df.IdEntradaNavigation is not null ? new TicketDTO
+                        {
+                            TicketID = df.IdEntradaNavigation.IdEntrada,
+                            FunctionID = df.IdEntradaNavigation.IdFuncion,
+                            SeatID = df.IdEntradaNavigation.IdButaca,
+                            Seat = new SeatDTO
+                            {
+                                SeatId = df.IdEntradaNavigation.IdButaca,
+                                SeatNumber = df.IdEntradaNavigation.IdButacaNavigation.NumButaca,
+                                SeatRow = df.IdEntradaNavigation.IdButacaNavigation.FilaButaca
+                            }
+                            ,
+                            Function = new FunctionDTO
+                            {
+                                FunctionId = df.IdEntradaNavigation.IdFuncionNavigation.IdFuncion,
+                                FilmId = df.IdEntradaNavigation.IdFuncionNavigation.IdPelicula,
+                                RoomId = df.IdEntradaNavigation.IdFuncionNavigation.IdSala,
+                                FunctionDate = df.IdEntradaNavigation.IdFuncionNavigation.Horario,
+                                Film = new FilmDTO
+                                {
+                                    FilmId = df.IdEntradaNavigation.IdFuncionNavigation.IdPeliculaNavigation.IdPelicula,
+                                    Title = df.IdEntradaNavigation.IdFuncionNavigation.IdPeliculaNavigation.NomPelicula
+                                },
+                                Room = new RoomDTO
+                                {
+                                    RoomId = df.IdEntradaNavigation.IdFuncionNavigation.IdSalaNavigation.IdSala,
+                                    RoomName = df.IdEntradaNavigation.IdFuncionNavigation.IdSalaNavigation.NomSala
+                                }
+                            },
+                        } : null,
+                        Promotion = df.IdPromocionNavigation is not null ? new PromotionDTO
+                        {
+                            IdPromotion = df.IdPromocionNavigation.IdPromocion,
+                            Description = df.IdPromocionNavigation.Descripcion,
+                            DiscountPercentage = df.IdPromocionNavigation.ValorDescuento,
+                            StartDate = df.IdPromocionNavigation.VigenciaDesde,
+                            EndDate = df.IdPromocionNavigation.VigenciaHasta
+                        } : null
+                    }).ToList()
+                    ,
+                    IsActive = invoice.Activo
                 };
             }
             catch (Exception ex)

@@ -1,4 +1,4 @@
-﻿namespace TP_ProgramaciónII_PIPORAMA.Data.DTOs
+﻿namespace TP_ProgramaciónII_PIPORAMA.Data.DTOs.Invoice
 {
     public class ClientTypeDTO
     {

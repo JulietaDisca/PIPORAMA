@@ -19,7 +19,7 @@
     "Parameters": [
       {
         "Name": "clientdto",
-        "Type": "TP_Programaci\u00F3nII_PIPORAMA.Data.DTOs.ClientDTO",
+        "Type": "TP_Programaci\u00F3nII_PIPORAMA.Data.DTOs.Invoice.ClientDTO",
         "IsRequired": true
       }
     ],
@@ -35,7 +35,7 @@
     "Parameters": [
       {
         "Name": "clientDTO",
-        "Type": "TP_Programaci\u00F3nII_PIPORAMA.Data.DTOs.ClientDTO",
+        "Type": "TP_Programaci\u00F3nII_PIPORAMA.Data.DTOs.Invoice.ClientDTO",
         "IsRequired": true
       }
     ],
@@ -93,7 +93,7 @@
     "Parameters": [
       {
         "Name": "employee",
-        "Type": "TP_Programaci\u00F3nII_PIPORAMA.Data.DTOs.EmployeeDTO",
+        "Type": "TP_Programaci\u00F3nII_PIPORAMA.Data.DTOs.Invoice.EmployeeDTO",
         "IsRequired": true
       }
     ],
@@ -130,7 +130,7 @@
       },
       {
         "Name": "employee",
-        "Type": "TP_Programaci\u00F3nII_PIPORAMA.Data.DTOs.EmployeeDTO",
+        "Type": "TP_Programaci\u00F3nII_PIPORAMA.Data.DTOs.Invoice.EmployeeDTO",
         "IsRequired": true
       }
     ],
@@ -151,5 +151,102 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TP_Programaci\u00F3nII_PIPORAMA.Controllers.InvoicesController",
+    "Method": "Get",
+    "RelativePath": "api/Invoices",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TP_Programaci\u00F3nII_PIPORAMA.Controllers.InvoicesController",
+    "Method": "Post",
+    "RelativePath": "api/Invoices",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "value",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TP_Programaci\u00F3nII_PIPORAMA.Controllers.InvoicesController",
+    "Method": "Get",
+    "RelativePath": "api/Invoices/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TP_Programaci\u00F3nII_PIPORAMA.Controllers.InvoicesController",
+    "Method": "Put",
+    "RelativePath": "api/Invoices/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "value",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TP_Programaci\u00F3nII_PIPORAMA.Controllers.InvoicesController",
+    "Method": "Delete",
+    "RelativePath": "api/Invoices/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
   }
 ]

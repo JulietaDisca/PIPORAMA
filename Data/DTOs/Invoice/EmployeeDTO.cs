@@ -1,7 +1,7 @@
 ﻿using System.Text.Json.Serialization;
 using TP_ProgramaciónII_PIPORAMA.Data.Models;
 
-namespace TP_ProgramaciónII_PIPORAMA.Data.DTOs
+namespace TP_ProgramaciónII_PIPORAMA.Data.DTOs.Invoice
 {
     public class EmployeeDTO
     {
