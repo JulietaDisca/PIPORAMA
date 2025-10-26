@@ -6,7 +6,7 @@ namespace TP_ProgramaciónII_PIPORAMA.Repositories.Interfaces
     {
         Task<IEnumerable<Empleado>> GetAllEmployees();
         Task<Empleado?> GetEmployeeById(int id);
-        Task AddEmployee(Empleado employee);
+        Task AddEmployee(Empleado employee, string neighborhood, Contacto contact);
         Task UpdateEmployee(Empleado employee);
         Task DeleteEmployee(int id);
     }

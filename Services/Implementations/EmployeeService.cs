@@ -23,10 +23,22 @@ namespace TP_ProgramaciónII_PIPORAMA.Services.Implementations
                     IdEmpleado = employee.IdEmpleado,
                     NomEmpleado = employee.NomEmpleado,
                     ApeEmpleado = employee.ApeEmpleado,
-                    IdBarrio = employee.IdBarrio,
-                    IdContacto = employee.IdContacto
+                    IdBarrio = employee.Barrio.IdBarrio,
+                    IdContacto = employee.Contacto.IdContacto,
+                    Activo = true,
+                    IdContactoNavigation = new Contacto
+                    {
+                        IdContacto = employee.Contacto.IdContacto,
+                        Descripcion = employee.Contacto.Descripcion,
+                        IdTipoContacto = employee.Contacto.IdTipoContacto
+                    },
+                    IdBarrioNavigation = new Barrio
+                    {
+                        IdBarrio = employee.Barrio.IdBarrio,
+                        Descripcion = employee.Barrio.Descripcion
+                    }
                 };
-                await _repository.AddEmployee(newEmployee);
+                await _repository.AddEmployee(newEmployee, newEmployee.IdBarrioNavigation.Descripcion, newEmployee.IdContactoNavigation);
             }
             catch (Exception ex)
             {
@@ -58,6 +70,7 @@ namespace TP_ProgramaciónII_PIPORAMA.Services.Implementations
                     ApeEmpleado = e.ApeEmpleado,
                     IdBarrio = e.IdBarrio,
                     IdContacto = e.IdContacto,
+                    Activo = e.Activo,
                     Barrio = e.IdBarrioNavigation is not null
                         ? new NeighborhoodDTO
                         {
@@ -94,6 +107,7 @@ namespace TP_ProgramaciónII_PIPORAMA.Services.Implementations
                     ApeEmpleado = employee.ApeEmpleado,
                     IdBarrio = employee.IdBarrio,
                     IdContacto = employee.IdContacto,
+                    Activo = employee.Activo,
                     Barrio = employee.IdBarrioNavigation is not null
                         ? new NeighborhoodDTO
                         {
@@ -127,7 +141,8 @@ namespace TP_ProgramaciónII_PIPORAMA.Services.Implementations
                     NomEmpleado = employee.NomEmpleado,
                     ApeEmpleado = employee.ApeEmpleado,
                     IdBarrio = employee.IdBarrio,
-                    IdContacto = employee.IdContacto
+                    IdContacto = employee.IdContacto,
+                    Activo = employee.Activo
                 };
                 await _repository.UpdateEmployee(updatedEmployee);
             }

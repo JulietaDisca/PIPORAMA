@@ -466,6 +466,9 @@
             "type": "integer",
             "format": "int32"
           },
+          "activo": {
+            "type": "boolean"
+          },
           "barrio": {
             "$ref": "#/components/schemas/NeighborhoodDTO"
           },
