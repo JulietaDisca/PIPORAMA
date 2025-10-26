@@ -9,6 +9,8 @@ public partial class Cliente
 {
     public int IdCliente { get; set; }
 
+    public string DniCliente { get; set; }
+
     public string NomCliente { get; set; }
 
     public string ApeCliente { get; set; }

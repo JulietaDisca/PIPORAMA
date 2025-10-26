@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using TP_ProgramaciónII_PIPORAMA.Data.DTOs;
 using TP_ProgramaciónII_PIPORAMA.Services.Interfaces;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -26,7 +27,7 @@ namespace TP_ProgramaciónII_PIPORAMA.Controllers
             }
             catch (Exception ex)
             {
-                return StatusCode(StatusCodes.Status500InternalServerError, ex);
+                return StatusCode(StatusCodes.Status500InternalServerError, "Error al obtener las facturas: " + ex.Message);
             }
         }
 
@@ -39,32 +40,48 @@ namespace TP_ProgramaciónII_PIPORAMA.Controllers
                 var invoice = await _service.GetInvoiceById(id);
                 if (invoice == null)
                 {
-                    return NotFound();
+                    return NotFound("Factura no encontrada");
                 }
                 return Ok(invoice);
             }
             catch (Exception ex)
             {
-                return StatusCode(StatusCodes.Status500InternalServerError, ex);
+                return StatusCode(StatusCodes.Status500InternalServerError, "Error al obtener la factura: " + ex.Message);
             }
         }
 
         // POST api/<InvoiceController>
         [HttpPost]
-        public void Post([FromBody] string value)
+        public async Task<IActionResult> Post([FromBody] InvoiceDTO invoice)
         {
-        }
-
-        // PUT api/<InvoiceController>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
-        {
+            try
+            {
+                await _service.AddInvoice(invoice);
+                return CreatedAtAction(nameof(Get), new { id = invoice.InvoiceId }, invoice);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, "Error al agregar la factura: " + ex.Message);
+            }
         }
 
         // DELETE api/<InvoiceController>/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public async Task<IActionResult> Delete(int id)
         {
+            try
+            {
+                var result = await _service.DeleteInvoice(id);
+                if (!result)
+                {
+                    return NotFound();
+                }
+                return Ok("Factura anulada con exito.");
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, ex);
+            }
         }
     }
 }

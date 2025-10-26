@@ -142,13 +142,16 @@ public partial class PIPORAMAContext : DbContext
             entity.ToTable("clientes");
 
             entity.Property(e => e.IdCliente).HasColumnName("id_cliente");
-            entity.Property(e => e.Activo)
-                .HasDefaultValue(true)
-                .HasColumnName("activo");
+            entity.Property(e => e.Activo).HasColumnName("activo");
             entity.Property(e => e.ApeCliente)
                 .HasMaxLength(40)
                 .IsUnicode(false)
                 .HasColumnName("ape_cliente");
+            entity.Property(e => e.DniCliente)
+                .IsRequired()
+                .HasMaxLength(8)
+                .IsUnicode(false)
+                .HasColumnName("dni_cliente");
             entity.Property(e => e.IdBarrio).HasColumnName("id_barrio");
             entity.Property(e => e.IdContacto).HasColumnName("id_contacto");
             entity.Property(e => e.IdTipoCliente).HasColumnName("id_tipo_cliente");
@@ -310,13 +313,16 @@ public partial class PIPORAMAContext : DbContext
             entity.ToTable("empleados");
 
             entity.Property(e => e.IdEmpleado).HasColumnName("id_empleado");
-            entity.Property(e => e.Activo)
-                .HasDefaultValue(true)
-                .HasColumnName("activo");
+            entity.Property(e => e.Activo).HasColumnName("activo");
             entity.Property(e => e.ApeEmpleado)
                 .HasMaxLength(40)
                 .IsUnicode(false)
                 .HasColumnName("ape_empleado");
+            entity.Property(e => e.DniEmpleado)
+                .IsRequired()
+                .HasMaxLength(8)
+                .IsUnicode(false)
+                .HasColumnName("dni_empleado");
             entity.Property(e => e.IdBarrio).HasColumnName("id_barrio");
             entity.Property(e => e.IdContacto).HasColumnName("id_contacto");
             entity.Property(e => e.NomEmpleado)
@@ -389,9 +395,7 @@ public partial class PIPORAMAContext : DbContext
             entity.ToTable("facturas");
 
             entity.Property(e => e.IdFactura).HasColumnName("id_factura");
-            entity.Property(e => e.Activo)
-                .HasDefaultValue(true)
-                .HasColumnName("activo");
+            entity.Property(e => e.Activo).HasColumnName("activo");
             entity.Property(e => e.Fecha)
                 .HasColumnType("datetime")
                 .HasColumnName("fecha");

@@ -1,10 +1,10 @@
 -- Script SQL Server: CineDB
 -- Todas las PK creadas con CONSTRAINT y con IDENTITY para los id que sean primary key
 
-CREATE DATABASE CineDB5;
+CREATE DATABASE PIPORAMA;
 GO
 
-USE CineDB5;
+USE PIPORAMA;
 GO
 
 -- TABLAS DE CATEGORIZACIÓN Y REFERENCIA
@@ -236,6 +236,7 @@ CREATE TABLE contactos (
 
 CREATE TABLE clientes (
     id_cliente INT IDENTITY(1,1) NOT NULL,
+    dni_cliente varchar(8) not null,
     nom_cliente VARCHAR(80),
     ape_cliente VARCHAR(40),
     id_tipo_cliente INT NOT NULL,
@@ -250,6 +251,7 @@ CREATE TABLE clientes (
 
 CREATE TABLE empleados (
     id_empleado INT IDENTITY(1,1) NOT NULL,
+    dni_empleado varchar(8) not null,
     nom_empleado VARCHAR(80),
     ape_empleado VARCHAR(40),
     id_barrio INT NOT NULL,

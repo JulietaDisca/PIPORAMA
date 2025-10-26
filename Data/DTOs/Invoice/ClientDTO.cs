@@ -3,6 +3,7 @@
     public class ClientDTO
     {
         public int Codigo { get; set; }
+        public string DniCliente { get; set; } = string.Empty;
         public string Nombre { get; set; } = string.Empty;
         public string Apellido { get; set; } = string.Empty;
         public int IdTipoCliente { get; set; }

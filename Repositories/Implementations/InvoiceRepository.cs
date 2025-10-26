@@ -11,14 +11,35 @@ namespace TP_ProgramaciónII_PIPORAMA.Repositories.Implementations
         {
             _context = context;
         }
-        public Task<bool> AddInvoice(Factura invoice)
+        public async Task<bool> AddInvoice(Factura invoice)
         {
-            throw new NotImplementedException();
+            // Add a new client
+            var existingClient = await _context.Clientes
+                .FirstOrDefaultAsync(c => c.DniCliente == invoice.IdClienteNavigation.DniCliente);
+            if (existingClient is null)
+            {
+                await _context.Clientes.AddAsync(invoice.IdClienteNavigation);
+                await _context.SaveChangesAsync();
+                // Recover the new client ID
+                invoice.IdCliente = invoice.IdClienteNavigation.IdCliente;
+            }
+            else
+            {
+                invoice.IdCliente = existingClient.IdCliente;
+            }
+            await _context.Facturas.AddAsync(invoice);
+            return await _context.SaveChangesAsync() > 0;
         }
 
-        public Task<bool> DeleteInvoice(int id)
+        public async Task<bool> DeleteInvoice(int id)
         {
-            throw new NotImplementedException();
+            var invoice = await GetInvoiceById(id);
+            if (invoice != null)
+            {
+                invoice.Activo = false;
+                return await _context.SaveChangesAsync() > 0;
+            }
+            return false;
         }
 
         public async Task<IEnumerable<Factura>> GetAllInvoices()
@@ -48,6 +69,7 @@ namespace TP_ProgramaciónII_PIPORAMA.Repositories.Implementations
                 .ThenInclude(e => e.IdButacaNavigation)
                 .Include(f => f.DetallesFacturas)
                 .ThenInclude(df => df.IdPromocionNavigation)
+                .Where(f => f.Activo)
                 .ToListAsync();
         }
 
@@ -78,6 +100,7 @@ namespace TP_ProgramaciónII_PIPORAMA.Repositories.Implementations
                 .ThenInclude(e => e.IdButacaNavigation)
                 .Include(f => f.DetallesFacturas)
                 .ThenInclude(df => df.IdPromocionNavigation)
+                .Where(f => f.Activo)
                 .FirstOrDefaultAsync(f => f.IdFactura == id);
         }
     }
