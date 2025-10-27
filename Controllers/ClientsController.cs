@@ -61,23 +61,8 @@ namespace TP_ProgramaciónII_PIPORAMA.Controllers
         {
             try
             {
-
-                var client = new Cliente
-                {
-                    IdCliente = clientdto.Codigo,
-                    NomCliente = clientdto.Nombre,
-                    ApeCliente = clientdto.Apellido,
-                    IdBarrio = clientdto.IdBarrio,
-                    IdContacto = clientdto.IdContacto,
-                    IdTipoCliente = clientdto.IdTipoCliente
-                };
-
-                var result = await _service.AddClientAsync(client);
-                if (result != null)
-                {
-                    return Ok("Cliente insertado exitosamente");
-                }
-                return BadRequest("No se pudo insertar el cliente.");
+                await _service.AddClientAsync(clientdto);
+                return Ok("Cliente creado exitosamente.");
             }
             catch (Exception ex)
             {
@@ -95,10 +80,12 @@ namespace TP_ProgramaciónII_PIPORAMA.Controllers
                 var client = new Cliente
                 {
                     IdCliente = clientDTO.Codigo,
+                    DniCliente = clientDTO.DniCliente,
                     NomCliente = clientDTO.Nombre,
                     ApeCliente = clientDTO.Apellido,
                     IdBarrio = clientDTO.IdBarrio,
                     IdContacto = clientDTO.IdContacto,
+                    Activo = clientDTO.Activo,
                     IdTipoCliente = clientDTO.IdTipoCliente
                 };
                 var result = await _service.UpdateClientAsync(client);

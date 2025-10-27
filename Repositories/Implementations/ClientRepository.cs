@@ -11,14 +11,16 @@ namespace TP_ProgramaciónII_PIPORAMA.Repositories.Implementations
         {
             _context = context;
         }
-        public async Task<Cliente> AddClientAsync(Cliente client)
+        public async Task<Cliente> AddClientAsync(Cliente client, string barrio, Contacto contacto)
         {
-            if (client == null)
-            {
-                throw new ArgumentNullException(nameof(client));
-            }
+            _context.Contactos.Add(contacto);
+            await _context.SaveChangesAsync();
+            client.IdContacto = contacto.IdContacto;
 
-            await _context.Clientes.AddAsync(client);
+            var barrio1 = await _context.Barrios.FirstOrDefaultAsync(b => b.Descripcion == barrio);
+            client.IdBarrio = barrio1.IdBarrio;
+
+            _context.Clientes.Add(client);
             await _context.SaveChangesAsync();
             return client;
 
@@ -28,8 +30,10 @@ namespace TP_ProgramaciónII_PIPORAMA.Repositories.Implementations
             var client = _context.Clientes.Find(clientId);
             if (client != null)
             {
-                _context.Clientes.Remove(client);
+               client.Activo = false;
+               _context.Clientes.Update(client);
                 return await _context.SaveChangesAsync() > 0;
+
             }
             return false;
         }
@@ -64,10 +68,12 @@ namespace TP_ProgramaciónII_PIPORAMA.Repositories.Implementations
         {
             var clientToUpdate = _context.Clientes.Find(client.IdCliente);
             if (clientToUpdate == null) return null;
+            clientToUpdate.DniCliente = client.DniCliente;
             clientToUpdate.NomCliente = client.NomCliente;
             clientToUpdate.ApeCliente = client.ApeCliente;
             clientToUpdate.IdBarrio = client.IdBarrio;
             clientToUpdate.IdContacto = client.IdContacto;
+            clientToUpdate.Activo = client.Activo;
             clientToUpdate.IdTipoCliente = client.IdTipoCliente;
             await _context.SaveChangesAsync();
             return clientToUpdate;

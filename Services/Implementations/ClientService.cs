@@ -13,36 +13,39 @@ namespace TP_ProgramaciónII_PIPORAMA.Services.Implementations
         {
             _repo = repo;
         }
-        public async Task<ClientDTO> AddClientAsync(Cliente client)
+        public async Task AddClientAsync(ClientDTO client)
         {
-            var addedClient = await _repo.AddClientAsync(client);
-            if (addedClient != null)
+            var newClient = new Cliente
             {
-                return new ClientDTO
+                IdCliente = client.Codigo,
+                DniCliente = client.DniCliente,
+                NomCliente = client.Nombre,
+                ApeCliente = client.Apellido,
+                IdBarrio = client.IdBarrio,
+                IdContacto = client.IdContacto,
+                Activo = client.Activo,
+                IdTipoCliente = client.IdTipoCliente,
+                IdBarrioNavigation = new Barrio
                 {
-                    Codigo = addedClient.IdCliente,
-                    Nombre = addedClient.NomCliente,
-                    Apellido = addedClient.ApeCliente,
-                    IdTipoCliente = addedClient.IdTipoCliente,
-                    IdBarrio = addedClient.IdBarrio,
-                    IdContacto = addedClient.IdContacto,
-                    Barrio = addedClient.IdBarrioNavigation is not null
-                    ? new NeighborhoodDTO
-                    {
-                        IdBarrio = addedClient.IdBarrioNavigation.IdBarrio,
-                        Descripcion = addedClient.IdBarrioNavigation.Descripcion,
-                    } : null!,
-                    Contacto = addedClient.IdContactoNavigation is not null
-                    ? new ContactDTO
-                    {
-                        IdContacto = addedClient.IdContactoNavigation.IdContacto,
-                        Descripcion = addedClient.IdContactoNavigation.Descripcion,
-                        IdTipoContacto = addedClient.IdContactoNavigation.IdTipoContactoNavigation.IdTipoContacto
-                    } : null!
-                };
+                    IdBarrio = client.Barrio.IdBarrio,
+                    Descripcion = client.Barrio.Descripcion
+                },
+                IdContactoNavigation = new Contacto
+                {
+                    IdContacto = client.Contacto.IdContacto,
+                    Descripcion = client.Contacto.Descripcion,
+                    IdTipoContacto = client.Contacto.IdTipoContacto
+                },
+                IdTipoClienteNavigation = new TiposCliente
+                {
+                    IdTipoCliente = client.TipoCliente.IdTipoCliente,
+                    TipoCliente = client.TipoCliente.TipoCliente
+                }
 
-            }
-            return null;
+
+            };
+            await _repo.AddClientAsync(newClient, newClient.IdBarrioNavigation.Descripcion, newClient.IdContactoNavigation);
+
 
         }
 
@@ -57,11 +60,13 @@ namespace TP_ProgramaciónII_PIPORAMA.Services.Implementations
             var clientDTOs = clients.Select(c => new ClientDTO
             {
                 Codigo = c.IdCliente,
+                DniCliente = c.DniCliente,
                 Nombre = c.NomCliente,
                 Apellido = c.ApeCliente,
                 IdTipoCliente = c.IdTipoCliente,
                 IdBarrio = c.IdBarrio,
                 IdContacto = c.IdContacto,
+                Activo = c.Activo,
                 TipoCliente = c.IdTipoClienteNavigation is not null
                     ? new ClientTypeDTO
                     {
@@ -98,11 +103,13 @@ namespace TP_ProgramaciónII_PIPORAMA.Services.Implementations
             return new ClientDTO
             {
                 Codigo = client.IdCliente,
+                DniCliente = client.DniCliente,
                 Nombre = client.NomCliente,
                 Apellido = client.ApeCliente,
                 IdTipoCliente = client.IdTipoCliente,
                 IdBarrio = client.IdBarrio,
                 IdContacto = client.IdContacto,
+                Activo = client.Activo,
                 TipoCliente = client.IdTipoClienteNavigation is not null
                 ? new ClientTypeDTO
                 {
@@ -133,11 +140,19 @@ namespace TP_ProgramaciónII_PIPORAMA.Services.Implementations
                 return new ClientDTO
                 {
                     Codigo = updatedClient.IdCliente,
+                    DniCliente = updatedClient.DniCliente,
                     Nombre = updatedClient.NomCliente,
                     Apellido = updatedClient.ApeCliente,
                     IdTipoCliente = updatedClient.IdTipoCliente,
                     IdBarrio = updatedClient.IdBarrio,
                     IdContacto = updatedClient.IdContacto,
+                    Activo = updatedClient.Activo,
+                    TipoCliente = updatedClient.IdTipoClienteNavigation is not null
+                    ? new ClientTypeDTO
+                    {
+                        IdTipoCliente = updatedClient.IdTipoClienteNavigation.IdTipoCliente,
+                        TipoCliente = updatedClient.IdTipoClienteNavigation.TipoCliente,
+                    } : null!,
                     Barrio = updatedClient.IdBarrioNavigation is not null
                     ? new NeighborhoodDTO
                     {
