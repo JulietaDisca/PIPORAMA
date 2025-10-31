@@ -15,6 +15,10 @@ public partial class Empleado
 
     public string ApeEmpleado { get; set; }
 
+    public string Usuario { get; set; }
+
+    public string Contrasenia { get; set; }
+
     public int IdBarrio { get; set; }
 
     public int IdContacto { get; set; }
