@@ -48,11 +48,11 @@ namespace TP_ProgramaciónII_PIPORAMA.Repositories.Implementations
                 .ToListAsync();
         }
 
-        public async Task<Empleado?> GetEmployeeById(int id)
+        public async Task<Empleado?> GetEmployeeByDni(string dni)
         {
             return await _context.Empleados.Include(e => e.IdBarrioNavigation)
                                            .Include(e => e.IdContactoNavigation)
-                                           .FirstOrDefaultAsync(e => e.IdEmpleado == id);
+                                           .FirstOrDefaultAsync(e => e.DniEmpleado == dni);
         }
 
         public async Task UpdateEmployee(Empleado employee)

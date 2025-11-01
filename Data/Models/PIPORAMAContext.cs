@@ -318,6 +318,11 @@ public partial class PIPORAMAContext : DbContext
                 .HasMaxLength(40)
                 .IsUnicode(false)
                 .HasColumnName("ape_empleado");
+            entity.Property(e => e.Contrasenia)
+                .IsRequired()
+                .HasMaxLength(30)
+                .IsUnicode(false)
+                .HasColumnName("contrasenia");
             entity.Property(e => e.DniEmpleado)
                 .IsRequired()
                 .HasMaxLength(8)
@@ -329,6 +334,11 @@ public partial class PIPORAMAContext : DbContext
                 .HasMaxLength(80)
                 .IsUnicode(false)
                 .HasColumnName("nom_empleado");
+            entity.Property(e => e.Usuario)
+                .IsRequired()
+                .HasMaxLength(30)
+                .IsUnicode(false)
+                .HasColumnName("usuario");
 
             entity.HasOne(d => d.IdBarrioNavigation).WithMany(p => p.Empleados)
                 .HasForeignKey(d => d.IdBarrio)
