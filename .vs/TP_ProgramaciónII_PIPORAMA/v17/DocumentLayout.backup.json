@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\jerog\\Desktop\\PIPORAMA\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|c:\\users\\jerog\\desktop\\piporama\\data\\dtos\\invoice\\clientdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|solutionrelative:data\\dtos\\invoice\\clientdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|c:\\users\\jerog\\desktop\\piporama\\repositories\\implementations\\invoicerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|solutionrelative:repositories\\implementations\\invoicerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -35,10 +39,6 @@
       "RelativeMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|solutionrelative:data\\dtos\\invoice\\employeedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|c:\\users\\jerog\\desktop\\piporama\\data\\dtos\\invoice\\clientdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|solutionrelative:data\\dtos\\invoice\\clientdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|c:\\users\\jerog\\desktop\\piporama\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
@@ -50,24 +50,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "InvoiceService.cs",
-              "DocumentMoniker": "C:\\Users\\jerog\\Desktop\\PIPORAMA\\Services\\Implementations\\InvoiceService.cs",
-              "RelativeDocumentMoniker": "Services\\Implementations\\InvoiceService.cs",
-              "ToolTip": "C:\\Users\\jerog\\Desktop\\PIPORAMA\\Services\\Implementations\\InvoiceService.cs",
-              "RelativeToolTip": "Services\\Implementations\\InvoiceService.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBQAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-26T23:31:50.211Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "InvoiceRepository.cs",
               "DocumentMoniker": "C:\\Users\\jerog\\Desktop\\PIPORAMA\\Repositories\\Implementations\\InvoiceRepository.cs",
               "RelativeDocumentMoniker": "Repositories\\Implementations\\InvoiceRepository.cs",
@@ -80,7 +67,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "ClientsController.cs",
               "DocumentMoniker": "C:\\Users\\jerog\\Desktop\\PIPORAMA\\Controllers\\ClientsController.cs",
               "RelativeDocumentMoniker": "Controllers\\ClientsController.cs",
@@ -88,12 +75,11 @@
               "RelativeToolTip": "Controllers\\ClientsController.cs",
               "ViewState": "AgIAAEYAAAAAAAAAAAAkwFIAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-26T22:24:00.565Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-26T22:24:00.565Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "ClientService.cs",
               "DocumentMoniker": "C:\\Users\\jerog\\Desktop\\PIPORAMA\\Services\\Implementations\\ClientService.cs",
               "RelativeDocumentMoniker": "Services\\Implementations\\ClientService.cs",
@@ -101,12 +87,11 @@
               "RelativeToolTip": "Services\\Implementations\\ClientService.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAAwC4AAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-26T22:19:50.742Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-26T22:19:50.742Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "IClientRepository.cs",
               "DocumentMoniker": "C:\\Users\\jerog\\Desktop\\PIPORAMA\\Repositories\\Interfaces\\IClientRepository.cs",
               "RelativeDocumentMoniker": "Repositories\\Interfaces\\IClientRepository.cs",
@@ -114,12 +99,11 @@
               "RelativeToolTip": "Repositories\\Interfaces\\IClientRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-26T22:27:06.338Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-26T22:27:06.338Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "ClientRepository.cs",
               "DocumentMoniker": "C:\\Users\\jerog\\Desktop\\PIPORAMA\\Repositories\\Implementations\\ClientRepository.cs",
               "RelativeDocumentMoniker": "Repositories\\Implementations\\ClientRepository.cs",
@@ -127,25 +111,11 @@
               "RelativeToolTip": "Repositories\\Implementations\\ClientRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-26T22:16:40.242Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-26T22:16:40.242Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "IClientService.cs",
-              "DocumentMoniker": "C:\\Users\\jerog\\Desktop\\PIPORAMA\\Services\\Interfaces\\IClientService.cs",
-              "RelativeDocumentMoniker": "Services\\Interfaces\\IClientService.cs",
-              "ToolTip": "C:\\Users\\jerog\\Desktop\\PIPORAMA\\Services\\Interfaces\\IClientService.cs",
-              "RelativeToolTip": "Services\\Interfaces\\IClientService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAkAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-26T22:46:54.689Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 0,
               "Title": "ClientDTO.cs",
               "DocumentMoniker": "C:\\Users\\jerog\\Desktop\\PIPORAMA\\Data\\DTOs\\Invoice\\ClientDTO.cs",
               "RelativeDocumentMoniker": "Data\\DTOs\\Invoice\\ClientDTO.cs",
@@ -158,7 +128,31 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "InvoiceService.cs",
+              "DocumentMoniker": "C:\\Users\\jerog\\Desktop\\PIPORAMA\\Services\\Implementations\\InvoiceService.cs",
+              "RelativeDocumentMoniker": "Services\\Implementations\\InvoiceService.cs",
+              "ToolTip": "C:\\Users\\jerog\\Desktop\\PIPORAMA\\Services\\Implementations\\InvoiceService.cs",
+              "RelativeToolTip": "Services\\Implementations\\InvoiceService.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBQAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T23:31:50.211Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 7,
+              "Title": "IClientService.cs",
+              "DocumentMoniker": "C:\\Users\\jerog\\Desktop\\PIPORAMA\\Services\\Interfaces\\IClientService.cs",
+              "RelativeDocumentMoniker": "Services\\Interfaces\\IClientService.cs",
+              "ToolTip": "C:\\Users\\jerog\\Desktop\\PIPORAMA\\Services\\Interfaces\\IClientService.cs",
+              "RelativeToolTip": "Services\\Interfaces\\IClientService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAkAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T22:46:54.689Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "EmployeeDTO.cs",
               "DocumentMoniker": "C:\\Users\\jerog\\Desktop\\PIPORAMA\\Data\\DTOs\\Invoice\\EmployeeDTO.cs",
               "RelativeDocumentMoniker": "Data\\DTOs\\Invoice\\EmployeeDTO.cs",
@@ -166,8 +160,7 @@
               "RelativeToolTip": "Data\\DTOs\\Invoice\\EmployeeDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-26T22:13:53.702Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-26T22:13:53.702Z"
             },
             {
               "$type": "Document",
@@ -179,8 +172,7 @@
               "RelativeToolTip": "appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAB5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-10-26T22:12:36.719Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-26T22:12:36.719Z"
             }
           ]
         }
