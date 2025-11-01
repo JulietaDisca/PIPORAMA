@@ -52,10 +52,10 @@ namespace TP_ProgramaciónII_PIPORAMA.Repositories.Implementations
             return null;
         }
 
-        public async Task<Cliente?> GetClientByIdAsync(int id)
+        public async Task<Cliente?> GetClientByDniAsync(string dni)
         {
             var client = await _context.Clientes.Include(c => c.IdBarrioNavigation).Include(c => c.IdTipoClienteNavigation)
-                .Include(c => c.IdContactoNavigation).FirstOrDefaultAsync(c => c.IdCliente == id);
+                .Include(c => c.IdContactoNavigation).FirstOrDefaultAsync(c => c.DniCliente == dni);
             if (client != null)
             {
                 return client;

@@ -2,8 +2,18 @@
 {
     public class TicketDTO
     {
-        public int TicketID { get; set; } 
-        public FunctionDTO? Function { get; set; }
-        public SeatDTO? Seat { get; set; }
+        public FunctionDTO Function { get; set; }
+        public SeatDTO Seat { get; set; }
+    }
+    public class FunctionDTO
+    {
+        public DateTime? FunctionDate { get; set; }
+        public string Film { get; set; }
+        public string Room { get; set; }
+    }
+    public class SeatDTO
+    {
+        public string SeatRow { get; set; }
+        public int? SeatNumber { get; set; }
     }
 }

@@ -32,12 +32,12 @@ namespace TP_ProgramaciónII_PIPORAMA.Controllers
         }
 
         // GET api/<EmployeesController>/5
-        [HttpGet("{id}")]
-        public async Task<IActionResult> Get(int id)
+        [HttpGet("{dni}")]
+        public async Task<IActionResult> Get(string dni)
         {
             try
             {
-                var employee = await _service.GetEmployeeById(id);
+                var employee = await _service.GetEmployeeByDni(dni);
                 if (employee == null)
                 {
                     return NotFound();
@@ -82,17 +82,17 @@ namespace TP_ProgramaciónII_PIPORAMA.Controllers
         }
 
         // DELETE api/<EmployeesController>/5
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> Delete(int id)
+        [HttpDelete("{dni}")]
+        public async Task<IActionResult> Delete(string dni)
         {
             try
             {
-                var employee = await _service.GetEmployeeById(id);
+                var employee = await _service.GetEmployeeByDni(dni);
                 if (employee == null)
                 {
                     return NotFound();
                 }
-                await _service.DeleteEmployee(id);
+                await _service.DeleteEmployee(employee.IdEmpleado);
                 return Ok("Empleado eliminado correctamente");
             }
             catch (Exception ex)

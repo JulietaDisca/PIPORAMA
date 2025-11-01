@@ -100,11 +100,11 @@ namespace TP_ProgramaciónII_PIPORAMA.Services.Implementations
             }
         }
 
-        public async Task<EmployeeDTO?> GetEmployeeById(int id)
+        public async Task<EmployeeDTO?> GetEmployeeByDni(string dni)
         {
             try
             {
-                var employee = await _repository.GetEmployeeById(id);
+                var employee = await _repository.GetEmployeeByDni(dni);
                 if (employee == null) return null;
                 return new EmployeeDTO
                 {

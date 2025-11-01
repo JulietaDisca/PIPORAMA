@@ -37,12 +37,12 @@ namespace TP_ProgramaciónII_PIPORAMA.Controllers
 
         }
 
-        [HttpGet("{id}")]
-        public async Task<IActionResult> GetClientByIdAsync(int id)
+        [HttpGet("{dni}")]
+        public async Task<IActionResult> GetClientByDniAsync(string dni)
         {
             try
             {
-                var client = await _service.GetClientByIdAsync(id);
+                var client = await _service.GetClientByDniAsync(dni);
                 if (client != null)
                 {
                     return Ok(client);

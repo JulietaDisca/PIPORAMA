@@ -96,9 +96,9 @@ namespace TP_ProgramaciónII_PIPORAMA.Services.Implementations
 
         }
 
-        public async Task<ClientDTO> GetClientByIdAsync(int clientId)
+        public async Task<ClientDTO> GetClientByDniAsync(string clientDni)
         {
-            var client = await _repo.GetClientByIdAsync(clientId);
+            var client = await _repo.GetClientByDniAsync(clientDni);
             if (client == null) return null;
             return new ClientDTO
             {
