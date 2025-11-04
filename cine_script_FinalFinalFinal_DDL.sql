@@ -254,6 +254,8 @@ CREATE TABLE empleados (
     dni_empleado varchar(8) not null,
     nom_empleado VARCHAR(80),
     ape_empleado VARCHAR(40),
+	usuario VARCHAR(30) not null,
+	contrasenia VARCHAR(30) not null,
     id_barrio INT NOT NULL,
     id_contacto INT NOT NULL,
     activo bit not null,

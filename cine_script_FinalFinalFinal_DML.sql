@@ -83,10 +83,10 @@ GO
 
 -- BARRIOS
 INSERT INTO barrios (descripcion) VALUES
-('Palermo'), ('Belgrano'), ('Caballito'), ('San Telmo'), ('Recoleta'),
-('Villa Crespo'), ('Almagro'), ('Nuñez'), ('Saavedra'), ('Villa Urquiza'),
-('Colegiales'), ('Chacarita'), ('La Boca'), ('Puerto Madero'), ('Montserrat'),
-('San Nicolas'), ('Balvanera'), ('Flores'), ('Floresta'), ('Mataderos');
+('Alberdi'), ('Alta Córdoba'), ('Alto Verde'), ('Jardín'), ('Nueva Córdoba'),
+('Argüello'), ('Bella vista'), ('Centro'), ('Chateau Carreras'), ('Cofico'),
+('General Arenales'), ('General Paz'), ('Güemes'), ('Observatorio'), ('San Vicente'),
+('San Francisco'), ('Providencia'), ('Poeta Lugones'), ('Ferreira'), ('Pueyrredón');
 GO
 
 -- TIPOS DE CONTACTO
@@ -350,12 +350,27 @@ INSERT INTO clientes (dni_cliente, nom_cliente, ape_cliente, id_tipo_cliente, id
 GO
 
 -- 20 EMPLEADOS
-INSERT INTO empleados (dni_empleado, nom_empleado, ape_empleado, id_barrio, id_contacto, activo) VALUES
-('98765432','Carlos', 'Sanchez', 7, 21,1), ('98765437','Romina', 'Alvarez', 8, 22,1), ('88765432','Mariano', 'Gutierrez', 1, 23,1), ('20765432','Javier', 'Perez', 2, 24,1),
-('98765433','Silvia', 'Lopez', 3, 25,1), ('98765438','Adrian', 'Diaz', 5, 26,1), ('78765432','Marcela', 'Fernandez', 6, 27,1), ('19765432','Daniel', 'Gonzalez', 10, 28,1),
-('98765434','Paola', 'Rodriguez', 11, 29,1), ('98765439','Lucas', 'Garcia', 13, 30,1), ('68765432','Esteban', 'Fernandez', 14, 31,1), ('18765432','Juana', 'Torres', 16, 32,1),
-('98765435','Victor', 'Ruiz', 18, 33,1), ('98765430','Hernan', 'Ramirez', 19, 34,1), ('58765432','Natalia', 'Alvarez', 20, 35,1), ('28765432','Facundo', 'Moreno', 4, 36,1),
-('98765436','Lorena', 'Gimenez', 9, 37,1), ('98765431','Sebastian', 'Romero', 12, 38,1), ('48765432','Ricardo', 'Castro', 15, 39,1), ('38765432','Monica', 'Medina', 17, 40,1);
+INSERT INTO empleados (dni_empleado, nom_empleado, ape_empleado, usuario, contrasenia, id_barrio, id_contacto, activo) VALUES
+('98765432','Carlos', 'Sanchez', 'carlos.sanchez', 'carlos1@2!saN', 7, 21,1), 
+('98765437','Romina', 'Alvarez', 'romina.alvarez', 'romina2@4!Alv', 8, 22,1), 
+('88765432','Mariano', 'Gutierrez', 'mariano.gutierrez', 'mariano@76!gUt', 1, 23,1), 
+('20765432','Javier', 'Perez', 'javier.perez', 'javier3@2!Per', 2, 24,1),
+('98765433','Silvia', 'Lopez', 'silvia.lopez', 'silvia3@9!lOp', 3, 25,1), 
+('98765438','Adrian', 'Diaz', 'adrian.diaz', 'adrian8@2!Diz', 5, 26,1), 
+('78765432','Marcela', 'Fernandez', 'marcela.fernandez', 'marcela@2!Fer', 6, 27,1), 
+('19765432','Daniel', 'Gonzalez', 'daniel.gonzalez', 'daniel2@2!GoN', 10, 28,1),
+('98765434','Paola', 'Rodriguez', 'paola.rodriguez', 'paola4@3!roD',11, 29,1), 
+('98765439','Lucas', 'Garcia', 'lucas.garcia', 'lucas9@3!GAR', 13, 30,1), 
+('68765432','Esteban', 'Fernandez', 'esteban.fernandez', 'esteban@2!FER', 14, 31,1), 
+('18765432','Juana', 'Torres', 'juana.torres', 'juana2@3!ToR', 16, 32,1),
+('98765435','Victor', 'Ruiz', 'victor.ruiz', 'victor@5!RUi', 18, 33,1), 
+('98765430','Hernan', 'Ramirez', 'hernan.ramirez', 'hernan@03!RaM',19, 34,1), 
+('58765432','Natalia', 'Alvarez', 'natalia.alvarez', 'natalia@2!ALV', 20, 35,1), 
+('28765432','Facundo', 'Moreno', 'facundo.moreno', 'facundo@3!Mor', 4, 36,1),
+('98765436','Lorena', 'Gimenez', 'lorena.gimenez', 'lorena@6!giM', 9, 37,1), 
+('98765431','Sebastian', 'Romero', 'sebastian.romero', 'sebastian@1!ROM', 12, 38,1), 
+('48765432','Ricardo', 'Castro', 'ricardo.castro', 'ricardo@5!CaS', 15, 39,1), 
+('38765432','Monica', 'Medina', 'monica.medina', 'monica@4!MeD', 17, 40,1);
 GO
 
 
