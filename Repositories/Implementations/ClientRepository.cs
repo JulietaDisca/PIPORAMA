@@ -11,14 +11,11 @@ namespace TP_ProgramaciónII_PIPORAMA.Repositories.Implementations
         {
             _context = context;
         }
-        public async Task<Cliente> AddClientAsync(Cliente client, string barrio, Contacto contacto)
+        public async Task<Cliente> AddClientAsync(Cliente client,Contacto contacto)
         {
             _context.Contactos.Add(contacto);
             await _context.SaveChangesAsync();
             client.IdContacto = contacto.IdContacto;
-
-            var barrio1 = await _context.Barrios.FirstOrDefaultAsync(b => b.Descripcion == barrio);
-            client.IdBarrio = barrio1.IdBarrio;
 
             _context.Clientes.Add(client);
             await _context.SaveChangesAsync();
