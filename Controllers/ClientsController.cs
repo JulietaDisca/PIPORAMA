@@ -61,7 +61,7 @@ namespace TP_ProgramaciónII_PIPORAMA.Controllers
                     throw new ArgumentException(error);
                 }
                 await _service.AddClientAsync(clientdto);
-                return Ok("Cliente creado exitosamente.");
+                return Ok(clientdto);
             }
             catch (Exception ex)
             {
@@ -85,7 +85,7 @@ namespace TP_ProgramaciónII_PIPORAMA.Controllers
                     NomCliente = clientDTO.Nombre,
                     ApeCliente = clientDTO.Apellido,
                     IdBarrio = clientDTO.IdBarrio,
-                    IdContacto = clientDTO.IdContacto,
+                    IdContacto = clientDTO.Contacto.IdContacto,
                     Activo = clientDTO.Activo,
                     IdTipoCliente = clientDTO.IdTipoCliente
                 };
@@ -151,31 +151,15 @@ namespace TP_ProgramaciónII_PIPORAMA.Controllers
                 error = "IdTipoCliente inválido.";
                 return false;
             }
-            if (clientdto.TipoCliente == null || clientdto.TipoCliente.IdTipoCliente <= 0)
-            {
-                error = "TipoCliente inválido.";
-                return false;
-            }
+            
             if (clientdto.IdBarrio <= 0)
             {
                 error = "IdBarrio inválido.";
                 return false;
             }
-            if (clientdto.Barrio == null || clientdto.Barrio.IdBarrio <= 0)
-            {
-                error = "Barrio inválido.";
-                return false;
-            }
-            if (clientdto.IdContacto <= 0)
-            {
-                error = "IdContacto inválido.";
-                return false;
-            }
-            if (clientdto.Contacto == null || clientdto.Contacto.IdContacto <= 0)
-            {
-                error = "Contacto inválido.";
-                return false;
-            }
+            
+            
+            
             error = string.Empty;
             return true;
         }
@@ -212,31 +196,8 @@ namespace TP_ProgramaciónII_PIPORAMA.Controllers
                 error = "IdTipoCliente inválido.";
                 return false;
             }
-            if (clientdto.TipoCliente == null || clientdto.TipoCliente.IdTipoCliente <= 0)
-            {
-                error = "TipoCliente inválido.";
-                return false;
-            }
-            if (clientdto.IdBarrio <= 0)
-            {
-                error = "IdBarrio inválido.";
-                return false;
-            }
-            if (clientdto.Barrio == null || clientdto.Barrio.IdBarrio <= 0)
-            {
-                error = "Barrio inválido.";
-                return false;
-            }
-            if (clientdto.IdContacto <= 0)
-            {
-                error = "IdContacto inválido.";
-                return false;
-            }
-            if (clientdto.Contacto == null || clientdto.Contacto.IdContacto <= 0)
-            {
-                error = "Contacto inválido.";
-                return false;
-            }
+            
+            
             error = string.Empty;
             return true;
         }
