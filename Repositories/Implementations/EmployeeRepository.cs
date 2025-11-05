@@ -12,6 +12,18 @@ namespace TP_ProgramaciónII_PIPORAMA.Repositories.Implementations
             _context = context;
         }
 
+        public async Task<bool> ActivateEmployee(int id)
+        {
+            var client = await _context.Empleados.FindAsync(id);
+            if (client == null)
+            {
+                return false;
+            }
+            client.Activo = true;
+            _context.Empleados.Update(client);
+            return await _context.SaveChangesAsync()>0;
+        }
+
         public async Task AddEmployee(Empleado employee, string barrioNombre, Contacto contacto)
         {
             // insertar contacto y obtener su id

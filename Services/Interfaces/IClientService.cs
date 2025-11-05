@@ -10,5 +10,7 @@ namespace TP_ProgramaciónII_PIPORAMA.Services.Interfaces
         Task AddClientAsync(ClientDTO client);
         Task<ClientDTO> UpdateClientAsync(Cliente client);
         Task<bool> DeleteClientAsync(int clientId);
+
+        Task<bool> ActivateClientAsync(int clientId);
     }
 }

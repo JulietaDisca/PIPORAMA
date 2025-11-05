@@ -124,6 +124,29 @@ namespace TP_ProgramaciónII_PIPORAMA.Controllers
             }
         }
 
+        [HttpPut("{id}")]
+        public async Task<IActionResult> ReactivateClient(int id)
+        {
+            try
+            {
+                if (!IsValidForDelete(id, out var error))
+                {
+                    throw new ArgumentException(error);
+                }
+                var result = await _service.ActivateClientAsync(id);
+                if (result)
+                {
+                    return Ok("Cliente dado de alta exitosamente.");
+                }
+                return BadRequest("No se pudo dar de alta al cliente.");
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Error interno del servidor: {ex.Message}");
+            }
+        }
+
+
         private bool IsValidForCreate(ClientDTO clientdto, out string error)
         {
             if (clientdto == null)

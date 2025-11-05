@@ -9,5 +9,6 @@ namespace TP_ProgramaciónII_PIPORAMA.Repositories.Interfaces
         Task AddEmployee(Empleado employee, string neighborhood, Contacto contact);
         Task UpdateEmployee(Empleado employee);
         Task DeleteEmployee(int id);
+        Task<bool> ActivateEmployee(int id);
     }
 }
