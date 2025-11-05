@@ -13,6 +13,12 @@ namespace TP_ProgramaciónII_PIPORAMA.Services.Implementations
         {
             _repo = repo;
         }
+
+        public async Task<bool> ActivateClientAsync(int clientId)
+        {
+            return await _repo.ActivateClientAsync(clientId);
+        }
+
         public async Task AddClientAsync(ClientDTO client)
         {
             var newClient = new Cliente

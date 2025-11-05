@@ -109,6 +109,28 @@ namespace TP_ProgramaciónII_PIPORAMA.Controllers
             }
         }
 
+        [HttpPut("/activate/{id}")]
+        public async Task<IActionResult> ActivateEmployee(int id)
+        {
+            try
+            {
+                if (id <= 0)
+                {
+                    throw new ArgumentException("Id inválido.");
+                }
+                var result = await _service.ActivateEmployee(id);
+                if (!result)
+                {
+                    return NotFound("Empleado no encontrado.");
+                }
+                return Ok("Empleado activado correctamente");
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
+            }
+        }
+
         private bool IsValidForCreate(EmployeeDTO employee, out string error)
         {
             if (employee == null)

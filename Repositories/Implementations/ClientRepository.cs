@@ -11,6 +11,19 @@ namespace TP_ProgramaciónII_PIPORAMA.Repositories.Implementations
         {
             _context = context;
         }
+
+        public async Task<bool> ActivateClientAsync(int clientId)
+        {
+            var client = await _context.Clientes.FindAsync(clientId);
+            if (client == null) 
+            {
+                return false;
+            }
+            client.Activo = true;
+            _context.Clientes.Update(client);
+            return await _context.SaveChangesAsync() > 0;
+        }
+
         public async Task<Cliente> AddClientAsync(Cliente client,Contacto contacto)
         {
             _context.Contactos.Add(contacto);

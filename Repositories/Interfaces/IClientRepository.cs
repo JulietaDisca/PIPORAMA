@@ -9,5 +9,7 @@ namespace TP_ProgramaciónII_PIPORAMA.Repositories.Interfaces
         Task<Cliente> AddClientAsync(Cliente client,Contacto contacto);
         Task<Cliente> UpdateClientAsync(Cliente client);
         Task<bool> DeleteClientAsync(int clientId);
+
+        Task<bool> ActivateClientAsync(int clientId);
     }
 }

@@ -14,6 +14,11 @@ namespace TP_ProgramaciónII_PIPORAMA.Services.Implementations
             _repository = repository;
         }
 
+        public async Task<bool> ActivateEmployee(int id)
+        {
+            return await _repository.ActivateEmployee(id);
+        }
+
         public async Task AddEmployee(EmployeeDTO employee)
         {
             try
