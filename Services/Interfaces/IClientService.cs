@@ -6,9 +6,11 @@ namespace TP_ProgramaciónII_PIPORAMA.Services.Interfaces
     public interface IClientService
     {
         Task<IEnumerable<ClientDTO>> GetAllClientsAsync();
-        Task<ClientDTO> GetClientByIdAsync(int clientId);
-        Task<ClientDTO> AddClientAsync(Cliente client);
+        Task<ClientDTO> GetClientByDniAsync(string clientDni);
+        Task AddClientAsync(ClientDTO client);
         Task<ClientDTO> UpdateClientAsync(Cliente client);
         Task<bool> DeleteClientAsync(int clientId);
+
+        Task<bool> ActivateClientAsync(int clientId);
     }
 }

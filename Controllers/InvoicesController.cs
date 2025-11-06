@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using TP_ProgramaciónII_PIPORAMA.Data.DTOs;
 using TP_ProgramaciónII_PIPORAMA.Services.Interfaces;
-
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace TP_ProgramaciónII_PIPORAMA.Controllers
 {
@@ -15,7 +14,6 @@ namespace TP_ProgramaciónII_PIPORAMA.Controllers
             _service = service;
         }
 
-        // GET: api/<InvoiceController>
         [HttpGet]
         public async Task<IActionResult> Get()
         {
@@ -26,11 +24,10 @@ namespace TP_ProgramaciónII_PIPORAMA.Controllers
             }
             catch (Exception ex)
             {
-                return StatusCode(StatusCodes.Status500InternalServerError, ex);
+                return StatusCode(StatusCodes.Status500InternalServerError, "Error al obtener las facturas: " + ex.Message);
             }
         }
 
-        // GET api/<InvoiceController>/5
         [HttpGet("{id}")]
         public async Task<IActionResult> Get(int id)
         {
@@ -39,9 +36,53 @@ namespace TP_ProgramaciónII_PIPORAMA.Controllers
                 var invoice = await _service.GetInvoiceById(id);
                 if (invoice == null)
                 {
-                    return NotFound();
+                    return NotFound("Factura no encontrada");
                 }
                 return Ok(invoice);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, "Error al obtener la factura: " + ex.Message);
+            }
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Post([FromBody] InvoiceDTO invoice)
+        {
+            try
+            {
+                if (!IsValidForCreate(invoice, out var error))
+                {
+                    throw new ArgumentException(error);
+                }
+                var result = await _service.AddInvoice(invoice);
+                if (result)
+                {
+                    return CreatedAtAction(nameof(Get), new { id = invoice.InvoiceId }, invoice);
+                }
+                return BadRequest("No se pudo crear la factura.");
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, "Error al agregar la factura: " + ex.Message);
+            }
+        }
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> Delete(int id)
+        {
+            try
+            {
+                if (!IsValidForDelete(id, out var error))
+                {
+                    throw new ArgumentException(error);
+                }
+                var result = await _service.DeleteInvoice(id);
+                if (!result)
+                {
+                    return NotFound();
+                }
+                return Ok("Factura anulada con exito.");
             }
             catch (Exception ex)
             {
@@ -49,22 +90,148 @@ namespace TP_ProgramaciónII_PIPORAMA.Controllers
             }
         }
 
-        // POST api/<InvoiceController>
-        [HttpPost]
-        public void Post([FromBody] string value)
+        private bool IsValidForCreate(InvoiceDTO invoice, out string error)
         {
+            if (invoice == null)
+            {
+                error = "InvoiceDTO es nulo.";
+                return false;
+            }
+            if (string.IsNullOrWhiteSpace(invoice.DniClient))
+            {
+                error = "DNI del cliente es requerido.";
+                return false;
+            }
+            if (string.IsNullOrWhiteSpace(invoice.DniEmployee))
+            {
+                error = "DNI del empleado es requerido.";
+                return false;
+            }
+            if (invoice.InvoiceDate == null)
+            {
+                error = "Fecha de la factura es requerida.";
+                return false;
+            }
+            if (string.IsNullOrWhiteSpace(invoice.PaymentMethod))
+            {
+                error = "Medio de pago es requerido.";
+                return false;
+            }
+            if (string.IsNullOrWhiteSpace(invoice.PurchaseStatus))
+            {
+                error = "Estado de compra es requerido.";
+                return false;
+            }
+            if (string.IsNullOrWhiteSpace(invoice.PurchaseForm))
+            {
+                error = "Forma de compra es requerida.";
+                return false;
+            }
+            if (invoice.DetailInvoices == null || invoice.DetailInvoices.Count == 0)
+            {
+                error = "Detalle de la factura es requerido.";
+                return false;
+            }
+            foreach (var df in invoice.DetailInvoices)
+            {
+                if (df == null)
+                {
+                    error = "Detalle inválido.";
+                    return false;
+                }
+                if (df.Price == null)
+                {
+                    error = "Precio del detalle es requerido.";
+                    return false;
+                }
+                if (string.IsNullOrWhiteSpace(df.Consumable) && string.IsNullOrWhiteSpace(df.Combo) && df.Ticket == null && df.Promotion == null)
+                {
+                    error = "Cada detalle debe contener consumible, combo, ticket o promoción.";
+                    return false;
+                }
+                if (df.Ticket != null)
+                {
+                    if (df.Ticket.Seat == null || string.IsNullOrWhiteSpace(df.Ticket.Seat.SeatRow) || df.Ticket.Seat.SeatNumber == null)
+                    {
+                        error = "Butaca del ticket incompleta.";
+                        return false;
+                    }
+                    if (df.Ticket.Function == null || invoice == null || df.Ticket.Function.FunctionDate == null || string.IsNullOrWhiteSpace(df.Ticket.Function.Film) || string.IsNullOrWhiteSpace(df.Ticket.Function.Room))
+                    {
+                        error = "Función del ticket incompleta.";
+                        return false;
+                    }
+                }
+                if (df.Promotion != null && string.IsNullOrWhiteSpace(df.Promotion.Description))
+                {
+                    error = "Promoción inválida.";
+                    return false;
+                }
+            }
+            error = string.Empty;
+            return true;
         }
 
-        // PUT api/<InvoiceController>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        private bool IsValidForUpdate(InvoiceDTO invoice, out string error)
         {
+            if (invoice == null)
+            {
+                error = "InvoiceDTO es nulo.";
+                return false;
+            }
+            if (invoice.InvoiceId <= 0)
+            {
+                error = "InvoiceId inválido.";
+                return false;
+            }
+            if (string.IsNullOrWhiteSpace(invoice.DniClient))
+            {
+                error = "DNI del cliente es requerido.";
+                return false;
+            }
+            if (string.IsNullOrWhiteSpace(invoice.DniEmployee))
+            {
+                error = "DNI del empleado es requerido.";
+                return false;
+            }
+            if (invoice.InvoiceDate == null)
+            {
+                error = "Fecha de la factura es requerida.";
+                return false;
+            }
+            if (string.IsNullOrWhiteSpace(invoice.PaymentMethod))
+            {
+                error = "Medio de pago es requerido.";
+                return false;
+            }
+            if (string.IsNullOrWhiteSpace(invoice.PurchaseStatus))
+            {
+                error = "Estado de compra es requerido.";
+                return false;
+            }
+            if (string.IsNullOrWhiteSpace(invoice.PurchaseForm))
+            {
+                error = "Forma de compra es requerida.";
+                return false;
+            }
+            if (invoice.DetailInvoices == null || invoice.DetailInvoices.Count == 0)
+            {
+                error = "Detalle de la factura es requerido.";
+                return false;
+            }
+            error = string.Empty;
+            return true;
         }
 
-        // DELETE api/<InvoiceController>/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
+        private bool IsValidForDelete(int id, out string error)
         {
+            if (id <= 0)
+            {
+                error = "Id inválido.";
+                return false;
+            }
+            error = string.Empty;
+            return true;
         }
     }
 }

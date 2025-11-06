@@ -14,6 +14,11 @@ namespace TP_ProgramaciónII_PIPORAMA.Services.Implementations
             _repository = repository;
         }
 
+        public async Task<bool> ActivateEmployee(int id)
+        {
+            return await _repository.ActivateEmployee(id);
+        }
+
         public async Task AddEmployee(EmployeeDTO employee)
         {
             try
@@ -24,6 +29,8 @@ namespace TP_ProgramaciónII_PIPORAMA.Services.Implementations
                     DniEmpleado = employee.DniEmpleado,
                     NomEmpleado = employee.NomEmpleado,
                     ApeEmpleado = employee.ApeEmpleado,
+                    Usuario = employee.Usuario,
+                    Contrasenia = employee.Contrasenia,
                     IdBarrio = employee.Barrio.IdBarrio,
                     IdContacto = employee.Contacto.IdContacto,
                     IdRol = employee.Rol.IdRol,
@@ -80,6 +87,8 @@ namespace TP_ProgramaciónII_PIPORAMA.Services.Implementations
                     DniEmpleado = e.DniEmpleado,
                     NomEmpleado = e.NomEmpleado,
                     ApeEmpleado = e.ApeEmpleado,
+                    Usuario = e.Usuario,
+                    Contrasenia = e.Contrasenia,
                     IdBarrio = e.IdBarrio,
                     IdContacto = e.IdContacto,
                     IdRol = e.IdRol,
@@ -114,11 +123,11 @@ namespace TP_ProgramaciónII_PIPORAMA.Services.Implementations
             }
         }
 
-        public async Task<EmployeeDTO?> GetEmployeeById(int id)
+        public async Task<EmployeeDTO?> GetEmployeeByDni(string dni)
         {
             try
             {
-                var employee = await _repository.GetEmployeeById(id);
+                var employee = await _repository.GetEmployeeByDni(dni);
                 if (employee == null) return null;
                 return new EmployeeDTO
                 {
@@ -126,6 +135,8 @@ namespace TP_ProgramaciónII_PIPORAMA.Services.Implementations
                     DniEmpleado = employee.DniEmpleado,
                     NomEmpleado = employee.NomEmpleado,
                     ApeEmpleado = employee.ApeEmpleado,
+                    Usuario = employee.Usuario,
+                    Contrasenia = employee.Contrasenia,
                     IdBarrio = employee.IdBarrio,
                     IdContacto = employee.IdContacto,
                     IdRol = employee.IdRol,
@@ -170,6 +181,8 @@ namespace TP_ProgramaciónII_PIPORAMA.Services.Implementations
                     DniEmpleado = employee.DniEmpleado,
                     NomEmpleado = employee.NomEmpleado,
                     ApeEmpleado = employee.ApeEmpleado,
+                    Usuario = employee.Usuario,
+                    Contrasenia = employee.Contrasenia,
                     IdBarrio = employee.IdBarrio,
                     IdContacto = employee.IdContacto,
                     IdRol = employee.IdRol,

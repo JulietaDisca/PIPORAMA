@@ -12,9 +12,6 @@ namespace TP_ProgramaciónII_PIPORAMA.Repositories.Implementations
             _context = context;
         }
 
-<<<<<<< Updated upstream
-        public async Task AddEmployee(Empleado employee, string barrioNombre, Contacto contacto)
-=======
         public async Task<bool> ActivateEmployee(int id)
         {
             var client = await _context.Empleados.FindAsync(id);
@@ -28,7 +25,6 @@ namespace TP_ProgramaciónII_PIPORAMA.Repositories.Implementations
         }
 
         public async Task AddEmployee(Empleado employee, string barrioNombre, Contacto contacto, string rol)
->>>>>>> Stashed changes
         {
             // insertar contacto y obtener su id
             _context.Contactos.Add(contacto);
@@ -73,16 +69,11 @@ namespace TP_ProgramaciónII_PIPORAMA.Repositories.Implementations
                 .ToListAsync();
         }
 
-        public async Task<Empleado?> GetEmployeeById(int id)
+        public async Task<Empleado?> GetEmployeeByDni(string dni)
         {
             return await _context.Empleados.Include(e => e.IdBarrioNavigation)
                                            .Include(e => e.IdContactoNavigation)
-<<<<<<< Updated upstream
-                                           .FirstOrDefaultAsync(e => e.IdEmpleado == id);
-=======
-                                           .Include(e => e.IdRolNavigation)
                                            .FirstOrDefaultAsync(e => e.DniEmpleado == dni);
->>>>>>> Stashed changes
         }
 
         public async Task UpdateEmployee(Empleado employee)

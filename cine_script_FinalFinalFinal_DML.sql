@@ -1,5 +1,5 @@
 
-USE CineDB5;
+USE PIPORAMA;
 GO
 
 GO
@@ -83,10 +83,10 @@ GO
 
 -- BARRIOS
 INSERT INTO barrios (descripcion) VALUES
-('Palermo'), ('Belgrano'), ('Caballito'), ('San Telmo'), ('Recoleta'),
-('Villa Crespo'), ('Almagro'), ('Nuñez'), ('Saavedra'), ('Villa Urquiza'),
-('Colegiales'), ('Chacarita'), ('La Boca'), ('Puerto Madero'), ('Montserrat'),
-('San Nicolas'), ('Balvanera'), ('Flores'), ('Floresta'), ('Mataderos');
+('Alberdi'), ('Alta Córdoba'), ('Alto Verde'), ('Jardín'), ('Nueva Córdoba'),
+('Argüello'), ('Bella vista'), ('Centro'), ('Chateau Carreras'), ('Cofico'),
+('General Arenales'), ('General Paz'), ('Güemes'), ('Observatorio'), ('San Vicente'),
+('San Francisco'), ('Providencia'), ('Poeta Lugones'), ('Ferreira'), ('Bajo Palermo');
 GO
 
 -- TIPOS DE CONTACTO
@@ -336,26 +336,47 @@ INSERT INTO contactos (descripcion, id_tipo_contacto) VALUES
 ('csanchez@cine.com', 1), ('ralvarez@cine.com', 1), ('mgutierrez@cine.com', 1), ('jperez@cine.com', 1), ('slopez@cine.com', 1),
 ('adiaz@cine.com', 1), ('mfernandez@cine.com', 1), ('dgonzalez@cine.com', 1), ('prodriguez@cine.com', 1), ('lgarcia@cine.com', 1),
 ('efernandez@cine.com', 1), ('jtorres@cine.com', 1), ('vruiz@cine.com', 1), ('hramirez@cine.com', 1), ('nalvarez@cine.com', 1),
-('fmoreno@cine.com', 1), ('lgimenez@cine.com', 1), ('sromero@cine.com', 1), ('rcastro@cine.com', 1), ('mmedina@cine.com', 1);
+('fmoreno@cine.com', 1), ('lgimenez@cine.com', 1), ('sromero@cine.com', 1), ('rcastro@cine.com', 1), ('mmedina@cine.com', 1),
+('3884567237',2);
+GO
+
+INSERT INTO roles (descripcion) VALUES
+('Administrador'), ('Empleado');
 GO
 
 -- 20 CLIENTES
-INSERT INTO clientes (nom_cliente, ape_cliente, id_tipo_cliente, id_barrio, id_contacto, activo) VALUES
-('Juan', 'Perez', 2, 1, 1,1), ('Maria', 'Gomez', 1, 3, 3,1), ('Lucas', 'Diaz', 1, 2, 5,1), ('Ana', 'Fernandez', 2, 1, 6,1,1),
-('Martin', 'Suarez', 1, 5, 8,1), ('Carla', 'Gonzalez', 3, 7, 9,1), ('Roberto', 'Lopez', 1, 4, 11,1), ('Lucia', 'Martinez', 2, 6, 12,1),
-('Diego', 'Sanchez', 4, 10, 13,1), ('Florencia', 'Romero', 1, 12, 14,1), ('Valeria', 'Torres', 4, 9, 16,1), ('Matias', 'Ruiz', 1, 11, 17,1),
-('Jorge', 'Alvarez', 2, 15, 18,1), ('Gabriela', 'Ramirez', 1, 18, 19,1), ('Agustin', 'Benitez', 1, 20, 2,1),
-('Sofia', 'Acosta', 2, 1, 4,1), ('Micaela', 'Medina', 1, 3, 7,1), ('Pedro', 'Castro', 3, 8, 10,1), ('Julieta', 'Herrera', 1, 14, 15,1),
-('Pablo', 'Gimenez', 1, 17, 20,1);
+INSERT INTO clientes (dni_cliente, nom_cliente, ape_cliente, id_tipo_cliente, id_barrio, id_contacto, activo) VALUES
+('44950713','Juan', 'Perez', 2, 1, 1,1), ('12345678','Maria', 'Gomez', 1, 3, 3,1), ('43427843','Lucas', 'Diaz', 1, 2, 5,1), ('13475246','Ana', 'Fernandez', 2, 1, 6,1),
+('71420647','Martin', 'Suarez', 1, 5, 8,1), ('20733765','Carla', 'Gonzalez', 3, 7, 9,1), ('23754165','Roberto', 'Lopez', 1, 4, 11,1), ('11427346','Lucia', 'Martinez', 2, 6, 12,1),
+('30457214','Diego', 'Sanchez', 4, 10, 13,1), ('71246547','Florencia', 'Romero', 1, 12, 14,1), ('14253678','Valeria', 'Torres', 4, 9, 16,1), ('12045714','Matias', 'Ruiz', 1, 11, 17,1),
+('12345679','Jorge', 'Alvarez', 2, 15, 18,1), ('12345675','Gabriela', 'Ramirez', 1, 18, 19,1), ('12345674','Agustin', 'Benitez', 1, 20, 2,1),
+('12345670','Sofia', 'Acosta', 2, 1, 4,1), ('12345676','Micaela', 'Medina', 1, 3, 7,1), ('12345673','Pedro', 'Castro', 3, 8, 10,1), ('12345672','Julieta', 'Herrera', 1, 14, 15,1),
+('12345677','Pablo', 'Gimenez', 1, 17, 20,1);
 GO
 
--- 20 EMPLEADOS
-INSERT INTO empleados (nom_empleado, ape_empleado, id_barrio, id_contacto, activo) VALUES
-('Carlos', 'Sanchez', 7, 21,1), ('Romina', 'Alvarez', 8, 22,1), ('Mariano', 'Gutierrez', 1, 23,1), ('Javier', 'Perez', 2, 24,1),
-('Silvia', 'Lopez', 3, 25,1), ('Adrian', 'Diaz', 5, 26,1), ('Marcela', 'Fernandez', 6, 27,1), ('Daniel', 'Gonzalez', 10, 28,1),
-('Paola', 'Rodriguez', 11, 29,1), ('Lucas', 'Garcia', 13, 30,1), ('Esteban', 'Fernandez', 14, 31,1), ('Juana', 'Torres', 16, 32,1),
-('Victor', 'Ruiz', 18, 33,1), ('Hernan', 'Ramirez', 19, 34,1), ('Natalia', 'Alvarez', 20, 35,1), ('Facundo', 'Moreno', 4, 36,1),
-('Lorena', 'Gimenez', 9, 37,1), ('Sebastian', 'Romero', 12, 38,1), ('Ricardo', 'Castro', 15, 39,1), ('Monica', 'Medina', 17, 40,1);
+-- 21 EMPLEADOS
+INSERT INTO empleados (dni_empleado, nom_empleado, ape_empleado, usuario, contrasenia, id_barrio, id_contacto, id_rol, activo) VALUES
+('98765432','Carlos', 'Sanchez', 'carlos.sanchez', 'carlos1@2!saN', 7, 21,2,1), 
+('98765437','Romina', 'Alvarez', 'romina.alvarez', 'romina2@4!Alv', 8, 22,2,1), 
+('88765432','Mariano', 'Gutierrez', 'mariano.gutierrez', 'mariano@76!gUt', 1, 23,2,1), 
+('20765432','Javier', 'Perez', 'javier.perez', 'javier3@2!Per', 2, 24,2,1),
+('98765433','Silvia', 'Lopez', 'silvia.lopez', 'silvia3@9!lOp', 3, 25,2,1), 
+('98765438','Adrian', 'Diaz', 'adrian.diaz', 'adrian8@2!Diz', 5, 26,2,1), 
+('78765432','Marcela', 'Fernandez', 'marcela.fernandez', 'marcela@2!Fer', 6, 27,2,1), 
+('19765432','Daniel', 'Gonzalez', 'daniel.gonzalez', 'daniel2@2!GoN', 10, 28,2,1),
+('98765434','Paola', 'Rodriguez', 'paola.rodriguez', 'paola4@3!roD',11, 29,2,1), 
+('98765439','Lucas', 'Garcia', 'lucas.garcia', 'lucas9@3!GAR', 13, 30,2,1), 
+('68765432','Esteban', 'Fernandez', 'esteban.fernandez', 'esteban@2!FER', 14, 31,2,1), 
+('18765432','Juana', 'Torres', 'juana.torres', 'juana2@3!ToR', 16, 32,2,1),
+('98765435','Victor', 'Ruiz', 'victor.ruiz', 'victor@5!RUi', 18, 33,2,1), 
+('98765430','Hernan', 'Ramirez', 'hernan.ramirez', 'hernan@03!RaM',19, 34,2,1), 
+('58765432','Natalia', 'Alvarez', 'natalia.alvarez', 'natalia@2!ALV', 20, 35,2,1), 
+('28765432','Facundo', 'Moreno', 'facundo.moreno', 'facundo@3!Mor', 4, 36,2,1),
+('98765436','Lorena', 'Gimenez', 'lorena.gimenez', 'lorena@6!giM', 9, 37,2,1), 
+('98765431','Sebastian', 'Romero', 'sebastian.romero', 'sebastian@1!ROM', 12, 38,2,1), 
+('48765432','Ricardo', 'Castro', 'ricardo.castro', 'ricardo@5!CaS', 15, 39,2,1), 
+('38765432','Monica', 'Medina', 'monica.medina', 'monica@4!MeD', 17, 40,2,1),
+('44948403', 'Juan Manuel', 'Torrejón', 'juan.torrejon', 'JuaneteCosmic',20,41,1,1);
 GO
 
 

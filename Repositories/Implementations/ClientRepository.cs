@@ -11,14 +11,26 @@ namespace TP_ProgramaciónII_PIPORAMA.Repositories.Implementations
         {
             _context = context;
         }
-        public async Task<Cliente> AddClientAsync(Cliente client)
-        {
-            if (client == null)
-            {
-                throw new ArgumentNullException(nameof(client));
-            }
 
-            await _context.Clientes.AddAsync(client);
+        public async Task<bool> ActivateClientAsync(int clientId)
+        {
+            var client = await _context.Clientes.FindAsync(clientId);
+            if (client == null) 
+            {
+                return false;
+            }
+            client.Activo = true;
+            _context.Clientes.Update(client);
+            return await _context.SaveChangesAsync() > 0;
+        }
+
+        public async Task<Cliente> AddClientAsync(Cliente client,Contacto contacto)
+        {
+            _context.Contactos.Add(contacto);
+            await _context.SaveChangesAsync();
+            client.IdContacto = contacto.IdContacto;
+
+            _context.Clientes.Add(client);
             await _context.SaveChangesAsync();
             return client;
 
@@ -28,8 +40,10 @@ namespace TP_ProgramaciónII_PIPORAMA.Repositories.Implementations
             var client = _context.Clientes.Find(clientId);
             if (client != null)
             {
-                _context.Clientes.Remove(client);
+               client.Activo = false;
+               _context.Clientes.Update(client);
                 return await _context.SaveChangesAsync() > 0;
+
             }
             return false;
         }
@@ -48,10 +62,10 @@ namespace TP_ProgramaciónII_PIPORAMA.Repositories.Implementations
             return null;
         }
 
-        public async Task<Cliente?> GetClientByIdAsync(int id)
+        public async Task<Cliente?> GetClientByDniAsync(string dni)
         {
             var client = await _context.Clientes.Include(c => c.IdBarrioNavigation).Include(c => c.IdTipoClienteNavigation)
-                .Include(c => c.IdContactoNavigation).FirstOrDefaultAsync(c => c.IdCliente == id);
+                .Include(c => c.IdContactoNavigation).FirstOrDefaultAsync(c => c.DniCliente == dni);
             if (client != null)
             {
                 return client;
@@ -64,10 +78,12 @@ namespace TP_ProgramaciónII_PIPORAMA.Repositories.Implementations
         {
             var clientToUpdate = _context.Clientes.Find(client.IdCliente);
             if (clientToUpdate == null) return null;
+            clientToUpdate.DniCliente = client.DniCliente;
             clientToUpdate.NomCliente = client.NomCliente;
             clientToUpdate.ApeCliente = client.ApeCliente;
             clientToUpdate.IdBarrio = client.IdBarrio;
             clientToUpdate.IdContacto = client.IdContacto;
+            clientToUpdate.Activo = client.Activo;
             clientToUpdate.IdTipoCliente = client.IdTipoCliente;
             await _context.SaveChangesAsync();
             return clientToUpdate;

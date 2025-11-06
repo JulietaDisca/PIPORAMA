@@ -11,14 +11,21 @@ namespace TP_ProgramaciónII_PIPORAMA.Repositories.Implementations
         {
             _context = context;
         }
-        public Task<bool> AddInvoice(Factura invoice)
+        public async Task<bool> AddInvoice(Factura invoice)
         {
-            throw new NotImplementedException();
+            await _context.Facturas.AddAsync(invoice);
+            return await _context.SaveChangesAsync() > 0;
         }
 
-        public Task<bool> DeleteInvoice(int id)
+        public async Task<bool> DeleteInvoice(int id)
         {
-            throw new NotImplementedException();
+            var invoice = await GetInvoiceById(id);
+            if (invoice != null)
+            {
+                invoice.Activo = false;
+                return await _context.SaveChangesAsync() > 0;
+            }
+            return false;
         }
 
         public async Task<IEnumerable<Factura>> GetAllInvoices()
@@ -33,8 +40,6 @@ namespace TP_ProgramaciónII_PIPORAMA.Repositories.Implementations
                 .ThenInclude(df => df.IdConsumibleNavigation)
                 .Include(f => f.DetallesFacturas)
                 .ThenInclude(df => df.IdComboNavigation)
-                .ThenInclude(c => c.DetallesCombos)
-                .ThenInclude(dc => dc.IdConsumibleNavigation)
                 .Include(f => f.DetallesFacturas)
                 .ThenInclude(df => df.IdEntradaNavigation)
                 .ThenInclude(e => e.IdFuncionNavigation)
@@ -48,7 +53,18 @@ namespace TP_ProgramaciónII_PIPORAMA.Repositories.Implementations
                 .ThenInclude(e => e.IdButacaNavigation)
                 .Include(f => f.DetallesFacturas)
                 .ThenInclude(df => df.IdPromocionNavigation)
+                .Where(f => f.Activo)
                 .ToListAsync();
+        }
+
+        public async Task<Combo> GetComboByName(string combo)
+        {
+            return await _context.Combos.FirstOrDefaultAsync(c => c.NomCombo == combo);
+        }
+
+        public async Task<Consumible> GetConsumableByName(string consumible)
+        {
+            return await _context.Consumibles.FirstOrDefaultAsync(c => c.NomConsumible == consumible);
         }
 
         public async Task<Factura?> GetInvoiceById(int id)
@@ -63,8 +79,6 @@ namespace TP_ProgramaciónII_PIPORAMA.Repositories.Implementations
                 .ThenInclude(df => df.IdConsumibleNavigation)
                 .Include(f => f.DetallesFacturas)
                 .ThenInclude(df => df.IdComboNavigation)
-                .ThenInclude(c => c.DetallesCombos)
-                .ThenInclude(dc => dc.IdConsumibleNavigation)
                 .Include(f => f.DetallesFacturas)
                 .ThenInclude(df => df.IdEntradaNavigation)
                 .ThenInclude(e => e.IdFuncionNavigation)
@@ -78,7 +92,48 @@ namespace TP_ProgramaciónII_PIPORAMA.Repositories.Implementations
                 .ThenInclude(e => e.IdButacaNavigation)
                 .Include(f => f.DetallesFacturas)
                 .ThenInclude(df => df.IdPromocionNavigation)
+                .Where(f => f.Activo)
                 .FirstOrDefaultAsync(f => f.IdFactura == id);
+        }
+
+        public async Task<Pelicula> GetMovieByTitle(string titulo)
+        {
+            return await _context.Peliculas.FirstOrDefaultAsync(p => p.NomPelicula == titulo);
+        }
+
+        public async Task<MediosPago> GetPaymentMethodByName(string metodo)
+        {
+            return await _context.MediosPagos.FirstOrDefaultAsync(m => m.MedioPago == metodo);
+        }
+
+        public async Task<Promocione> GetPromotionByName(string promocion)
+        {
+            return await _context.Promociones.FirstOrDefaultAsync(p => p.Descripcion == promocion);
+        }
+
+        public async Task<FormaCompra> GetPurchaseFormByName(string forma)
+        {
+            return await _context.FormaCompras.FirstOrDefaultAsync(f => f.FormaCompra1 == forma);
+        }
+
+        public async Task<EstadosCompra> GetPurchaseStatusByName(string estado)
+        {
+            return await _context.EstadosCompras.FirstOrDefaultAsync(e => e.Descripcion == estado);
+        }
+
+        public async Task<Sala> GetRoomByName(string sala)
+        {
+            return await _context.Salas.FirstOrDefaultAsync(s => s.NomSala == sala);
+        }
+
+        public async Task<Butaca> GetSeatByRowNumber(string row, int? number)
+        {
+            return await _context.Butacas.FirstOrDefaultAsync(b => b.FilaButaca == row && b.NumButaca == number);
+        }
+        public async Task<Funcione?> GetFunctionByMovieRoomDateAsync(int movieId, int roomId, DateTime? horario)
+        {
+            return await _context.Funciones
+                .FirstOrDefaultAsync(f => f.IdPelicula == movieId && f.IdSala == roomId && f.Horario == horario);
         }
     }
 }
