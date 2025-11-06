@@ -5165,11 +5165,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\marti\\Desktop\\piporama cine\\TP_ProgramaciónII_PIPORAMA.csproj",
+      "projectUniqueName": "C:\\Users\\marti\\Desktop\\backend-piporama\\TP_ProgramaciónII_PIPORAMA.csproj",
       "projectName": "TP_ProgramaciónII_PIPORAMA",
-      "projectPath": "C:\\Users\\marti\\Desktop\\piporama cine\\TP_ProgramaciónII_PIPORAMA.csproj",
+      "projectPath": "C:\\Users\\marti\\Desktop\\backend-piporama\\TP_ProgramaciónII_PIPORAMA.csproj",
       "packagesPath": "C:\\Users\\marti\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\marti\\Desktop\\piporama cine\\obj\\",
+      "outputPath": "C:\\Users\\marti\\Desktop\\backend-piporama\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

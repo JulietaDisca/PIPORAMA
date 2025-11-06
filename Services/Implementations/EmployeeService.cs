@@ -26,6 +26,7 @@ namespace TP_ProgramaciónII_PIPORAMA.Services.Implementations
                     ApeEmpleado = employee.ApeEmpleado,
                     IdBarrio = employee.Barrio.IdBarrio,
                     IdContacto = employee.Contacto.IdContacto,
+                    IdRol = employee.Rol.IdRol,
                     Activo = true,
                     IdContactoNavigation = new Contacto
                     {
@@ -37,9 +38,18 @@ namespace TP_ProgramaciónII_PIPORAMA.Services.Implementations
                     {
                         IdBarrio = employee.Barrio.IdBarrio,
                         Descripcion = employee.Barrio.Descripcion
+                    },
+                    IdRolNavigation = new Role
+                    {
+                        IdRol = employee.IdRol,
+                        Descripcion = employee.Rol.Descripcion
                     }
                 };
-                await _repository.AddEmployee(newEmployee, newEmployee.IdBarrioNavigation.Descripcion, newEmployee.IdContactoNavigation);
+                await _repository.AddEmployee(  newEmployee, 
+                                                newEmployee.IdBarrioNavigation.Descripcion, 
+                                                newEmployee.IdContactoNavigation, 
+                                                newEmployee.IdRolNavigation.Descripcion 
+                                                );
             }
             catch (Exception ex)
             {
@@ -72,6 +82,7 @@ namespace TP_ProgramaciónII_PIPORAMA.Services.Implementations
                     ApeEmpleado = e.ApeEmpleado,
                     IdBarrio = e.IdBarrio,
                     IdContacto = e.IdContacto,
+                    IdRol = e.IdRol,
                     Activo = e.Activo,
                     Barrio = e.IdBarrioNavigation is not null
                         ? new NeighborhoodDTO
@@ -86,6 +97,13 @@ namespace TP_ProgramaciónII_PIPORAMA.Services.Implementations
                             IdContacto = e.IdContactoNavigation.IdContacto,
                             Descripcion = e.IdContactoNavigation.Descripcion,
                             IdTipoContacto = e.IdContactoNavigation.IdTipoContacto
+                        }
+                        : null!,
+                    Rol = e.IdRolNavigation is not null
+                        ? new RoleDTO
+                        {
+                            IdRol = e.IdRolNavigation.IdRol,
+                            Descripcion = e.IdRolNavigation.Descripcion
                         }
                         : null!
                 });
@@ -110,6 +128,7 @@ namespace TP_ProgramaciónII_PIPORAMA.Services.Implementations
                     ApeEmpleado = employee.ApeEmpleado,
                     IdBarrio = employee.IdBarrio,
                     IdContacto = employee.IdContacto,
+                    IdRol = employee.IdRol,
                     Activo = employee.Activo,
                     Barrio = employee.IdBarrioNavigation is not null
                         ? new NeighborhoodDTO
@@ -124,6 +143,13 @@ namespace TP_ProgramaciónII_PIPORAMA.Services.Implementations
                             IdContacto = employee.IdContactoNavigation.IdContacto,
                             Descripcion = employee.IdContactoNavigation.Descripcion,
                             IdTipoContacto = employee.IdContactoNavigation.IdTipoContacto
+                        }
+                        : null!,
+                    Rol = employee.IdRolNavigation is not null
+                        ? new RoleDTO
+                        {
+                            IdRol = employee.IdRolNavigation.IdRol,
+                            Descripcion = employee.IdRolNavigation.Descripcion
                         }
                         : null!
                 };
@@ -146,6 +172,7 @@ namespace TP_ProgramaciónII_PIPORAMA.Services.Implementations
                     ApeEmpleado = employee.ApeEmpleado,
                     IdBarrio = employee.IdBarrio,
                     IdContacto = employee.IdContacto,
+                    IdRol = employee.IdRol,
                     Activo = employee.Activo
                 };
                 await _repository.UpdateEmployee(updatedEmployee);
