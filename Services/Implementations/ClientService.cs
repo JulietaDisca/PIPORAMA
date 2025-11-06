@@ -61,7 +61,14 @@ namespace TP_ProgramaciónII_PIPORAMA.Services.Implementations
                 IdTipoCliente = c.IdTipoCliente,
                 IdBarrio = c.IdBarrio,
                 Activo = c.Activo,
-                
+                Contacto = c.IdContactoNavigation is not null
+                ? new ContactDTO
+                {
+                    IdContacto = c.IdContactoNavigation.IdContacto,
+                    Descripcion = c.IdContactoNavigation.Descripcion,
+                    IdTipoContacto = c.IdContactoNavigation.IdTipoContacto
+                }
+                : null!
 
 
             }).ToList();
@@ -82,28 +89,38 @@ namespace TP_ProgramaciónII_PIPORAMA.Services.Implementations
                 IdTipoCliente = client.IdTipoCliente,
                 IdBarrio = client.IdBarrio,
                 Activo = client.Activo,
-                
+                Contacto = client.IdContactoNavigation is not null
+                ? new ContactDTO
+                {
+                    IdContacto = client.IdContactoNavigation.IdContacto,
+                    Descripcion = client.IdContactoNavigation.Descripcion,
+                    IdTipoContacto = client.IdContactoNavigation.IdTipoContacto
+                }
+                : null!
+
             };
         }
 
-        public async Task<ClientDTO> UpdateClientAsync(Cliente client)
+        public async Task UpdateClientAsync(ClientDTO client)
         {
-            var updatedClient = await _repo.UpdateClientAsync(client);
-            if (updatedClient != null)
+            var updatedClient = new Cliente
             {
-                return new ClientDTO
+                IdCliente = client.Codigo,
+                DniCliente = client.DniCliente,
+                NomCliente = client.Nombre,
+                ApeCliente = client.Apellido,
+                IdBarrio = client.IdBarrio,
+                Activo = client.Activo,
+                IdTipoCliente = client.IdTipoCliente,
+                IdContactoNavigation = new Contacto
                 {
-                    Codigo = updatedClient.IdCliente,
-                    DniCliente = updatedClient.DniCliente,
-                    Nombre = updatedClient.NomCliente,
-                    Apellido = updatedClient.ApeCliente,
-                    IdTipoCliente = updatedClient.IdTipoCliente,
-                    IdBarrio = updatedClient.IdBarrio,
-                    Activo = updatedClient.Activo,
-                    
-                };
-            }
-            return null;
+                    IdContacto = client.Contacto.IdContacto,
+                    Descripcion = client.Contacto.Descripcion,
+                    IdTipoContacto = client.Contacto.IdTipoContacto
+                }
+
+            };
+            await _repo.UpdateClientAsync(updatedClient);
         }
     }
 }

@@ -69,7 +69,7 @@ namespace TP_ProgramaciónII_PIPORAMA.Controllers
             }
         }
 
-        [HttpPut]
+        [HttpPut("/editar/{id}")]
         public async Task<IActionResult> PutClient([FromBody] ClientDTO clientDTO)
         {
             try
@@ -78,23 +78,10 @@ namespace TP_ProgramaciónII_PIPORAMA.Controllers
                 {
                     throw new ArgumentException(error);
                 }
-                var client = new Cliente
-                {
-                    IdCliente = clientDTO.Codigo,
-                    DniCliente = clientDTO.DniCliente,
-                    NomCliente = clientDTO.Nombre,
-                    ApeCliente = clientDTO.Apellido,
-                    IdBarrio = clientDTO.IdBarrio,
-                    IdContacto = clientDTO.Contacto.IdContacto,
-                    Activo = clientDTO.Activo,
-                    IdTipoCliente = clientDTO.IdTipoCliente
-                };
-                var result = await _service.UpdateClientAsync(client);
-                if (result != null)
-                {
-                    return Ok("Cliente actualizado exitosamente.");
-                }
-                return BadRequest("No se pudo actualizar el cliente.");
+                
+                await _service.UpdateClientAsync(clientDTO);
+                return Ok("Cliente actualizado exitosamente.");
+                
             }
             catch (Exception ex)
             {
@@ -192,11 +179,6 @@ namespace TP_ProgramaciónII_PIPORAMA.Controllers
             if (clientdto == null)
             {
                 error = "ClientDTO es nulo.";
-                return false;
-            }
-            if (clientdto.Codigo <= 0)
-            {
-                error = "Código del cliente inválido.";
                 return false;
             }
             if (string.IsNullOrWhiteSpace(clientdto.DniCliente))
