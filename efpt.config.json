@@ -124,6 +124,10 @@
          "ObjectType": 0
       },
       {
+         "Name": "[dbo].[roles]",
+         "ObjectType": 0
+      },
+      {
          "Name": "[dbo].[sala_butacas]",
          "ObjectType": 0
       },
