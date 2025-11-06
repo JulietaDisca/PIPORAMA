@@ -1,4 +1,9 @@
+<<<<<<< HEAD
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
+=======
 ﻿using Microsoft.IdentityModel.Tokens;
+>>>>>>> 449827c1e31dda8f26915aca3efc34ae9d79533b
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
@@ -51,10 +56,23 @@ namespace TP_ProgramaciónII_PIPORAMA.Repositories.Implementations
         public bool ValidateLogin(UserEmployeeDTO user)
         {
             var employee = _context.Empleados
+<<<<<<< HEAD
+                 .Include(e => e.IdRolNavigation)
+                .FirstOrDefault(e => e.Usuario == user.Usuario && 
+                                    e.Contrasenia == user.Contrasenia && 
+                                    e.IdRolNavigation.Descripcion == user.Rol && 
+                                    e.Activo
+                );
+
+            if (employee != null)
+            {
+                if (user.Usuario == employee.Usuario && user.Contrasenia == employee.Contrasenia && user.Rol == employee.IdRolNavigation.Descripcion)
+=======
                 .FirstOrDefault(e => e.Usuario == user.Usuario && e.Contrasenia == user.Contrasenia && e.Activo);
             if (employee != null)
             {
                 if (user.Usuario == employee.Usuario && user.Contrasenia == employee.Contrasenia)
+>>>>>>> 449827c1e31dda8f26915aca3efc34ae9d79533b
                 {
                     return true;
                 }

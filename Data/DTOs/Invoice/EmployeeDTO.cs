@@ -19,9 +19,13 @@ namespace TP_ProgramaciónII_PIPORAMA.Data.DTOs.Invoice
 
         public int IdContacto { get; set; }
 
+        public int IdRol { get; set; }
+
         public bool Activo { get; set; }
 
         public NeighborhoodDTO Barrio { get; set; }
         public ContactDTO Contacto { get; set; }
+
+        public RoleDTO Rol { get; set; }
     }
 }
