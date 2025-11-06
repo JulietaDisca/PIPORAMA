@@ -8,7 +8,7 @@ namespace TP_ProgramaciónII_PIPORAMA.Services.Interfaces
         Task<IEnumerable<ClientDTO>> GetAllClientsAsync();
         Task<ClientDTO> GetClientByDniAsync(string clientDni);
         Task AddClientAsync(ClientDTO client);
-        Task<ClientDTO> UpdateClientAsync(Cliente client);
+        Task UpdateClientAsync(ClientDTO client);
         Task<bool> DeleteClientAsync(int clientId);
 
         Task<bool> ActivateClientAsync(int clientId);

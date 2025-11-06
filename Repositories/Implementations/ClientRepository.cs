@@ -64,8 +64,7 @@ namespace TP_ProgramaciónII_PIPORAMA.Repositories.Implementations
 
         public async Task<Cliente?> GetClientByDniAsync(string dni)
         {
-            var client = await _context.Clientes.Include(c => c.IdBarrioNavigation).Include(c => c.IdTipoClienteNavigation)
-                .Include(c => c.IdContactoNavigation).FirstOrDefaultAsync(c => c.DniCliente == dni);
+            var client = await _context.Clientes.Include(c=>c.IdContactoNavigation).FirstOrDefaultAsync(c=>c.DniCliente==dni);
             if (client != null)
             {
                 return client;
@@ -74,19 +73,10 @@ namespace TP_ProgramaciónII_PIPORAMA.Repositories.Implementations
 
         }
 
-        public async Task<Cliente> UpdateClientAsync(Cliente client)
+        public async Task UpdateClientAsync(Cliente client)
         {
-            var clientToUpdate = _context.Clientes.Find(client.IdCliente);
-            if (clientToUpdate == null) return null;
-            clientToUpdate.DniCliente = client.DniCliente;
-            clientToUpdate.NomCliente = client.NomCliente;
-            clientToUpdate.ApeCliente = client.ApeCliente;
-            clientToUpdate.IdBarrio = client.IdBarrio;
-            clientToUpdate.IdContacto = client.IdContacto;
-            clientToUpdate.Activo = client.Activo;
-            clientToUpdate.IdTipoCliente = client.IdTipoCliente;
+            _context.Clientes.Update(client);
             await _context.SaveChangesAsync();
-            return clientToUpdate;
 
         }
     }
