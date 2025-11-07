@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using TP_ProgramaciónII_PIPORAMA.Data.DTOs.Invoice;
 using TP_ProgramaciónII_PIPORAMA.Data.Models;
 using TP_ProgramaciónII_PIPORAMA.Repositories.Interfaces;
 
@@ -59,6 +60,11 @@ namespace TP_ProgramaciónII_PIPORAMA.Repositories.Implementations
         public async Task<IEnumerable<TiposContacto>> GetAllTipoContactos()
         {
             return await _context.TiposContactos.ToListAsync();
+        }
+
+        public async Task<IEnumerable<Role>> GetAllEmpleadosRoles()
+        {
+            return await _context.Roles.ToListAsync();
         }
     }
 }

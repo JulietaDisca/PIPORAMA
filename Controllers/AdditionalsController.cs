@@ -145,5 +145,19 @@ namespace TP_ProgramaciónII_PIPORAMA.Controllers
                 return StatusCode(500, $"Error interno del servidor: {ex.Message}");
             }
         }
+
+        [HttpGet("empleados-roles")]
+        public async Task<IActionResult> GetAllEmpleadosRoles()
+        {
+            try
+            {
+                var empleadosRoles = await _additionalService.GetAllEmpleadosRoles();
+                return Ok(empleadosRoles);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Error interno del servidor: {ex.Message}");
+            }
+        }
     }
 }
