@@ -23,6 +23,8 @@ public partial class Empleado
 
     public int IdContacto { get; set; }
 
+    public int IdRol { get; set; }
+
     public bool Activo { get; set; }
 
     public virtual ICollection<Factura> Facturas { get; set; } = new List<Factura>();
@@ -30,4 +32,6 @@ public partial class Empleado
     public virtual Barrio IdBarrioNavigation { get; set; }
 
     public virtual Contacto IdContactoNavigation { get; set; }
+
+    public virtual Role IdRolNavigation { get; set; }
 }

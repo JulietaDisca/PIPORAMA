@@ -234,6 +234,12 @@ CREATE TABLE contactos (
     CONSTRAINT FK_contactos_tipo FOREIGN KEY (id_tipo_contacto) REFERENCES tipos_contacto(id_tipo_contacto)
 );
 
+CREATE TABLE roles (
+    id_rol INT IDENTITY (1,1) NOT NULL,
+    descripcion VARCHAR(20) NOT NULL,
+    CONSTRAINT PK_roles PRIMARY KEY (id_rol)
+);
+
 CREATE TABLE clientes (
     id_cliente INT IDENTITY(1,1) NOT NULL,
     dni_cliente varchar(8) not null,
@@ -258,10 +264,12 @@ CREATE TABLE empleados (
 	contrasenia VARCHAR(30) not null,
     id_barrio INT NOT NULL,
     id_contacto INT NOT NULL,
+    id_rol INT NOT NULL,
     activo bit not null,
     CONSTRAINT PK_empleados PRIMARY KEY (id_empleado),
     CONSTRAINT FK_empleados_barrio FOREIGN KEY (id_barrio) REFERENCES barrios(id_barrio),
-    CONSTRAINT FK_empleados_contacto FOREIGN KEY (id_contacto) REFERENCES contactos(id_contacto)
+    CONSTRAINT FK_empleados_contacto FOREIGN KEY (id_contacto) REFERENCES contactos(id_contacto),
+    CONSTRAINT FK_empleados_roles FOREIGN KEY (id_rol) REFERENCES roles(id_rol)
 );
 
 CREATE TABLE facturas (

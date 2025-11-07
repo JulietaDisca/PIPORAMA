@@ -1,4 +1,5 @@
-﻿using Microsoft.IdentityModel.Tokens;
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
@@ -51,11 +52,17 @@ namespace TP_ProgramaciónII_PIPORAMA.Repositories.Implementations
         public bool ValidateLogin(UserEmployeeDTO user)
         {
             var employee = _context.Empleados
-                .FirstOrDefault(e => e.Usuario == user.Usuario && e.Contrasenia == user.Contrasenia && e.Activo);
+                 .Include(e => e.IdRolNavigation)
+                .FirstOrDefault(e => e.Usuario == user.Usuario && 
+                                    e.Contrasenia == user.Contrasenia && 
+                                    e.IdRolNavigation.Descripcion == user.Rol && 
+                                    e.Activo
+                );
+
             if (employee != null)
             {
-                if (user.Usuario == employee.Usuario && user.Contrasenia == employee.Contrasenia)
-                {
+                if (user.Usuario == employee.Usuario && user.Contrasenia == employee.Contrasenia && user.Rol == employee.IdRolNavigation.Descripcion)
+                { 
                     return true;
                 }
             }

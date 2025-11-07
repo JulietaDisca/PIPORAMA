@@ -6,8 +6,10 @@ namespace TP_ProgramaciónII_PIPORAMA.Repositories.Interfaces
     {
         Task<IEnumerable<Cliente>> GetAllClientsAsync();
         Task<Cliente?> GetClientByDniAsync(string dni);
-        Task<Cliente> AddClientAsync(Cliente client, string barrio, Contacto contacto);
-        Task<Cliente> UpdateClientAsync(Cliente client);
+        Task<Cliente> AddClientAsync(Cliente client,Contacto contacto);
+        Task UpdateClientAsync(Cliente client);
         Task<bool> DeleteClientAsync(int clientId);
+
+        Task<bool> ActivateClientAsync(int clientId);
     }
 }

@@ -109,6 +109,28 @@ namespace TP_ProgramaciónII_PIPORAMA.Controllers
             }
         }
 
+        [HttpPut("/activate/{id}")]
+        public async Task<IActionResult> ActivateEmployee(int id)
+        {
+            try
+            {
+                if (id <= 0)
+                {
+                    throw new ArgumentException("Id inválido.");
+                }
+                var result = await _service.ActivateEmployee(id);
+                if (!result)
+                {
+                    return NotFound("Empleado no encontrado.");
+                }
+                return Ok("Empleado activado correctamente");
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
+            }
+        }
+
         private bool IsValidForCreate(EmployeeDTO employee, out string error)
         {
             if (employee == null)
@@ -139,26 +161,6 @@ namespace TP_ProgramaciónII_PIPORAMA.Controllers
             if (string.IsNullOrWhiteSpace(employee.Contrasenia))
             {
                 error = "Contraseña es requerida.";
-                return false;
-            }
-            if (employee.IdBarrio <= 0)
-            {
-                error = "IdBarrio inválido.";
-                return false;
-            }
-            if (employee.Barrio == null || employee.Barrio.IdBarrio <= 0)
-            {
-                error = "Barrio inválido.";
-                return false;
-            }
-            if (employee.IdContacto <= 0)
-            {
-                error = "IdContacto inválido.";
-                return false;
-            }
-            if (employee.Contacto == null || employee.Contacto.IdContacto <= 0)
-            {
-                error = "Contacto inválido.";
                 return false;
             }
             error = string.Empty;

@@ -10,5 +10,6 @@ namespace TP_ProgramaciónII_PIPORAMA.Services.Interfaces
         Task AddEmployee(EmployeeDTO employee);
         Task UpdateEmployee(EmployeeDTO employee);
         Task DeleteEmployee(int id);
+        Task<bool> ActivateEmployee(int id);
     }
 }

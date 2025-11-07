@@ -61,7 +61,7 @@ namespace TP_ProgramaciónII_PIPORAMA.Controllers
                     throw new ArgumentException(error);
                 }
                 await _service.AddClientAsync(clientdto);
-                return Ok("Cliente creado exitosamente.");
+                return Ok(clientdto);
             }
             catch (Exception ex)
             {
@@ -69,7 +69,7 @@ namespace TP_ProgramaciónII_PIPORAMA.Controllers
             }
         }
 
-        [HttpPut]
+        [HttpPut("/editar/{id}")]
         public async Task<IActionResult> PutClient([FromBody] ClientDTO clientDTO)
         {
             try
@@ -78,23 +78,10 @@ namespace TP_ProgramaciónII_PIPORAMA.Controllers
                 {
                     throw new ArgumentException(error);
                 }
-                var client = new Cliente
-                {
-                    IdCliente = clientDTO.Codigo,
-                    DniCliente = clientDTO.DniCliente,
-                    NomCliente = clientDTO.Nombre,
-                    ApeCliente = clientDTO.Apellido,
-                    IdBarrio = clientDTO.IdBarrio,
-                    IdContacto = clientDTO.IdContacto,
-                    Activo = clientDTO.Activo,
-                    IdTipoCliente = clientDTO.IdTipoCliente
-                };
-                var result = await _service.UpdateClientAsync(client);
-                if (result != null)
-                {
-                    return Ok("Cliente actualizado exitosamente.");
-                }
-                return BadRequest("No se pudo actualizar el cliente.");
+                
+                await _service.UpdateClientAsync(clientDTO);
+                return Ok("Cliente actualizado exitosamente.");
+                
             }
             catch (Exception ex)
             {
@@ -124,6 +111,29 @@ namespace TP_ProgramaciónII_PIPORAMA.Controllers
             }
         }
 
+        [HttpPut("{id}")]
+        public async Task<IActionResult> ReactivateClient(int id)
+        {
+            try
+            {
+                if (!IsValidForDelete(id, out var error))
+                {
+                    throw new ArgumentException(error);
+                }
+                var result = await _service.ActivateClientAsync(id);
+                if (result)
+                {
+                    return Ok("Cliente dado de alta exitosamente.");
+                }
+                return BadRequest("No se pudo dar de alta al cliente.");
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Error interno del servidor: {ex.Message}");
+            }
+        }
+
+
         private bool IsValidForCreate(ClientDTO clientdto, out string error)
         {
             if (clientdto == null)
@@ -151,31 +161,15 @@ namespace TP_ProgramaciónII_PIPORAMA.Controllers
                 error = "IdTipoCliente inválido.";
                 return false;
             }
-            if (clientdto.TipoCliente == null || clientdto.TipoCliente.IdTipoCliente <= 0)
-            {
-                error = "TipoCliente inválido.";
-                return false;
-            }
+            
             if (clientdto.IdBarrio <= 0)
             {
                 error = "IdBarrio inválido.";
                 return false;
             }
-            if (clientdto.Barrio == null || clientdto.Barrio.IdBarrio <= 0)
-            {
-                error = "Barrio inválido.";
-                return false;
-            }
-            if (clientdto.IdContacto <= 0)
-            {
-                error = "IdContacto inválido.";
-                return false;
-            }
-            if (clientdto.Contacto == null || clientdto.Contacto.IdContacto <= 0)
-            {
-                error = "Contacto inválido.";
-                return false;
-            }
+            
+            
+            
             error = string.Empty;
             return true;
         }
@@ -185,11 +179,6 @@ namespace TP_ProgramaciónII_PIPORAMA.Controllers
             if (clientdto == null)
             {
                 error = "ClientDTO es nulo.";
-                return false;
-            }
-            if (clientdto.Codigo <= 0)
-            {
-                error = "Código del cliente inválido.";
                 return false;
             }
             if (string.IsNullOrWhiteSpace(clientdto.DniCliente))
@@ -212,31 +201,8 @@ namespace TP_ProgramaciónII_PIPORAMA.Controllers
                 error = "IdTipoCliente inválido.";
                 return false;
             }
-            if (clientdto.TipoCliente == null || clientdto.TipoCliente.IdTipoCliente <= 0)
-            {
-                error = "TipoCliente inválido.";
-                return false;
-            }
-            if (clientdto.IdBarrio <= 0)
-            {
-                error = "IdBarrio inválido.";
-                return false;
-            }
-            if (clientdto.Barrio == null || clientdto.Barrio.IdBarrio <= 0)
-            {
-                error = "Barrio inválido.";
-                return false;
-            }
-            if (clientdto.IdContacto <= 0)
-            {
-                error = "IdContacto inválido.";
-                return false;
-            }
-            if (clientdto.Contacto == null || clientdto.Contacto.IdContacto <= 0)
-            {
-                error = "Contacto inválido.";
-                return false;
-            }
+            
+            
             error = string.Empty;
             return true;
         }

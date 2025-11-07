@@ -67,6 +67,8 @@ public partial class PIPORAMAContext : DbContext
 
     public virtual DbSet<PromocionesEntrada> PromocionesEntradas { get; set; }
 
+    public virtual DbSet<Role> Roles { get; set; }
+
     public virtual DbSet<Sala> Salas { get; set; }
 
     public virtual DbSet<SalaButaca> SalaButacas { get; set; }
@@ -330,6 +332,7 @@ public partial class PIPORAMAContext : DbContext
                 .HasColumnName("dni_empleado");
             entity.Property(e => e.IdBarrio).HasColumnName("id_barrio");
             entity.Property(e => e.IdContacto).HasColumnName("id_contacto");
+            entity.Property(e => e.IdRol).HasColumnName("id_rol");
             entity.Property(e => e.NomEmpleado)
                 .HasMaxLength(80)
                 .IsUnicode(false)
@@ -349,6 +352,11 @@ public partial class PIPORAMAContext : DbContext
                 .HasForeignKey(d => d.IdContacto)
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK_empleados_contacto");
+
+            entity.HasOne(d => d.IdRolNavigation).WithMany(p => p.Empleados)
+                .HasForeignKey(d => d.IdRol)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK_empleados_roles");
         });
 
         modelBuilder.Entity<Entrada>(entity =>
@@ -657,6 +665,20 @@ public partial class PIPORAMAContext : DbContext
                 .HasForeignKey(d => d.IdTipoProyeccion)
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK_promociones_entradas_tipo_proyeccion");
+        });
+
+        modelBuilder.Entity<Role>(entity =>
+        {
+            entity.HasKey(e => e.IdRol);
+
+            entity.ToTable("roles");
+
+            entity.Property(e => e.IdRol).HasColumnName("id_rol");
+            entity.Property(e => e.Descripcion)
+                .IsRequired()
+                .HasMaxLength(20)
+                .IsUnicode(false)
+                .HasColumnName("descripcion");
         });
 
         modelBuilder.Entity<Sala>(entity =>
