@@ -146,6 +146,58 @@
       {
          "Name": "[dbo].[tipos_proyeccion]",
          "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[ClientesFrecuentes]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[ConsumiblesMasVendidos]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[EntradasRecaudacionXDia]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[FuncionesXHorario]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PeliculasEnCartelera]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PeliculasMasVistas]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PromedioEntradasPorSala]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[ProximasFunciones]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[RecaudacionTotal]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[RecaudacionXPelicula]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[RecaudacónTotalCombos]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[TotalClientesRegistrados]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[TotalEntradasVendidas]",
+         "ObjectType": 1
       }
    ],
    "UiHint": null,
