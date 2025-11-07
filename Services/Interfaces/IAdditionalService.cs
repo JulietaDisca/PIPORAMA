@@ -1,5 +1,6 @@
 ﻿using TP_ProgramaciónII_PIPORAMA.Data.DTOs.Additional;
 using TP_ProgramaciónII_PIPORAMA.Data.DTOs.DetailInvoice;
+using TP_ProgramaciónII_PIPORAMA.Data.DTOs.Invoice;
 using TP_ProgramaciónII_PIPORAMA.Data.Models;
 
 namespace TP_ProgramaciónII_PIPORAMA.Services.Interfaces
@@ -16,5 +17,6 @@ namespace TP_ProgramaciónII_PIPORAMA.Services.Interfaces
         Task<IEnumerable<MediosPago>> GetAllMediosPago();
         Task<IEnumerable<EstadosCompra>> GetAllEstadosCompra();
         Task<IEnumerable<FormaCompra>> GetAllFormasCompra();
+        Task<IEnumerable<Role>> GetAllEmpleadosRoles();
     }
 }
