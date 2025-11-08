@@ -1,5 +1,6 @@
 ﻿using TP_ProgramaciónII_PIPORAMA.Data.DTOs.Additional;
 using TP_ProgramaciónII_PIPORAMA.Data.DTOs.DetailInvoice;
+using TP_ProgramaciónII_PIPORAMA.Data.DTOs.Invoice;
 using TP_ProgramaciónII_PIPORAMA.Data.Models;
 
 namespace TP_ProgramaciónII_PIPORAMA.Services.Interfaces
@@ -19,5 +20,7 @@ namespace TP_ProgramaciónII_PIPORAMA.Services.Interfaces
         Task<IEnumerable<Sala>> GetAllSalas();
         Task<IEnumerable<Consumible>> GetAllConsumibles();
         Task<IEnumerable<ComboDTO>> GetAllCombos();
+        Task<IEnumerable<Role>> GetAllEmpleadosRoles();
+
     }
 }

@@ -150,6 +150,7 @@ namespace TP_ProgramaciónII_PIPORAMA.Controllers
                 return StatusCode(500, $"Error interno del servidor: {ex.Message}");
             }
         }
+
         [HttpGet("salas")]
         public async Task<IActionResult> GetAllSalas()
         {
@@ -157,12 +158,28 @@ namespace TP_ProgramaciónII_PIPORAMA.Controllers
             {
                 var salas = await _additionalService.GetAllSalas();
                 return Ok(salas);
+
             }
             catch (Exception ex)
             {
                 return StatusCode(500, $"Error interno del servidor: {ex.Message}");
             }
         }
+        [HttpGet("empleados-roles")]
+        public async Task<IActionResult> GetAllEmpleadosRoles()
+        {
+            try
+            {
+                var empleadosRoles = await _additionalService.GetAllEmpleadosRoles();
+                return Ok(empleadosRoles);
+
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Error interno del servidor: {ex.Message}");
+            }
+        }
+
         [HttpGet("consumibles")]
         public async Task<IActionResult> GetAllConsumibles()
         {
@@ -230,5 +247,7 @@ namespace TP_ProgramaciónII_PIPORAMA.Controllers
                 return StatusCode(500, "Error al buscar asientos: " + ex.Message);
             }
         }
+
+
     }
 }

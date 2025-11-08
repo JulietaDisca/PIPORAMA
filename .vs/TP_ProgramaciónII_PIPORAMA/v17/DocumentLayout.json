@@ -3,16 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\jerog\\Desktop\\PIPORAMA\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|c:\\users\\jerog\\desktop\\piporama\\data\\models\\storeprocedure\\ipiporamacontextprocedures.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|solutionrelative:data\\models\\storeprocedure\\ipiporamacontextprocedures.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|c:\\users\\jerog\\desktop\\piporama\\controllers\\additionalscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|solutionrelative:controllers\\additionalscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|c:\\users\\jerog\\desktop\\piporama\\services\\implementations\\additionalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|solutionrelative:services\\implementations\\additionalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|c:\\users\\jerog\\desktop\\piporama\\repositories\\implementations\\additionalrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|solutionrelative:repositories\\implementations\\additionalrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|c:\\users\\jerog\\desktop\\piporama\\services\\implementations\\invoiceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|solutionrelative:services\\implementations\\invoiceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|c:\\users\\jerog\\desktop\\piporama\\services\\interfaces\\iadditionalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|solutionrelative:services\\interfaces\\iadditionalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|c:\\users\\jerog\\desktop\\piporama\\controllers\\clientscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|solutionrelative:controllers\\clientscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|c:\\users\\jerog\\desktop\\piporama\\repositories\\interfaces\\iadditionalrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|solutionrelative:repositories\\interfaces\\iadditionalrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|c:\\users\\jerog\\desktop\\piporama\\services\\implementations\\invoiceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|solutionrelative:services\\implementations\\invoiceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|c:\\users\\jerog\\desktop\\piporama\\cine_script_finalfinalfinal_dml.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
@@ -25,10 +45,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|c:\\users\\jerog\\desktop\\piporama\\data\\models\\storeprocedure\\piporamacontextprocedures.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|solutionrelative:data\\models\\storeprocedure\\piporamacontextprocedures.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|c:\\users\\jerog\\desktop\\piporama\\data\\models\\storeprocedure\\ipiporamacontextprocedures.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|solutionrelative:data\\models\\storeprocedure\\ipiporamacontextprocedures.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|c:\\users\\jerog\\desktop\\piporama\\efpt.config.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -47,18 +63,6 @@
       "RelativeMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|c:\\users\\jerog\\desktop\\piporama\\controllers\\additionalscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|solutionrelative:controllers\\additionalscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|c:\\users\\jerog\\desktop\\piporama\\repositories\\interfaces\\iadditionalrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|solutionrelative:repositories\\interfaces\\iadditionalrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|c:\\users\\jerog\\desktop\\piporama\\services\\implementations\\additionalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|solutionrelative:services\\implementations\\additionalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|c:\\users\\jerog\\desktop\\piporama\\data\\dtos\\detailinvoice\\ticketdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|solutionrelative:data\\dtos\\detailinvoice\\ticketdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -69,10 +73,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|c:\\users\\jerog\\desktop\\piporama\\data\\models\\detallescombo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|solutionrelative:data\\models\\detallescombo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|c:\\users\\jerog\\desktop\\piporama\\controllers\\clientscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|solutionrelative:controllers\\clientscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|c:\\users\\jerog\\desktop\\piporama\\data\\models\\combo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -121,14 +121,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|c:\\users\\jerog\\desktop\\piporama\\data\\dtos\\invoice\\employeedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|solutionrelative:data\\dtos\\invoice\\employeedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|c:\\users\\jerog\\desktop\\piporama\\cine_script_finalfinalfinal_ddl.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
-      "RelativeMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|solutionrelative:cine_script_finalfinalfinal_ddl.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|c:\\users\\jerog\\desktop\\piporama\\cine_script_finalfinalfinal_dml.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
-      "RelativeMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|solutionrelative:cine_script_finalfinalfinal_dml.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
     }
   ],
   "DocumentGroupContainers": [
@@ -142,226 +134,72 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "cine_script_FinalFinalFinal_DML.sql ",
-              "DocumentMoniker": "C:\\Users\\jerog\\Desktop\\PIPORAMA\\cine_script_FinalFinalFinal_DML.sql",
-              "RelativeDocumentMoniker": "cine_script_FinalFinalFinal_DML.sql",
-              "ToolTip": "C:\\Users\\jerog\\Desktop\\PIPORAMA\\cine_script_FinalFinalFinal_DML.sql",
-              "RelativeToolTip": "cine_script_FinalFinalFinal_DML.sql",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2025-11-02T17:10:21.621Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "IAdditionalService.cs",
-              "DocumentMoniker": "C:\\Users\\jerog\\Desktop\\PIPORAMA\\Services\\Interfaces\\IAdditionalService.cs",
-              "RelativeDocumentMoniker": "Services\\Interfaces\\IAdditionalService.cs",
-              "ToolTip": "C:\\Users\\jerog\\Desktop\\PIPORAMA\\Services\\Interfaces\\IAdditionalService.cs",
-              "RelativeToolTip": "Services\\Interfaces\\IAdditionalService.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAxwBMAAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-08T01:21:51.822Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "InvoiceService.cs",
-              "DocumentMoniker": "C:\\Users\\jerog\\Desktop\\PIPORAMA\\Services\\Implementations\\InvoiceService.cs",
-              "RelativeDocumentMoniker": "Services\\Implementations\\InvoiceService.cs",
-              "ToolTip": "C:\\Users\\jerog\\Desktop\\PIPORAMA\\Services\\Implementations\\InvoiceService.cs",
-              "RelativeToolTip": "Services\\Implementations\\InvoiceService.cs",
-              "ViewState": "AgIAADYAAAAAAAAAAAAYwBUAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-26T23:31:50.211Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AdditionalRepository.cs",
-              "DocumentMoniker": "C:\\Users\\jerog\\Desktop\\PIPORAMA\\Repositories\\Implementations\\AdditionalRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\Implementations\\AdditionalRepository.cs",
-              "ToolTip": "C:\\Users\\jerog\\Desktop\\PIPORAMA\\Repositories\\Implementations\\AdditionalRepository.cs",
-              "RelativeToolTip": "Repositories\\Implementations\\AdditionalRepository.cs",
-              "ViewState": "AgIAADEAAAAAAAAAAADwvz8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-08T01:20:38.461Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "cine_script_FinalFinalFinal_DDL.sql ",
-              "DocumentMoniker": "C:\\Users\\jerog\\Desktop\\PIPORAMA\\cine_script_FinalFinalFinal_DDL.sql",
-              "RelativeDocumentMoniker": "cine_script_FinalFinalFinal_DDL.sql",
-              "ToolTip": "C:\\Users\\jerog\\Desktop\\PIPORAMA\\cine_script_FinalFinalFinal_DDL.sql",
-              "RelativeToolTip": "cine_script_FinalFinalFinal_DDL.sql",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2025-11-02T17:09:49.297Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "PIPORAMAContextProcedures.cs",
-              "DocumentMoniker": "C:\\Users\\jerog\\Desktop\\PIPORAMA\\Data\\Models\\StoreProcedure\\PIPORAMAContextProcedures.cs",
-              "RelativeDocumentMoniker": "Data\\Models\\StoreProcedure\\PIPORAMAContextProcedures.cs",
-              "ToolTip": "C:\\Users\\jerog\\Desktop\\PIPORAMA\\Data\\Models\\StoreProcedure\\PIPORAMAContextProcedures.cs",
-              "RelativeToolTip": "Data\\Models\\StoreProcedure\\PIPORAMAContextProcedures.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUBAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-08T18:11:00.21Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "IPIPORAMAContextProcedures.cs",
-              "DocumentMoniker": "C:\\Users\\jerog\\Desktop\\PIPORAMA\\Data\\Models\\StoreProcedure\\IPIPORAMAContextProcedures.cs",
-              "RelativeDocumentMoniker": "Data\\Models\\StoreProcedure\\IPIPORAMAContextProcedures.cs",
-              "ToolTip": "C:\\Users\\jerog\\Desktop\\PIPORAMA\\Data\\Models\\StoreProcedure\\IPIPORAMAContextProcedures.cs",
-              "RelativeToolTip": "Data\\Models\\StoreProcedure\\IPIPORAMAContextProcedures.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAQwBwAAAClAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-08T18:07:36.324Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "efpt.config.json",
-              "DocumentMoniker": "C:\\Users\\jerog\\Desktop\\PIPORAMA\\efpt.config.json",
-              "RelativeDocumentMoniker": "efpt.config.json",
-              "ToolTip": "C:\\Users\\jerog\\Desktop\\PIPORAMA\\efpt.config.json",
-              "RelativeToolTip": "efpt.config.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAANIAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-11-08T19:10:42.807Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\jerog\\Desktop\\PIPORAMA\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\jerog\\Desktop\\PIPORAMA\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAAwDcAAABEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-08T18:16:31.907Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\jerog\\Desktop\\PIPORAMA\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\jerog\\Desktop\\PIPORAMA\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-11-08T18:38:00.447Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
               "Title": "AdditionalsController.cs",
               "DocumentMoniker": "C:\\Users\\jerog\\Desktop\\PIPORAMA\\Controllers\\AdditionalsController.cs",
               "RelativeDocumentMoniker": "Controllers\\AdditionalsController.cs",
               "ToolTip": "C:\\Users\\jerog\\Desktop\\PIPORAMA\\Controllers\\AdditionalsController.cs",
               "RelativeToolTip": "Controllers\\AdditionalsController.cs",
-              "ViewState": "AgIAAEwAAAAAAAAAAAAwwNwAAABAAAAAAAAAAA==",
+              "ViewState": "AgIAAKIAAAAAAAAAAAAiwPkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-08T01:25:14.885Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 2,
               "Title": "AdditionalService.cs",
               "DocumentMoniker": "C:\\Users\\jerog\\Desktop\\PIPORAMA\\Services\\Implementations\\AdditionalService.cs",
               "RelativeDocumentMoniker": "Services\\Implementations\\AdditionalService.cs",
               "ToolTip": "C:\\Users\\jerog\\Desktop\\PIPORAMA\\Services\\Implementations\\AdditionalService.cs",
               "RelativeToolTip": "Services\\Implementations\\AdditionalService.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAkwDgAAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAAHsAAAAAAAAAAAAiwAwAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-08T01:24:04.498Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "PIPORAMAContext.cs",
-              "DocumentMoniker": "C:\\Users\\jerog\\Desktop\\PIPORAMA\\Data\\Models\\PIPORAMAContext.cs",
-              "RelativeDocumentMoniker": "Data\\Models\\PIPORAMAContext.cs",
-              "ToolTip": "C:\\Users\\jerog\\Desktop\\PIPORAMA\\Data\\Models\\PIPORAMAContext.cs",
-              "RelativeToolTip": "Data\\Models\\PIPORAMAContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAO4BAAA8AAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "AdditionalRepository.cs",
+              "DocumentMoniker": "C:\\Users\\jerog\\Desktop\\PIPORAMA\\Repositories\\Implementations\\AdditionalRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\Implementations\\AdditionalRepository.cs",
+              "ToolTip": "C:\\Users\\jerog\\Desktop\\PIPORAMA\\Repositories\\Implementations\\AdditionalRepository.cs",
+              "RelativeToolTip": "Repositories\\Implementations\\AdditionalRepository.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAiwAoAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-05T13:13:26.288Z",
+              "WhenOpened": "2025-11-08T01:20:38.461Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "TicketDTO.cs",
-              "DocumentMoniker": "C:\\Users\\jerog\\Desktop\\PIPORAMA\\Data\\DTOs\\DetailInvoice\\TicketDTO.cs",
-              "RelativeDocumentMoniker": "Data\\DTOs\\DetailInvoice\\TicketDTO.cs",
-              "ToolTip": "C:\\Users\\jerog\\Desktop\\PIPORAMA\\Data\\DTOs\\DetailInvoice\\TicketDTO.cs",
-              "RelativeToolTip": "Data\\DTOs\\DetailInvoice\\TicketDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAnAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "IPIPORAMAContextProcedures.cs",
+              "DocumentMoniker": "C:\\Users\\jerog\\Desktop\\PIPORAMA\\Data\\Models\\StoreProcedure\\IPIPORAMAContextProcedures.cs",
+              "RelativeDocumentMoniker": "Data\\Models\\StoreProcedure\\IPIPORAMAContextProcedures.cs",
+              "ToolTip": "C:\\Users\\jerog\\Desktop\\PIPORAMA\\Data\\Models\\StoreProcedure\\IPIPORAMAContextProcedures.cs",
+              "RelativeToolTip": "Data\\Models\\StoreProcedure\\IPIPORAMAContextProcedures.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAQwB8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-08T13:39:58.96Z",
+              "WhenOpened": "2025-11-08T18:07:36.324Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "IAdditionalRepository.cs",
-              "DocumentMoniker": "C:\\Users\\jerog\\Desktop\\PIPORAMA\\Repositories\\Interfaces\\IAdditionalRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\Interfaces\\IAdditionalRepository.cs",
-              "ToolTip": "C:\\Users\\jerog\\Desktop\\PIPORAMA\\Repositories\\Interfaces\\IAdditionalRepository.cs",
-              "RelativeToolTip": "Repositories\\Interfaces\\IAdditionalRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAhAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "IAdditionalService.cs",
+              "DocumentMoniker": "C:\\Users\\jerog\\Desktop\\PIPORAMA\\Services\\Interfaces\\IAdditionalService.cs",
+              "RelativeDocumentMoniker": "Services\\Interfaces\\IAdditionalService.cs",
+              "ToolTip": "C:\\Users\\jerog\\Desktop\\PIPORAMA\\Services\\Interfaces\\IAdditionalService.cs",
+              "RelativeToolTip": "Services\\Interfaces\\IAdditionalService.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAA5wBUAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-08T01:19:23.832Z",
+              "WhenOpened": "2025-11-08T01:21:51.822Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "DashboardRepository.cs",
-              "DocumentMoniker": "C:\\Users\\jerog\\Desktop\\PIPORAMA\\Repositories\\Implementations\\DashboardRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\Implementations\\DashboardRepository.cs",
-              "ToolTip": "C:\\Users\\jerog\\Desktop\\PIPORAMA\\Repositories\\Implementations\\DashboardRepository.cs",
-              "RelativeToolTip": "Repositories\\Implementations\\DashboardRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-08T18:15:38.25Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "DetallesCombo.cs",
-              "DocumentMoniker": "C:\\Users\\jerog\\Desktop\\PIPORAMA\\Data\\Models\\DetallesCombo.cs",
-              "RelativeDocumentMoniker": "Data\\Models\\DetallesCombo.cs",
-              "ToolTip": "C:\\Users\\jerog\\Desktop\\PIPORAMA\\Data\\Models\\DetallesCombo.cs",
-              "RelativeToolTip": "Data\\Models\\DetallesCombo.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABEAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-08T12:39:40.433Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 5,
               "Title": "ClientsController.cs",
               "DocumentMoniker": "C:\\Users\\jerog\\Desktop\\PIPORAMA\\Controllers\\ClientsController.cs",
               "RelativeDocumentMoniker": "Controllers\\ClientsController.cs",
@@ -369,8 +207,149 @@
               "RelativeToolTip": "Controllers\\ClientsController.cs",
               "ViewState": "AgIAAEUAAAAAAAAAAAAqwFIAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-26T22:24:00.565Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-26T22:24:00.565Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IAdditionalRepository.cs",
+              "DocumentMoniker": "C:\\Users\\jerog\\Desktop\\PIPORAMA\\Repositories\\Interfaces\\IAdditionalRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\Interfaces\\IAdditionalRepository.cs",
+              "ToolTip": "C:\\Users\\jerog\\Desktop\\PIPORAMA\\Repositories\\Interfaces\\IAdditionalRepository.cs",
+              "RelativeToolTip": "Repositories\\Interfaces\\IAdditionalRepository.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAzwBUAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-08T01:19:23.832Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "InvoiceService.cs",
+              "DocumentMoniker": "C:\\Users\\jerog\\Desktop\\PIPORAMA\\Services\\Implementations\\InvoiceService.cs",
+              "RelativeDocumentMoniker": "Services\\Implementations\\InvoiceService.cs",
+              "ToolTip": "C:\\Users\\jerog\\Desktop\\PIPORAMA\\Services\\Implementations\\InvoiceService.cs",
+              "RelativeToolTip": "Services\\Implementations\\InvoiceService.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAYwBUAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T23:31:50.211Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "cine_script_FinalFinalFinal_DML.sql",
+              "DocumentMoniker": "C:\\Users\\jerog\\Desktop\\PIPORAMA\\cine_script_FinalFinalFinal_DML.sql",
+              "RelativeDocumentMoniker": "cine_script_FinalFinalFinal_DML.sql",
+              "ToolTip": "C:\\Users\\jerog\\Desktop\\PIPORAMA\\cine_script_FinalFinalFinal_DML.sql",
+              "RelativeToolTip": "cine_script_FinalFinalFinal_DML.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-11-02T17:10:21.621Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "cine_script_FinalFinalFinal_DDL.sql",
+              "DocumentMoniker": "C:\\Users\\jerog\\Desktop\\PIPORAMA\\cine_script_FinalFinalFinal_DDL.sql",
+              "RelativeDocumentMoniker": "cine_script_FinalFinalFinal_DDL.sql",
+              "ToolTip": "C:\\Users\\jerog\\Desktop\\PIPORAMA\\cine_script_FinalFinalFinal_DDL.sql",
+              "RelativeToolTip": "cine_script_FinalFinalFinal_DDL.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-11-02T17:09:49.297Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "PIPORAMAContextProcedures.cs",
+              "DocumentMoniker": "C:\\Users\\jerog\\Desktop\\PIPORAMA\\Data\\Models\\StoreProcedure\\PIPORAMAContextProcedures.cs",
+              "RelativeDocumentMoniker": "Data\\Models\\StoreProcedure\\PIPORAMAContextProcedures.cs",
+              "ToolTip": "C:\\Users\\jerog\\Desktop\\PIPORAMA\\Data\\Models\\StoreProcedure\\PIPORAMAContextProcedures.cs",
+              "RelativeToolTip": "Data\\Models\\StoreProcedure\\PIPORAMAContextProcedures.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-08T18:11:00.21Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "efpt.config.json",
+              "DocumentMoniker": "C:\\Users\\jerog\\Desktop\\PIPORAMA\\efpt.config.json",
+              "RelativeDocumentMoniker": "efpt.config.json",
+              "ToolTip": "C:\\Users\\jerog\\Desktop\\PIPORAMA\\efpt.config.json",
+              "RelativeToolTip": "efpt.config.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAANIAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-08T19:10:42.807Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\jerog\\Desktop\\PIPORAMA\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\jerog\\Desktop\\PIPORAMA\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAAwDcAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-08T18:16:31.907Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\jerog\\Desktop\\PIPORAMA\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\jerog\\Desktop\\PIPORAMA\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-08T18:38:00.447Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "PIPORAMAContext.cs",
+              "DocumentMoniker": "C:\\Users\\jerog\\Desktop\\PIPORAMA\\Data\\Models\\PIPORAMAContext.cs",
+              "RelativeDocumentMoniker": "Data\\Models\\PIPORAMAContext.cs",
+              "ToolTip": "C:\\Users\\jerog\\Desktop\\PIPORAMA\\Data\\Models\\PIPORAMAContext.cs",
+              "RelativeToolTip": "Data\\Models\\PIPORAMAContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAO4BAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-05T13:13:26.288Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "TicketDTO.cs",
+              "DocumentMoniker": "C:\\Users\\jerog\\Desktop\\PIPORAMA\\Data\\DTOs\\DetailInvoice\\TicketDTO.cs",
+              "RelativeDocumentMoniker": "Data\\DTOs\\DetailInvoice\\TicketDTO.cs",
+              "ToolTip": "C:\\Users\\jerog\\Desktop\\PIPORAMA\\Data\\DTOs\\DetailInvoice\\TicketDTO.cs",
+              "RelativeToolTip": "Data\\DTOs\\DetailInvoice\\TicketDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-08T13:39:58.96Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "DashboardRepository.cs",
+              "DocumentMoniker": "C:\\Users\\jerog\\Desktop\\PIPORAMA\\Repositories\\Implementations\\DashboardRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\Implementations\\DashboardRepository.cs",
+              "ToolTip": "C:\\Users\\jerog\\Desktop\\PIPORAMA\\Repositories\\Implementations\\DashboardRepository.cs",
+              "RelativeToolTip": "Repositories\\Implementations\\DashboardRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-08T18:15:38.25Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "DetallesCombo.cs",
+              "DocumentMoniker": "C:\\Users\\jerog\\Desktop\\PIPORAMA\\Data\\Models\\DetallesCombo.cs",
+              "RelativeDocumentMoniker": "Data\\Models\\DetallesCombo.cs",
+              "ToolTip": "C:\\Users\\jerog\\Desktop\\PIPORAMA\\Data\\Models\\DetallesCombo.cs",
+              "RelativeToolTip": "Data\\Models\\DetallesCombo.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABEAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-08T12:39:40.433Z"
             },
             {
               "$type": "Document",
@@ -382,8 +361,7 @@
               "RelativeToolTip": "Data\\Models\\Combo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-08T12:33:52.298Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-08T12:33:52.298Z"
             },
             {
               "$type": "Document",
@@ -395,8 +373,7 @@
               "RelativeToolTip": "Data\\DTOs\\Additional\\ComboDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-08T12:45:38.544Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-08T12:45:38.544Z"
             },
             {
               "$type": "Document",
@@ -408,8 +385,7 @@
               "RelativeToolTip": "Data\\DTOs\\DetailInvoice\\AsientoDTO.cs",
               "ViewState": "AgIAAAIAAAAAAAAAAAAxwAYAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-08T14:01:37.595Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-08T14:01:37.595Z"
             },
             {
               "$type": "Document",
@@ -421,8 +397,7 @@
               "RelativeToolTip": "Services\\Implementations\\ClientService.cs",
               "ViewState": "AgIAACwAAAAAAAAAAAAgwG8AAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-26T22:19:50.742Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-26T22:19:50.742Z"
             },
             {
               "$type": "Document",
@@ -434,8 +409,7 @@
               "RelativeToolTip": "Repositories\\Interfaces\\IClientRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAkAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-26T22:27:06.338Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-26T22:27:06.338Z"
             },
             {
               "$type": "Document",
@@ -447,8 +421,7 @@
               "RelativeToolTip": "Repositories\\Implementations\\ClientRepository.cs",
               "ViewState": "AgIAAD8AAAAAAAAAAAAowE4AAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-26T22:16:40.242Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-26T22:16:40.242Z"
             },
             {
               "$type": "Document",
@@ -460,8 +433,7 @@
               "RelativeToolTip": "Repositories\\Implementations\\InvoiceRepository.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAIwB0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-26T23:10:45.303Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-26T23:10:45.303Z"
             },
             {
               "$type": "Document",
@@ -473,8 +445,7 @@
               "RelativeToolTip": "Services\\Implementations\\EmployeeService.cs",
               "ViewState": "AgIAAI8AAAAAAAAAAAAswF0AAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-05T13:48:10.032Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-05T13:48:10.032Z"
             },
             {
               "$type": "Document",
@@ -486,8 +457,7 @@
               "RelativeToolTip": "Repositories\\Interfaces\\IEmployeeRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-05T13:46:56.886Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-05T13:46:56.886Z"
             },
             {
               "$type": "Document",
@@ -499,8 +469,7 @@
               "RelativeToolTip": "Repositories\\Implementations\\EmployeeRepository.cs",
               "ViewState": "AgIAADkAAAAAAAAAAAAowBcAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-05T13:47:10.735Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-05T13:47:10.735Z"
             },
             {
               "$type": "Document",
@@ -512,8 +481,7 @@
               "RelativeToolTip": "Data\\DTOs\\Invoice\\ClientDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-26T22:16:24.242Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-26T22:16:24.242Z"
             },
             {
               "$type": "Document",
@@ -525,8 +493,7 @@
               "RelativeToolTip": "Data\\DTOs\\Invoice\\EmployeeDTO.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAxwAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-26T22:13:53.702Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-26T22:13:53.702Z"
             }
           ]
         }
