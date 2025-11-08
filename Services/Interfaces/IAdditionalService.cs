@@ -16,5 +16,8 @@ namespace TP_ProgramaciónII_PIPORAMA.Services.Interfaces
         Task<IEnumerable<MediosPago>> GetAllMediosPago();
         Task<IEnumerable<EstadosCompra>> GetAllEstadosCompra();
         Task<IEnumerable<FormaCompra>> GetAllFormasCompra();
+        Task<IEnumerable<Sala>> GetAllSalas();
+        Task<IEnumerable<Consumible>> GetAllConsumibles();
+        Task<IEnumerable<ComboDTO>> GetAllCombos();
     }
 }

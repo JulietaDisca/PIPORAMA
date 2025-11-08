@@ -1,4 +1,5 @@
-﻿using TP_ProgramaciónII_PIPORAMA.Data.Models;
+﻿using TP_ProgramaciónII_PIPORAMA.Data.DTOs.Additional;
+using TP_ProgramaciónII_PIPORAMA.Data.Models;
 
 namespace TP_ProgramaciónII_PIPORAMA.Repositories.Interfaces
 {
@@ -14,6 +15,10 @@ namespace TP_ProgramaciónII_PIPORAMA.Repositories.Interfaces
         Task<IEnumerable<MediosPago>> GetAllMediosPago();
         Task<IEnumerable<EstadosCompra>> GetAllEstadosCompra();
         Task<IEnumerable<FormaCompra>> GetAllFormasCompra();
+        Task<IEnumerable<Sala>> GetAllSalas();
+        Task<IEnumerable<Consumible>> GetAllConsumibles();
+        Task<IEnumerable<ComboDTO>> GetAllCombos();
+
 
     }
 }

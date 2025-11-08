@@ -15,292 +15,292 @@ namespace TP_ProgramaciónII_PIPORAMA.Data.Models
     {
         private IPIPORAMAContextProcedures _procedures;
 
-        public virtual IPIPORAMAContextProcedures Procedures
-        {
-            get
-            {
-                if (_procedures is null) _procedures = new PIPORAMAContextProcedures(this);
-                return _procedures;
-            }
-            set
-            {
-                _procedures = value;
-            }
-        }
+    //    public virtual IPIPORAMAContextProcedures Procedures
+    //    {
+    //        get
+    //        {
+    //            if (_procedures is null) _procedures = new PIPORAMAContextProcedures(this);
+    //            return _procedures;
+    //        }
+    //        set
+    //        {
+    //            _procedures = value;
+    //        }
+    //    }
 
-        public IPIPORAMAContextProcedures GetProcedures()
-        {
-            return Procedures;
-        }
-    }
+    //    public IPIPORAMAContextProcedures GetProcedures()
+    //    {
+    //        return Procedures;
+    //    }
+    //}
 
-    public partial class PIPORAMAContextProcedures : IPIPORAMAContextProcedures
-    {
-        private readonly PIPORAMAContext _context;
+    //public partial class PIPORAMAContextProcedures : IPIPORAMAContextProcedures
+    //{
+    //    private readonly PIPORAMAContext _context;
 
-        public PIPORAMAContextProcedures(PIPORAMAContext context)
-        {
-            _context = context;
-        }
+    //    public PIPORAMAContextProcedures(PIPORAMAContext context)
+    //    {
+    //        _context = context;
+    //    }
 
-        public virtual async Task<List<ClientesFrecuentesResult>> ClientesFrecuentesAsync(OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default)
-        {
-            var parameterreturnValue = new SqlParameter
-            {
-                ParameterName = "returnValue",
-                Direction = System.Data.ParameterDirection.Output,
-                SqlDbType = System.Data.SqlDbType.Int,
-            };
+    //    public virtual async Task<List<ClientesFrecuentesResult>> ClientesFrecuentesAsync(OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default)
+    //    {
+    //        var parameterreturnValue = new SqlParameter
+    //        {
+    //            ParameterName = "returnValue",
+    //            Direction = System.Data.ParameterDirection.Output,
+    //            SqlDbType = System.Data.SqlDbType.Int,
+    //        };
 
-            var sqlParameters = new []
-            {
-                parameterreturnValue,
-            };
-            var _ = await _context.SqlQueryToListAsync<ClientesFrecuentesResult>("EXEC @returnValue = [dbo].[ClientesFrecuentes]", sqlParameters, cancellationToken);
+    //        var sqlParameters = new []
+    //        {
+    //            parameterreturnValue,
+    //        };
+    //        var _ = await _context.SqlQueryToListAsync<ClientesFrecuentesResult>("EXEC @returnValue = [dbo].[ClientesFrecuentes]", sqlParameters, cancellationToken);
 
-            returnValue?.SetValue(parameterreturnValue.Value);
+    //        returnValue?.SetValue(parameterreturnValue.Value);
 
-            return _;
-        }
+    //        return _;
+    //    }
 
-        public virtual async Task<List<ConsumiblesMasVendidosResult>> ConsumiblesMasVendidosAsync(OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default)
-        {
-            var parameterreturnValue = new SqlParameter
-            {
-                ParameterName = "returnValue",
-                Direction = System.Data.ParameterDirection.Output,
-                SqlDbType = System.Data.SqlDbType.Int,
-            };
+    //    public virtual async Task<List<ConsumiblesMasVendidosResult>> ConsumiblesMasVendidosAsync(OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default)
+    //    {
+    //        var parameterreturnValue = new SqlParameter
+    //        {
+    //            ParameterName = "returnValue",
+    //            Direction = System.Data.ParameterDirection.Output,
+    //            SqlDbType = System.Data.SqlDbType.Int,
+    //        };
 
-            var sqlParameters = new []
-            {
-                parameterreturnValue,
-            };
-            var _ = await _context.SqlQueryToListAsync<ConsumiblesMasVendidosResult>("EXEC @returnValue = [dbo].[ConsumiblesMasVendidos]", sqlParameters, cancellationToken);
+    //        var sqlParameters = new []
+    //        {
+    //            parameterreturnValue,
+    //        };
+    //        var _ = await _context.SqlQueryToListAsync<ConsumiblesMasVendidosResult>("EXEC @returnValue = [dbo].[ConsumiblesMasVendidos]", sqlParameters, cancellationToken);
 
-            returnValue?.SetValue(parameterreturnValue.Value);
+    //        returnValue?.SetValue(parameterreturnValue.Value);
 
-            return _;
-        }
+    //        return _;
+    //    }
 
-        public virtual async Task<List<EntradasRecaudacionXDiaResult>> EntradasRecaudacionXDiaAsync(OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default)
-        {
-            var parameterreturnValue = new SqlParameter
-            {
-                ParameterName = "returnValue",
-                Direction = System.Data.ParameterDirection.Output,
-                SqlDbType = System.Data.SqlDbType.Int,
-            };
+    //    public virtual async Task<List<EntradasRecaudacionXDiaResult>> EntradasRecaudacionXDiaAsync(OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default)
+    //    {
+    //        var parameterreturnValue = new SqlParameter
+    //        {
+    //            ParameterName = "returnValue",
+    //            Direction = System.Data.ParameterDirection.Output,
+    //            SqlDbType = System.Data.SqlDbType.Int,
+    //        };
 
-            var sqlParameters = new []
-            {
-                parameterreturnValue,
-            };
-            var _ = await _context.SqlQueryToListAsync<EntradasRecaudacionXDiaResult>("EXEC @returnValue = [dbo].[EntradasRecaudacionXDia]", sqlParameters, cancellationToken);
+    //        var sqlParameters = new []
+    //        {
+    //            parameterreturnValue,
+    //        };
+    //        var _ = await _context.SqlQueryToListAsync<EntradasRecaudacionXDiaResult>("EXEC @returnValue = [dbo].[EntradasRecaudacionXDia]", sqlParameters, cancellationToken);
 
-            returnValue?.SetValue(parameterreturnValue.Value);
+    //        returnValue?.SetValue(parameterreturnValue.Value);
 
-            return _;
-        }
+    //        return _;
+    //    }
 
-        public virtual async Task<List<FuncionesXHorarioResult>> FuncionesXHorarioAsync(OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default)
-        {
-            var parameterreturnValue = new SqlParameter
-            {
-                ParameterName = "returnValue",
-                Direction = System.Data.ParameterDirection.Output,
-                SqlDbType = System.Data.SqlDbType.Int,
-            };
+    //    public virtual async Task<List<FuncionesXHorarioResult>> FuncionesXHorarioAsync(OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default)
+    //    {
+    //        var parameterreturnValue = new SqlParameter
+    //        {
+    //            ParameterName = "returnValue",
+    //            Direction = System.Data.ParameterDirection.Output,
+    //            SqlDbType = System.Data.SqlDbType.Int,
+    //        };
 
-            var sqlParameters = new []
-            {
-                parameterreturnValue,
-            };
-            var _ = await _context.SqlQueryToListAsync<FuncionesXHorarioResult>("EXEC @returnValue = [dbo].[FuncionesXHorario]", sqlParameters, cancellationToken);
+    //        var sqlParameters = new []
+    //        {
+    //            parameterreturnValue,
+    //        };
+    //        var _ = await _context.SqlQueryToListAsync<FuncionesXHorarioResult>("EXEC @returnValue = [dbo].[FuncionesXHorario]", sqlParameters, cancellationToken);
 
-            returnValue?.SetValue(parameterreturnValue.Value);
+    //        returnValue?.SetValue(parameterreturnValue.Value);
 
-            return _;
-        }
+    //        return _;
+    //    }
 
-        public virtual async Task<List<PeliculasEnCarteleraResult>> PeliculasEnCarteleraAsync(OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default)
-        {
-            var parameterreturnValue = new SqlParameter
-            {
-                ParameterName = "returnValue",
-                Direction = System.Data.ParameterDirection.Output,
-                SqlDbType = System.Data.SqlDbType.Int,
-            };
+    //    public virtual async Task<List<PeliculasEnCarteleraResult>> PeliculasEnCarteleraAsync(OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default)
+    //    {
+    //        var parameterreturnValue = new SqlParameter
+    //        {
+    //            ParameterName = "returnValue",
+    //            Direction = System.Data.ParameterDirection.Output,
+    //            SqlDbType = System.Data.SqlDbType.Int,
+    //        };
 
-            var sqlParameters = new []
-            {
-                parameterreturnValue,
-            };
-            var _ = await _context.SqlQueryToListAsync<PeliculasEnCarteleraResult>("EXEC @returnValue = [dbo].[PeliculasEnCartelera]", sqlParameters, cancellationToken);
+    //        var sqlParameters = new []
+    //        {
+    //            parameterreturnValue,
+    //        };
+    //        var _ = await _context.SqlQueryToListAsync<PeliculasEnCarteleraResult>("EXEC @returnValue = [dbo].[PeliculasEnCartelera]", sqlParameters, cancellationToken);
 
-            returnValue?.SetValue(parameterreturnValue.Value);
+    //        returnValue?.SetValue(parameterreturnValue.Value);
 
-            return _;
-        }
+    //        return _;
+    //    }
 
-        public virtual async Task<List<PeliculasMasVistasResult>> PeliculasMasVistasAsync(OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default)
-        {
-            var parameterreturnValue = new SqlParameter
-            {
-                ParameterName = "returnValue",
-                Direction = System.Data.ParameterDirection.Output,
-                SqlDbType = System.Data.SqlDbType.Int,
-            };
+    //    public virtual async Task<List<PeliculasMasVistasResult>> PeliculasMasVistasAsync(OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default)
+    //    {
+    //        var parameterreturnValue = new SqlParameter
+    //        {
+    //            ParameterName = "returnValue",
+    //            Direction = System.Data.ParameterDirection.Output,
+    //            SqlDbType = System.Data.SqlDbType.Int,
+    //        };
 
-            var sqlParameters = new []
-            {
-                parameterreturnValue,
-            };
-            var _ = await _context.SqlQueryToListAsync<PeliculasMasVistasResult>("EXEC @returnValue = [dbo].[PeliculasMasVistas]", sqlParameters, cancellationToken);
+    //        var sqlParameters = new []
+    //        {
+    //            parameterreturnValue,
+    //        };
+    //        var _ = await _context.SqlQueryToListAsync<PeliculasMasVistasResult>("EXEC @returnValue = [dbo].[PeliculasMasVistas]", sqlParameters, cancellationToken);
 
-            returnValue?.SetValue(parameterreturnValue.Value);
+    //        returnValue?.SetValue(parameterreturnValue.Value);
 
-            return _;
-        }
+    //        return _;
+    //    }
 
-        public virtual async Task<List<PromedioEntradasPorSalaResult>> PromedioEntradasPorSalaAsync(OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default)
-        {
-            var parameterreturnValue = new SqlParameter
-            {
-                ParameterName = "returnValue",
-                Direction = System.Data.ParameterDirection.Output,
-                SqlDbType = System.Data.SqlDbType.Int,
-            };
+    //    public virtual async Task<List<PromedioEntradasPorSalaResult>> PromedioEntradasPorSalaAsync(OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default)
+    //    {
+    //        var parameterreturnValue = new SqlParameter
+    //        {
+    //            ParameterName = "returnValue",
+    //            Direction = System.Data.ParameterDirection.Output,
+    //            SqlDbType = System.Data.SqlDbType.Int,
+    //        };
 
-            var sqlParameters = new []
-            {
-                parameterreturnValue,
-            };
-            var _ = await _context.SqlQueryToListAsync<PromedioEntradasPorSalaResult>("EXEC @returnValue = [dbo].[PromedioEntradasPorSala]", sqlParameters, cancellationToken);
+    //        var sqlParameters = new []
+    //        {
+    //            parameterreturnValue,
+    //        };
+    //        var _ = await _context.SqlQueryToListAsync<PromedioEntradasPorSalaResult>("EXEC @returnValue = [dbo].[PromedioEntradasPorSala]", sqlParameters, cancellationToken);
 
-            returnValue?.SetValue(parameterreturnValue.Value);
+    //        returnValue?.SetValue(parameterreturnValue.Value);
 
-            return _;
-        }
+    //        return _;
+    //    }
 
-        public virtual async Task<List<ProximasFuncionesResult>> ProximasFuncionesAsync(OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default)
-        {
-            var parameterreturnValue = new SqlParameter
-            {
-                ParameterName = "returnValue",
-                Direction = System.Data.ParameterDirection.Output,
-                SqlDbType = System.Data.SqlDbType.Int,
-            };
+    //    public virtual async Task<List<ProximasFuncionesResult>> ProximasFuncionesAsync(OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default)
+    //    {
+    //        var parameterreturnValue = new SqlParameter
+    //        {
+    //            ParameterName = "returnValue",
+    //            Direction = System.Data.ParameterDirection.Output,
+    //            SqlDbType = System.Data.SqlDbType.Int,
+    //        };
 
-            var sqlParameters = new []
-            {
-                parameterreturnValue,
-            };
-            var _ = await _context.SqlQueryToListAsync<ProximasFuncionesResult>("EXEC @returnValue = [dbo].[ProximasFunciones]", sqlParameters, cancellationToken);
+    //        var sqlParameters = new []
+    //        {
+    //            parameterreturnValue,
+    //        };
+    //        var _ = await _context.SqlQueryToListAsync<ProximasFuncionesResult>("EXEC @returnValue = [dbo].[ProximasFunciones]", sqlParameters, cancellationToken);
 
-            returnValue?.SetValue(parameterreturnValue.Value);
+    //        returnValue?.SetValue(parameterreturnValue.Value);
 
-            return _;
-        }
+    //        return _;
+    //    }
 
-        public virtual async Task<List<RecaudacionTotalResult>> RecaudacionTotalAsync(OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default)
-        {
-            var parameterreturnValue = new SqlParameter
-            {
-                ParameterName = "returnValue",
-                Direction = System.Data.ParameterDirection.Output,
-                SqlDbType = System.Data.SqlDbType.Int,
-            };
+    //    public virtual async Task<List<RecaudacionTotalResult>> RecaudacionTotalAsync(OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default)
+    //    {
+    //        var parameterreturnValue = new SqlParameter
+    //        {
+    //            ParameterName = "returnValue",
+    //            Direction = System.Data.ParameterDirection.Output,
+    //            SqlDbType = System.Data.SqlDbType.Int,
+    //        };
 
-            var sqlParameters = new []
-            {
-                parameterreturnValue,
-            };
-            var _ = await _context.SqlQueryToListAsync<RecaudacionTotalResult>("EXEC @returnValue = [dbo].[RecaudacionTotal]", sqlParameters, cancellationToken);
+    //        var sqlParameters = new []
+    //        {
+    //            parameterreturnValue,
+    //        };
+    //        var _ = await _context.SqlQueryToListAsync<RecaudacionTotalResult>("EXEC @returnValue = [dbo].[RecaudacionTotal]", sqlParameters, cancellationToken);
 
-            returnValue?.SetValue(parameterreturnValue.Value);
+    //        returnValue?.SetValue(parameterreturnValue.Value);
 
-            return _;
-        }
+    //        return _;
+    //    }
 
-        public virtual async Task<List<RecaudacionXPeliculaResult>> RecaudacionXPeliculaAsync(OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default)
-        {
-            var parameterreturnValue = new SqlParameter
-            {
-                ParameterName = "returnValue",
-                Direction = System.Data.ParameterDirection.Output,
-                SqlDbType = System.Data.SqlDbType.Int,
-            };
+    //    public virtual async Task<List<RecaudacionXPeliculaResult>> RecaudacionXPeliculaAsync(OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default)
+    //    {
+    //        var parameterreturnValue = new SqlParameter
+    //        {
+    //            ParameterName = "returnValue",
+    //            Direction = System.Data.ParameterDirection.Output,
+    //            SqlDbType = System.Data.SqlDbType.Int,
+    //        };
 
-            var sqlParameters = new []
-            {
-                parameterreturnValue,
-            };
-            var _ = await _context.SqlQueryToListAsync<RecaudacionXPeliculaResult>("EXEC @returnValue = [dbo].[RecaudacionXPelicula]", sqlParameters, cancellationToken);
+    //        var sqlParameters = new []
+    //        {
+    //            parameterreturnValue,
+    //        };
+    //        var _ = await _context.SqlQueryToListAsync<RecaudacionXPeliculaResult>("EXEC @returnValue = [dbo].[RecaudacionXPelicula]", sqlParameters, cancellationToken);
 
-            returnValue?.SetValue(parameterreturnValue.Value);
+    //        returnValue?.SetValue(parameterreturnValue.Value);
 
-            return _;
-        }
+    //        return _;
+    //    }
 
-        public virtual async Task<List<RecaudacónTotalCombosResult>> RecaudacónTotalCombosAsync(OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default)
-        {
-            var parameterreturnValue = new SqlParameter
-            {
-                ParameterName = "returnValue",
-                Direction = System.Data.ParameterDirection.Output,
-                SqlDbType = System.Data.SqlDbType.Int,
-            };
+    //    public virtual async Task<List<RecaudacónTotalCombosResult>> RecaudacónTotalCombosAsync(OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default)
+    //    {
+    //        var parameterreturnValue = new SqlParameter
+    //        {
+    //            ParameterName = "returnValue",
+    //            Direction = System.Data.ParameterDirection.Output,
+    //            SqlDbType = System.Data.SqlDbType.Int,
+    //        };
 
-            var sqlParameters = new []
-            {
-                parameterreturnValue,
-            };
-            var _ = await _context.SqlQueryToListAsync<RecaudacónTotalCombosResult>("EXEC @returnValue = [dbo].[RecaudacónTotalCombos]", sqlParameters, cancellationToken);
+    //        var sqlParameters = new []
+    //        {
+    //            parameterreturnValue,
+    //        };
+    //        var _ = await _context.SqlQueryToListAsync<RecaudacónTotalCombosResult>("EXEC @returnValue = [dbo].[RecaudacónTotalCombos]", sqlParameters, cancellationToken);
 
-            returnValue?.SetValue(parameterreturnValue.Value);
+    //        returnValue?.SetValue(parameterreturnValue.Value);
 
-            return _;
-        }
+    //        return _;
+    //    }
 
-        public virtual async Task<List<TotalClientesRegistradosResult>> TotalClientesRegistradosAsync(OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default)
-        {
-            var parameterreturnValue = new SqlParameter
-            {
-                ParameterName = "returnValue",
-                Direction = System.Data.ParameterDirection.Output,
-                SqlDbType = System.Data.SqlDbType.Int,
-            };
+    //    public virtual async Task<List<TotalClientesRegistradosResult>> TotalClientesRegistradosAsync(OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default)
+    //    {
+    //        var parameterreturnValue = new SqlParameter
+    //        {
+    //            ParameterName = "returnValue",
+    //            Direction = System.Data.ParameterDirection.Output,
+    //            SqlDbType = System.Data.SqlDbType.Int,
+    //        };
 
-            var sqlParameters = new []
-            {
-                parameterreturnValue,
-            };
-            var _ = await _context.SqlQueryToListAsync<TotalClientesRegistradosResult>("EXEC @returnValue = [dbo].[TotalClientesRegistrados]", sqlParameters, cancellationToken);
+    //        var sqlParameters = new []
+    //        {
+    //            parameterreturnValue,
+    //        };
+    //        var _ = await _context.SqlQueryToListAsync<TotalClientesRegistradosResult>("EXEC @returnValue = [dbo].[TotalClientesRegistrados]", sqlParameters, cancellationToken);
 
-            returnValue?.SetValue(parameterreturnValue.Value);
+    //        returnValue?.SetValue(parameterreturnValue.Value);
 
-            return _;
-        }
+    //        return _;
+    //    }
 
-        public virtual async Task<List<TotalEntradasVendidasResult>> TotalEntradasVendidasAsync(OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default)
-        {
-            var parameterreturnValue = new SqlParameter
-            {
-                ParameterName = "returnValue",
-                Direction = System.Data.ParameterDirection.Output,
-                SqlDbType = System.Data.SqlDbType.Int,
-            };
+    //    public virtual async Task<List<TotalEntradasVendidasResult>> TotalEntradasVendidasAsync(OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default)
+    //    {
+    //        var parameterreturnValue = new SqlParameter
+    //        {
+    //            ParameterName = "returnValue",
+    //            Direction = System.Data.ParameterDirection.Output,
+    //            SqlDbType = System.Data.SqlDbType.Int,
+    //        };
 
-            var sqlParameters = new []
-            {
-                parameterreturnValue,
-            };
-            var _ = await _context.SqlQueryToListAsync<TotalEntradasVendidasResult>("EXEC @returnValue = [dbo].[TotalEntradasVendidas]", sqlParameters, cancellationToken);
+    //        var sqlParameters = new []
+    //        {
+    //            parameterreturnValue,
+    //        };
+    //        var _ = await _context.SqlQueryToListAsync<TotalEntradasVendidasResult>("EXEC @returnValue = [dbo].[TotalEntradasVendidas]", sqlParameters, cancellationToken);
 
-            returnValue?.SetValue(parameterreturnValue.Value);
+    //        returnValue?.SetValue(parameterreturnValue.Value);
 
-            return _;
-        }
+    //        return _;
+    //    }
     }
 }

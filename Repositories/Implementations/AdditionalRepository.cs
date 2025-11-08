@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using TP_ProgramaciónII_PIPORAMA.Data.DTOs.Additional;
 using TP_ProgramaciónII_PIPORAMA.Data.Models;
 using TP_ProgramaciónII_PIPORAMA.Repositories.Interfaces;
 
@@ -59,6 +60,28 @@ namespace TP_ProgramaciónII_PIPORAMA.Repositories.Implementations
         public async Task<IEnumerable<TiposContacto>> GetAllTipoContactos()
         {
             return await _context.TiposContactos.ToListAsync();
+        }
+
+        public async Task<IEnumerable<Sala>> GetAllSalas()
+        {
+            return await _context.Salas.ToListAsync();
+        }
+
+        public async Task<IEnumerable<Consumible>> GetAllConsumibles()
+        {
+            return await _context.Consumibles.ToListAsync();
+        }
+
+        public async Task<IEnumerable<ComboDTO>> GetAllCombos()
+        {
+            return await _context.Combos
+                .Select(c => new ComboDTO
+                {
+                    NomCombo = c.NomCombo,
+                    PrecioCombo = c.DetallesCombos.Sum(dc=> dc.PreUnitario*dc.Cantidad)
+                })
+                .ToListAsync();
+
         }
     }
 }
