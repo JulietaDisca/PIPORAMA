@@ -21,6 +21,17 @@ namespace TP_ProgramaciónII_PIPORAMA.Services.Implementations
             return await _repository.GetAllBarrios();
         }
 
+        public async Task<IEnumerable<ComboDTO>> GetAllCombos()
+        {
+            return await _repository.GetAllCombos();
+            
+        }
+
+        public async Task<IEnumerable<Consumible>> GetAllConsumibles()
+        {
+            return await _repository.GetAllConsumibles();
+        }
+
         public async Task<IEnumerable<EstadosCompra>> GetAllEstadosCompra()
         {
             return await _repository.GetAllEstadosCompra();
@@ -39,10 +50,12 @@ namespace TP_ProgramaciónII_PIPORAMA.Services.Implementations
             foreach (var funcion in funciones)
             {
                 var dto = new FunctionDTO
-                {
+                {   
+                    IdFuncion = funcion.IdFuncion,
                     FunctionDate = funcion.Horario,
                     Film = funcion.IdPeliculaNavigation?.NomPelicula ?? string.Empty,
-                    Room = funcion.IdSalaNavigation?.NomSala ?? string.Empty
+                    Room = funcion.IdSalaNavigation?.NomSala ?? string.Empty,
+                    Precio = funcion.Precio ?? 0
                 };
                 funcionesDTO.Add(dto);
             }
@@ -73,6 +86,11 @@ namespace TP_ProgramaciónII_PIPORAMA.Services.Implementations
         public async Task<IEnumerable<Promocione>> GetAllPromociones()
         {
             return await _repository.GetAllPromociones();
+        }
+
+        public async Task<IEnumerable<Sala>> GetAllSalas()
+        {
+            return await _repository.GetAllSalas();
         }
 
         public async Task<IEnumerable<RoomSeatDTO>> GetAllSalasButacas()

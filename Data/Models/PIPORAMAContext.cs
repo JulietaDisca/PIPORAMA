@@ -490,6 +490,7 @@ public partial class PIPORAMAContext : DbContext
             entity.Property(e => e.IdPelicula).HasColumnName("id_pelicula");
             entity.Property(e => e.IdSala).HasColumnName("id_sala");
             entity.Property(e => e.IdTipoProyeccion).HasColumnName("id_tipo_proyeccion");
+            entity.Property(e => e.Precio).HasColumnName("precio");
 
             entity.HasOne(d => d.IdFormatoNavigation).WithMany(p => p.Funciones)
                 .HasForeignKey(d => d.IdFormato)

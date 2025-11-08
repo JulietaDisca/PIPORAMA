@@ -1,9 +1,3 @@
-
-USE PIPORAMA;
-GO
-
-GO
-
 -- CATEGORIAS
 INSERT INTO categorias (categoria) VALUES
 ('Gaseosa'), ('Snack Salado'), ('Golosina'), ('Combo'), ('Bebida Caliente'), ('Bebida Alcohólica (Cerveza)');
@@ -236,27 +230,27 @@ INSERT INTO sala_butacas (id_butaca, id_sala) VALUES
 GO
 
 -- 20 FUNCIONES
-INSERT INTO funciones (id_pelicula, horario, id_tipo_proyeccion, id_sala, id_formato, id_idioma) VALUES
-(1, '2025-10-21 18:00:00', 1, 1, 1, 1), -- Barbie, Sala 1 (2D), Doblada, Español
-(2, '2025-10-21 17:30:00', 2, 8, 2, 2), -- Oppenheimer, Sala 8 (IMAX), Subtitulada, Inglés
-(3, '2025-10-21 16:00:00', 2, 5, 1, 1), -- Super Mario, Sala 5 (3D), Doblada, Español
-(4, '2025-10-21 19:00:00', 1, 9, 2, 2), -- Guardians 3, Sala 9 (D-BOX), Subtitulada, Inglés
-(5, '2025-10-21 22:00:00', 1, 2, 2, 2), -- Fast X, Sala 2 (2D), Subtitulada, Inglés
-(6, '2025-10-21 18:30:00', 2, 6, 1, 1), -- Spider-Verse, Sala 6 (3D), Doblada, Español
-(7, '2025-10-21 17:00:00', 1, 3, 1, 1), -- Wonka, Sala 3 (2D), Doblada, Español
-(8, '2025-10-21 21:30:00', 1, 8, 2, 2), -- Mission Impossible, Sala 8 (IMAX), Subtitulada, Inglés
-(9, '2025-10-21 22:30:00', 1, 4, 2, 2), -- John Wick 4, Sala 4 (2D), Subtitulada, Inglés
-(10, '2025-10-21 20:00:00', 2, 7, 2, 2), -- Dune 2, Sala 7 (4D), Subtitulada, Inglés
-(11, '2025-10-21 15:00:00', 1, 11, 1, 1), -- Inside Out 2, Sala 11 (2D Comfort), Doblada, Español
-(12, '2025-10-21 22:15:00', 1, 12, 2, 2), -- Deadpool 3, Sala 12 (2D Comfort), Subtitulada, Inglés
-(13, '2025-10-21 19:45:00', 2, 13, 2, 2), -- Godzilla x Kong, Sala 13 (3D Comfort), Subtitulada, Inglés
-(14, '2025-10-21 16:30:00', 1, 14, 1, 1), -- Kung Fu Panda 4, Sala 14 (2D), Doblada, Español
-(15, '2025-10-21 20:30:00', 1, 15, 2, 2), -- Planet of the Apes, Sala 15 (2D), Subtitulada, Inglés
-(16, '2025-10-21 22:45:00', 1, 18, 2, 2), -- A Quiet Place, Sala 18 (2D), Subtitulada, Inglés
-(17, '2025-10-21 15:30:00', 1, 19, 1, 1), -- Garfield, Sala 19 (2D), Doblada, Español
-(18, '2025-10-21 21:00:00', 2, 20, 2, 2), -- Beetlejuice 2, Sala 20 (D-BOX), Subtitulada, Inglés
-(1, '2025-10-21 20:45:00', 1, 1, 1, 1), -- Barbie (Otra función), Sala 1 (2D), Doblada, Español
-(10, '2025-10-21 23:00:00', 2, 7, 2, 2); -- Dune 2 (Trasnoche), Sala 7 (4D), Subtitulada, Inglés
+INSERT INTO funciones (id_pelicula, horario, id_tipo_proyeccion, id_sala, id_formato, id_idioma, precio) VALUES
+(1, '2025-10-21 18:00:00', 1, 1, 1, 1,1200), -- Barbie, Sala 1 (2D), Doblada, Español
+(2, '2025-10-21 17:30:00', 2, 8, 2, 2,1200), -- Oppenheimer, Sala 8 (IMAX), Subtitulada, Inglés
+(3, '2025-10-21 16:00:00', 2, 5, 1, 1,1200), -- Super Mario, Sala 5 (3D), Doblada, Español
+(4, '2025-10-21 19:00:00', 1, 9, 2, 2,1200), -- Guardians 3, Sala 9 (D-BOX), Subtitulada, Inglés
+(5, '2025-10-21 22:00:00', 1, 2, 2, 2,1200), -- Fast X, Sala 2 (2D), Subtitulada, Inglés
+(6, '2025-10-21 18:30:00', 2, 6, 1, 1,1200), -- Spider-Verse, Sala 6 (3D), Doblada, Español
+(7, '2025-10-21 17:00:00', 1, 3, 1, 1,1200), -- Wonka, Sala 3 (2D), Doblada, Español
+(8, '2025-10-21 21:30:00', 1, 8, 2, 2,1200), -- Mission Impossible, Sala 8 (IMAX), Subtitulada, Inglés
+(9, '2025-10-21 22:30:00', 1, 4, 2, 2,1200), -- John Wick 4, Sala 4 (2D), Subtitulada, Inglés
+(10, '2025-10-21 20:00:00', 2, 7, 2, 2,1200), -- Dune 2, Sala 7 (4D), Subtitulada, Inglés
+(11, '2025-10-21 15:00:00', 1, 11, 1, 1,1200), -- Inside Out 2, Sala 11 (2D Comfort), Doblada, Español
+(12, '2025-10-21 22:15:00', 1, 12, 2, 2,1200), -- Deadpool 3, Sala 12 (2D Comfort), Subtitulada, Inglés
+(13, '2025-10-21 19:45:00', 2, 13, 2, 2,1200), -- Godzilla x Kong, Sala 13 (3D Comfort), Subtitulada, Inglés
+(14, '2025-10-21 16:30:00', 1, 14, 1, 1,1200), -- Kung Fu Panda 4, Sala 14 (2D), Doblada, Español
+(15, '2025-10-21 20:30:00', 1, 15, 2, 2,1200), -- Planet of the Apes, Sala 15 (2D), Subtitulada, Inglés
+(16, '2025-10-21 22:45:00', 1, 18, 2, 2,1200), -- A Quiet Place, Sala 18 (2D), Subtitulada, Inglés
+(17, '2025-10-21 15:30:00', 1, 19, 1, 1,1200), -- Garfield, Sala 19 (2D), Doblada, Español
+(18, '2025-10-21 21:00:00', 2, 20, 2, 2,1200), -- Beetlejuice 2, Sala 20 (D-BOX), Subtitulada, Inglés
+(1, '2025-10-21 20:45:00', 1, 1, 1, 1,1200), -- Barbie (Otra función), Sala 1 (2D), Doblada, Español
+(10, '2025-10-21 23:00:00', 2, 7, 2, 2,1200); -- Dune 2 (Trasnoche), Sala 7 (4D), Subtitulada, Inglés
 GO
 
 -- PROMOCIONES
@@ -471,3 +465,5 @@ INSERT INTO detalles_factura (id_factura, precio, id_consumible, id_combo, id_en
 (20, 7000, NULL, NULL, 35, 15), -- Entrada 35 (Dune 2) 10% Trasnoche
 (20, 7000, NULL, NULL, 36, 15); -- Entrada 36 (Dune 2) 10% Trasnoche
 GO
+
+

@@ -4,28 +4,51 @@ using TP_ProgramaciónII_PIPORAMA.Repositories.Interfaces;
 using TP_ProgramaciónII_PIPORAMA.Services.Interfaces;
 using TP_ProgramaciónII_PIPORAMA.Data.DTOs;
 using TP_ProgramaciónII_PIPORAMA.Data.DTOs.DetailInvoice;
+using Microsoft.EntityFrameworkCore;
 
 namespace TP_ProgramaciónII_PIPORAMA.Services.Implementations
 {
     public class InvoiceService : IInvoiceService
     {
+        private readonly PIPORAMAContext _context;
+
         private readonly IInvoiceRepository _repository;
         private readonly IClientRepository _clientRepository;
         private readonly IEmployeeRepository _employeeRepository;
-        public InvoiceService(IInvoiceRepository repository, IClientRepository clientRepository, IEmployeeRepository employeeRepository)
+        public InvoiceService(IInvoiceRepository repository, IClientRepository clientRepository, IEmployeeRepository employeeRepository,PIPORAMAContext context)
         {
             _repository = repository;
             _clientRepository = clientRepository;
             _employeeRepository = employeeRepository;
+            _context = context;
         }
         public async Task<bool> AddInvoice(InvoiceDTO invoice)
         {
-            var cliente = await _clientRepository.GetClientByDniAsync(invoice.DniClient);
+            var cliente = await _context.Clientes.FirstOrDefaultAsync(c => c.DniCliente == invoice.DniClient);
+            if(cliente is null)
+            {
+                throw new Exception($"Cliente no encontrado con DNI: {invoice.DniClient}");
+            }
             var empleado = await _employeeRepository.GetEmployeeByDni(invoice.DniEmployee);
+            if(empleado is null)
+            {
+                throw new Exception($"Empleado no encontrado con DNI: {invoice.DniEmployee}");
+            }
             var medioPago = await _repository.GetPaymentMethodByName(invoice.PaymentMethod);
+            if(medioPago is null)
+            {
+                throw new Exception($"Medio de pago no encontrado: {invoice.PaymentMethod}");
+            }
             var formaCompra = await _repository.GetPurchaseFormByName(invoice.PurchaseForm);
+            if(formaCompra is null)
+            {
+                throw new Exception($"Forma de compra no encontrada: {invoice.PurchaseForm}");
+            }
             var estadoCompra = await _repository.GetPurchaseStatusByName(invoice.PurchaseStatus);
-
+            if(estadoCompra is null)
+            {
+                throw new Exception($"Estado de compra no encontrado: {invoice.PurchaseStatus}");
+            }
             var detalles = new List<DetallesFactura>();
 
             if (invoice.DetailInvoices != null)
