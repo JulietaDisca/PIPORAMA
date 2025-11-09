@@ -62,7 +62,6 @@ namespace TP_ProgramaciónII_PIPORAMA.Repositories.Implementations
         public async Task<IEnumerable<Empleado>> GetAllEmployees()
         {
             return await _context.Empleados
-                .Where(e => e.Activo)
                 .Include(e => e.IdBarrioNavigation)
                 .Include(e => e.IdContactoNavigation)
                 .Include(e => e.IdRolNavigation)
