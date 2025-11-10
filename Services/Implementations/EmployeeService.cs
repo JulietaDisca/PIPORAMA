@@ -31,9 +31,6 @@ namespace TP_ProgramaciónII_PIPORAMA.Services.Implementations
                     ApeEmpleado = employee.ApeEmpleado,
                     Usuario = employee.Usuario,
                     Contrasenia = employee.Contrasenia,
-                    IdBarrio = employee.Barrio.IdBarrio,
-                    IdContacto = employee.Contacto.IdContacto,
-                    IdRol = employee.Rol.IdRol,
                     Activo = true,
                     IdContactoNavigation = new Contacto
                     {
@@ -48,7 +45,6 @@ namespace TP_ProgramaciónII_PIPORAMA.Services.Implementations
                     },
                     IdRolNavigation = new Role
                     {
-                        IdRol = employee.IdRol,
                         Descripcion = employee.Rol.Descripcion
                     }
                 };
@@ -89,9 +85,6 @@ namespace TP_ProgramaciónII_PIPORAMA.Services.Implementations
                     ApeEmpleado = e.ApeEmpleado,
                     Usuario = e.Usuario,
                     Contrasenia = e.Contrasenia,
-                    IdBarrio = e.IdBarrio,
-                    IdContacto = e.IdContacto,
-                    IdRol = e.IdRol,
                     Activo = e.Activo,
                     Barrio = e.IdBarrioNavigation is not null
                         ? new NeighborhoodDTO
@@ -137,9 +130,6 @@ namespace TP_ProgramaciónII_PIPORAMA.Services.Implementations
                     ApeEmpleado = employee.ApeEmpleado,
                     Usuario = employee.Usuario,
                     Contrasenia = employee.Contrasenia,
-                    IdBarrio = employee.IdBarrio,
-                    IdContacto = employee.IdContacto,
-                    IdRol = employee.IdRol,
                     Activo = employee.Activo,
                     Barrio = employee.IdBarrioNavigation is not null
                         ? new NeighborhoodDTO
@@ -183,9 +173,6 @@ namespace TP_ProgramaciónII_PIPORAMA.Services.Implementations
                     ApeEmpleado = employee.ApeEmpleado,
                     Usuario = employee.Usuario,
                     Contrasenia = employee.Contrasenia,
-                    IdBarrio = employee.IdBarrio,
-                    IdContacto = employee.IdContacto,
-                    IdRol = employee.IdRol,
                     Activo = employee.Activo
                 };
                 await _repository.UpdateEmployee(updatedEmployee);
