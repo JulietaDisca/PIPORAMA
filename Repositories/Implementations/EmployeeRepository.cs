@@ -42,6 +42,8 @@ namespace TP_ProgramaciónII_PIPORAMA.Repositories.Implementations
             if (rolFind == null)
                 throw new Exception("Rol no existe");
             employee.IdRol = rolFind.IdRol;
+            employee.IdRolNavigation = null;
+
 
             // insertar empleado
             _context.Empleados.Add(employee);
@@ -72,6 +74,7 @@ namespace TP_ProgramaciónII_PIPORAMA.Repositories.Implementations
         {
             return await _context.Empleados.Include(e => e.IdBarrioNavigation)
                                            .Include(e => e.IdContactoNavigation)
+                                           .Include(e => e.IdRolNavigation)
                                            .FirstOrDefaultAsync(e => e.DniEmpleado == dni);
         }
 

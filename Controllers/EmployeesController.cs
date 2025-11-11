@@ -199,19 +199,9 @@ namespace TP_ProgramaciónII_PIPORAMA.Controllers
                 error = "Usuario es requerido.";
                 return false;
             }
-            if (employee.IdBarrio <= 0)
-            {
-                error = "IdBarrio inválido.";
-                return false;
-            }
             if (employee.Barrio == null || employee.Barrio.IdBarrio <= 0)
             {
                 error = "Barrio inválido.";
-                return false;
-            }
-            if (employee.IdContacto <= 0)
-            {
-                error = "IdContacto inválido.";
                 return false;
             }
             if (employee.Contacto == null || employee.Contacto.IdContacto <= 0)
