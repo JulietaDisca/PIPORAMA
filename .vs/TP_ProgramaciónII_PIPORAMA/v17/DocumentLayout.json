@@ -1,29 +1,25 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Usuario\\Desktop\\Cosas de la uni\\Universidad\\TUP\\PIPORAMA\\",
+  "WorkspaceRootPath": "C:\\Users\\marti\\Desktop\\backend-piporama\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|c:\\users\\usuario\\desktop\\cosas de la uni\\universidad\\tup\\piporama\\data\\dtos\\invoice\\employeedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|solutionrelative:data\\dtos\\invoice\\employeedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|c:\\users\\usuario\\desktop\\cosas de la uni\\universidad\\tup\\piporama\\services\\implementations\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|solutionrelative:services\\implementations\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|c:\\users\\usuario\\desktop\\cosas de la uni\\universidad\\tup\\piporama\\controllers\\employeescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|solutionrelative:controllers\\employeescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|c:\\users\\usuario\\desktop\\cosas de la uni\\universidad\\tup\\piporama\\repositories\\implementations\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|c:\\users\\marti\\desktop\\backend-piporama\\repositories\\implementations\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|solutionrelative:repositories\\implementations\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|c:\\users\\usuario\\desktop\\cosas de la uni\\universidad\\tup\\piporama\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|c:\\users\\marti\\desktop\\backend-piporama\\services\\implementations\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|solutionrelative:services\\implementations\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|c:\\users\\marti\\desktop\\backend-piporama\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|c:\\users\\usuario\\desktop\\cosas de la uni\\universidad\\tup\\piporama\\controllers\\clientscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|c:\\users\\marti\\desktop\\backend-piporama\\controllers\\employeescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|solutionrelative:controllers\\employeescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|c:\\users\\marti\\desktop\\backend-piporama\\controllers\\clientscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|solutionrelative:controllers\\clientscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -42,88 +38,74 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "EmployeeService.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Cosas de la uni\\Universidad\\TUP\\PIPORAMA\\Services\\Implementations\\EmployeeService.cs",
+              "DocumentMoniker": "C:\\Users\\marti\\Desktop\\backend-piporama\\Services\\Implementations\\EmployeeService.cs",
               "RelativeDocumentMoniker": "Services\\Implementations\\EmployeeService.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Cosas de la uni\\Universidad\\TUP\\PIPORAMA\\Services\\Implementations\\EmployeeService.cs",
+              "ToolTip": "C:\\Users\\marti\\Desktop\\backend-piporama\\Services\\Implementations\\EmployeeService.cs",
               "RelativeToolTip": "Services\\Implementations\\EmployeeService.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAgwCwAAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAAIYAAAAAAAAAAAAswJoAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-10T21:57:13.484Z",
+              "WhenOpened": "2025-11-11T00:01:33.424Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "EmployeeDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Cosas de la uni\\Universidad\\TUP\\PIPORAMA\\Data\\DTOs\\Invoice\\EmployeeDTO.cs",
-              "RelativeDocumentMoniker": "Data\\DTOs\\Invoice\\EmployeeDTO.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Cosas de la uni\\Universidad\\TUP\\PIPORAMA\\Data\\DTOs\\Invoice\\EmployeeDTO.cs",
-              "RelativeToolTip": "Data\\DTOs\\Invoice\\EmployeeDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-10T21:56:08.457Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "EmployeeRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Cosas de la uni\\Universidad\\TUP\\PIPORAMA\\Repositories\\Implementations\\EmployeeRepository.cs",
+              "DocumentMoniker": "C:\\Users\\marti\\Desktop\\backend-piporama\\Repositories\\Implementations\\EmployeeRepository.cs",
               "RelativeDocumentMoniker": "Repositories\\Implementations\\EmployeeRepository.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Cosas de la uni\\Universidad\\TUP\\PIPORAMA\\Repositories\\Implementations\\EmployeeRepository.cs",
+              "ToolTip": "C:\\Users\\marti\\Desktop\\backend-piporama\\Repositories\\Implementations\\EmployeeRepository.cs",
               "RelativeToolTip": "Repositories\\Implementations\\EmployeeRepository.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAgwE4AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAAwEwAAABKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-09T23:08:47.001Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "EmployeesController.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Cosas de la uni\\Universidad\\TUP\\PIPORAMA\\Controllers\\EmployeesController.cs",
+              "DocumentMoniker": "C:\\Users\\marti\\Desktop\\backend-piporama\\Controllers\\EmployeesController.cs",
               "RelativeDocumentMoniker": "Controllers\\EmployeesController.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Cosas de la uni\\Universidad\\TUP\\PIPORAMA\\Controllers\\EmployeesController.cs",
+              "ToolTip": "C:\\Users\\marti\\Desktop\\backend-piporama\\Controllers\\EmployeesController.cs",
               "RelativeToolTip": "Controllers\\EmployeesController.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAiwIUAAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAcwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-09T23:08:39.188Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-09T23:08:39.188Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ClientsController.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Cosas de la uni\\Universidad\\TUP\\PIPORAMA\\Controllers\\ClientsController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ClientsController.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Cosas de la uni\\Universidad\\TUP\\PIPORAMA\\Controllers\\ClientsController.cs",
-              "RelativeToolTip": "Controllers\\ClientsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-09T23:08:37.601Z"
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\marti\\Desktop\\backend-piporama\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\marti\\Desktop\\backend-piporama\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAgAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-09T23:08:09.889Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Cosas de la uni\\Universidad\\TUP\\PIPORAMA\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Cosas de la uni\\Universidad\\TUP\\PIPORAMA\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-11-09T23:08:09.889Z",
-              "EditorCaption": ""
+              "Title": "ClientsController.cs",
+              "DocumentMoniker": "C:\\Users\\marti\\Desktop\\backend-piporama\\Controllers\\ClientsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ClientsController.cs",
+              "ToolTip": "C:\\Users\\marti\\Desktop\\backend-piporama\\Controllers\\ClientsController.cs",
+              "RelativeToolTip": "Controllers\\ClientsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T23:08:37.601Z"
             }
           ]
         }

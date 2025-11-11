@@ -32,26 +32,19 @@ namespace TP_ProgramaciónII_PIPORAMA.Services.Implementations
                     Usuario = employee.Usuario,
                     Contrasenia = employee.Contrasenia,
                     Activo = true,
-                    IdContactoNavigation = new Contacto
-                    {
-                        IdContacto = employee.Contacto.IdContacto,
-                        Descripcion = employee.Contacto.Descripcion,
-                        IdTipoContacto = employee.Contacto.IdTipoContacto
-                    },
-                    IdBarrioNavigation = new Barrio
-                    {
-                        IdBarrio = employee.Barrio.IdBarrio,
-                        Descripcion = employee.Barrio.Descripcion
-                    },
-                    IdRolNavigation = new Role
-                    {
-                        Descripcion = employee.Rol.Descripcion
-                    }
+                    IdBarrio = employee.Barrio.IdBarrio,
+                    IdContacto = employee.Contacto.IdContacto,
+                    IdRol = employee.Rol.IdRol
                 };
                 await _repository.AddEmployee(  newEmployee, 
-                                                newEmployee.IdBarrioNavigation.Descripcion, 
-                                                newEmployee.IdContactoNavigation, 
-                                                newEmployee.IdRolNavigation.Descripcion 
+                                                employee.Barrio.Descripcion, 
+                                                new Contacto
+                                                {
+                                                    IdContacto = employee.Contacto.IdContacto,
+                                                    Descripcion = employee.Contacto.Descripcion,
+                                                    IdTipoContacto = employee.Contacto.IdTipoContacto
+                                                },
+                                                employee.Rol.Descripcion 
                                                 );
             }
             catch (Exception ex)
@@ -173,7 +166,10 @@ namespace TP_ProgramaciónII_PIPORAMA.Services.Implementations
                     ApeEmpleado = employee.ApeEmpleado,
                     Usuario = employee.Usuario,
                     Contrasenia = employee.Contrasenia,
-                    Activo = employee.Activo
+                    Activo = employee.Activo,
+                    IdBarrio = employee.Barrio.IdBarrio,
+                    IdContacto = employee.Contacto.IdContacto,
+                    IdRol = employee.Rol.IdRol
                 };
                 await _repository.UpdateEmployee(updatedEmployee);
             }
