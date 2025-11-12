@@ -55,7 +55,7 @@ namespace TP_ProgramaciónII_PIPORAMA.Services.Implementations
                     FunctionDate = funcion.Horario,
                     Film = funcion.IdPeliculaNavigation?.NomPelicula ?? string.Empty,
                     Room = funcion.IdSalaNavigation?.NomSala ?? string.Empty,
-                    Precio = funcion.Precio ?? 0
+                    Precio = funcion.Precio
                 };
                 funcionesDTO.Add(dto);
             }

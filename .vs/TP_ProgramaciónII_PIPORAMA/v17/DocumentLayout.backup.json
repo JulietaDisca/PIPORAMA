@@ -1,26 +1,34 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\marti\\Desktop\\backend-piporama\\",
+  "WorkspaceRootPath": "C:\\Users\\Hp 15-Ef2514\\OneDrive\\Escritorio\\PIPORAMA\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|c:\\users\\marti\\desktop\\backend-piporama\\services\\implementations\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|solutionrelative:services\\implementations\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|c:\\users\\hp 15-ef2514\\onedrive\\escritorio\\piporama\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|c:\\users\\marti\\desktop\\backend-piporama\\repositories\\implementations\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|solutionrelative:repositories\\implementations\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|c:\\users\\hp 15-ef2514\\onedrive\\escritorio\\piporama\\services\\implementations\\additionalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|solutionrelative:services\\implementations\\additionalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|c:\\users\\marti\\desktop\\backend-piporama\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|c:\\users\\hp 15-ef2514\\onedrive\\escritorio\\piporama\\repositories\\implementations\\additionalrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|solutionrelative:repositories\\implementations\\additionalrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|c:\\users\\marti\\desktop\\backend-piporama\\controllers\\employeescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|solutionrelative:controllers\\employeescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|c:\\users\\hp 15-ef2514\\onedrive\\escritorio\\piporama\\repositories\\interfaces\\iadditionalrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|solutionrelative:repositories\\interfaces\\iadditionalrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|c:\\users\\marti\\desktop\\backend-piporama\\controllers\\clientscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|solutionrelative:controllers\\clientscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|c:\\users\\hp 15-ef2514\\onedrive\\escritorio\\piporama\\data\\dtos\\additional\\combodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|solutionrelative:data\\dtos\\additional\\combodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|c:\\users\\hp 15-ef2514\\onedrive\\escritorio\\piporama\\services\\interfaces\\iadditionalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|solutionrelative:services\\interfaces\\iadditionalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|c:\\users\\hp 15-ef2514\\onedrive\\escritorio\\piporama\\data\\models\\piporamacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|solutionrelative:data\\models\\piporamacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,82 +38,98 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "EmployeeService.cs",
-              "DocumentMoniker": "C:\\Users\\marti\\Desktop\\backend-piporama\\Services\\Implementations\\EmployeeService.cs",
-              "RelativeDocumentMoniker": "Services\\Implementations\\EmployeeService.cs",
-              "ToolTip": "C:\\Users\\marti\\Desktop\\backend-piporama\\Services\\Implementations\\EmployeeService.cs",
-              "RelativeToolTip": "Services\\Implementations\\EmployeeService.cs",
-              "ViewState": "AgIAAJgAAAAAAAAAAAAswKwAAAASAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Hp 15-Ef2514\\OneDrive\\Escritorio\\PIPORAMA\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Hp 15-Ef2514\\OneDrive\\Escritorio\\PIPORAMA\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAADcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-11T00:01:33.424Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "EmployeeRepository.cs",
-              "DocumentMoniker": "C:\\Users\\marti\\Desktop\\backend-piporama\\Repositories\\Implementations\\EmployeeRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\Implementations\\EmployeeRepository.cs",
-              "ToolTip": "C:\\Users\\marti\\Desktop\\backend-piporama\\Repositories\\Implementations\\EmployeeRepository.cs",
-              "RelativeToolTip": "Repositories\\Implementations\\EmployeeRepository.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAAC4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-09T23:08:47.001Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "EmployeesController.cs",
-              "DocumentMoniker": "C:\\Users\\marti\\Desktop\\backend-piporama\\Controllers\\EmployeesController.cs",
-              "RelativeDocumentMoniker": "Controllers\\EmployeesController.cs",
-              "ToolTip": "C:\\Users\\marti\\Desktop\\backend-piporama\\Controllers\\EmployeesController.cs",
-              "RelativeToolTip": "Controllers\\EmployeesController.cs",
-              "ViewState": "AgIAAEwAAAAAAAAAAAAcwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-09T23:08:39.188Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\marti\\Desktop\\backend-piporama\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\marti\\Desktop\\backend-piporama\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAgAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-11-09T23:08:09.889Z",
+              "WhenOpened": "2025-11-12T00:48:29.066Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "ClientsController.cs",
-              "DocumentMoniker": "C:\\Users\\marti\\Desktop\\backend-piporama\\Controllers\\ClientsController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ClientsController.cs",
-              "ToolTip": "C:\\Users\\marti\\Desktop\\backend-piporama\\Controllers\\ClientsController.cs",
-              "RelativeToolTip": "Controllers\\ClientsController.cs",
+              "Title": "ComboDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Hp 15-Ef2514\\OneDrive\\Escritorio\\PIPORAMA\\Data\\DTOs\\Additional\\ComboDTO.cs",
+              "RelativeDocumentMoniker": "Data\\DTOs\\Additional\\ComboDTO.cs",
+              "ToolTip": "C:\\Users\\Hp 15-Ef2514\\OneDrive\\Escritorio\\PIPORAMA\\Data\\DTOs\\Additional\\ComboDTO.cs",
+              "RelativeToolTip": "Data\\DTOs\\Additional\\ComboDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T00:45:10.603Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IAdditionalRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Hp 15-Ef2514\\OneDrive\\Escritorio\\PIPORAMA\\Repositories\\Interfaces\\IAdditionalRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\Interfaces\\IAdditionalRepository.cs",
+              "ToolTip": "C:\\Users\\Hp 15-Ef2514\\OneDrive\\Escritorio\\PIPORAMA\\Repositories\\Interfaces\\IAdditionalRepository.cs",
+              "RelativeToolTip": "Repositories\\Interfaces\\IAdditionalRepository.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAA8wBcAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T00:44:22.454Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IAdditionalService.cs",
+              "DocumentMoniker": "C:\\Users\\Hp 15-Ef2514\\OneDrive\\Escritorio\\PIPORAMA\\Services\\Interfaces\\IAdditionalService.cs",
+              "RelativeDocumentMoniker": "Services\\Interfaces\\IAdditionalService.cs",
+              "ToolTip": "C:\\Users\\Hp 15-Ef2514\\OneDrive\\Escritorio\\PIPORAMA\\Services\\Interfaces\\IAdditionalService.cs",
+              "RelativeToolTip": "Services\\Interfaces\\IAdditionalService.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABYAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T00:44:18.05Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PIPORAMAContext.cs",
+              "DocumentMoniker": "C:\\Users\\Hp 15-Ef2514\\OneDrive\\Escritorio\\PIPORAMA\\Data\\Models\\PIPORAMAContext.cs",
+              "RelativeDocumentMoniker": "Data\\Models\\PIPORAMAContext.cs",
+              "ToolTip": "C:\\Users\\Hp 15-Ef2514\\OneDrive\\Escritorio\\PIPORAMA\\Data\\Models\\PIPORAMAContext.cs",
+              "RelativeToolTip": "Data\\Models\\PIPORAMAContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-09T23:08:37.601Z"
+              "WhenOpened": "2025-11-12T00:44:00.631Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AdditionalRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Hp 15-Ef2514\\OneDrive\\Escritorio\\PIPORAMA\\Repositories\\Implementations\\AdditionalRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\Implementations\\AdditionalRepository.cs",
+              "ToolTip": "C:\\Users\\Hp 15-Ef2514\\OneDrive\\Escritorio\\PIPORAMA\\Repositories\\Implementations\\AdditionalRepository.cs",
+              "RelativeToolTip": "Repositories\\Implementations\\AdditionalRepository.cs",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAcwFUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T00:38:38.082Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AdditionalService.cs",
+              "DocumentMoniker": "C:\\Users\\Hp 15-Ef2514\\OneDrive\\Escritorio\\PIPORAMA\\Services\\Implementations\\AdditionalService.cs",
+              "RelativeDocumentMoniker": "Services\\Implementations\\AdditionalService.cs",
+              "ToolTip": "C:\\Users\\Hp 15-Ef2514\\OneDrive\\Escritorio\\PIPORAMA\\Services\\Implementations\\AdditionalService.cs",
+              "RelativeToolTip": "Services\\Implementations\\AdditionalService.cs",
+              "ViewState": "AgIAAGUAAAAAAAAAAAAuwHQAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T00:37:11.834Z",
+              "EditorCaption": ""
             }
           ]
         }

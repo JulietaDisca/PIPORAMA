@@ -13,9 +13,9 @@ public partial class DetallesCombo
 
     public int IdConsumible { get; set; }
 
-    public int Cantidad { get; set; }
+    public int? Cantidad { get; set; }
 
-    public int PreUnitario { get; set; }
+    public int? PreUnitario { get; set; }
 
     public virtual Combo IdComboNavigation { get; set; }
 

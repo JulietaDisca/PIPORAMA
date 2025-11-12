@@ -21,7 +21,7 @@ public partial class Funcione
 
     public int IdIdioma { get; set; }
 
-    public int? Precio { get; set; }
+    public int Precio { get; set; }
 
     public virtual ICollection<Entrada> Entrada { get; set; } = new List<Entrada>();
 
