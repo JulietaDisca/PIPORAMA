@@ -52,8 +52,8 @@ builder.Services.AddScoped<IAdditionalRepository, AdditionalRepository>();
 builder.Services.AddScoped<IAdditionalService, AdditionalService>();
 
 /* INYECCION DASHBOARD JULI*/
-//builder.Services.AddScoped<IDashboardRepository, DashboardRepository>();
-//builder.Services.AddScoped<IDashboardService, DashboardService>();
+builder.Services.AddScoped<IDashboardRepository, DashboardRepository>();
+builder.Services.AddScoped<IDashboardService, DashboardService>();
 
 builder.Services.AddDbContext<PIPORAMAContext>(options =>
 options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
