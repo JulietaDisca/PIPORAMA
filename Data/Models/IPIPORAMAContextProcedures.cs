@@ -13,18 +13,18 @@ namespace TP_ProgramaciónII_PIPORAMA.Data.Models
 {
     public partial interface IPIPORAMAContextProcedures
     {
-        Task<List<ClientesFrecuentesResult>> ClientesFrecuentesAsync(OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default);
-        Task<List<ConsumiblesMasVendidosResult>> ConsumiblesMasVendidosAsync(OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default);
-        Task<List<EntradasRecaudacionXDiaResult>> EntradasRecaudacionXDiaAsync(OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default);
-        Task<List<FuncionesXHorarioResult>> FuncionesXHorarioAsync(OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default);
-        Task<List<PeliculasEnCarteleraResult>> PeliculasEnCarteleraAsync(OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default);
-        Task<List<PeliculasMasVistasResult>> PeliculasMasVistasAsync(OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default);
-        Task<List<PromedioEntradasPorSalaResult>> PromedioEntradasPorSalaAsync(OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default);
-        Task<List<ProximasFuncionesResult>> ProximasFuncionesAsync(OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default);
-        Task<List<RecaudacionTotalResult>> RecaudacionTotalAsync(OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default);
-        Task<List<RecaudacionXPeliculaResult>> RecaudacionXPeliculaAsync(OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default);
-        Task<List<RecaudacónTotalCombosResult>> RecaudacónTotalCombosAsync(OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default);
-        Task<List<TotalClientesRegistradosResult>> TotalClientesRegistradosAsync(OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default);
-        Task<List<TotalEntradasVendidasResult>> TotalEntradasVendidasAsync(OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default);
+        Task<List<SP_ClientesFrecuentesResult>> SP_ClientesFrecuentesAsync(DateTime? fecha_inicio, DateTime? fecha_fin, int? compra, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default);
+        Task<List<SP_ConsumiblesMasVendidosResult>> SP_ConsumiblesMasVendidosAsync(DateTime? fecha_inicio, DateTime? fecha_fin, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default);
+        Task<List<SP_EntradasRecaudacionXDiaResult>> SP_EntradasRecaudacionXDiaAsync(DateTime? fecha_inicio, DateTime? fecha_fin, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default);
+        Task<List<SP_FuncionesXHorarioResult>> SP_FuncionesXHorarioAsync(OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default);
+        Task<List<SP_PeliculasEnCarteleraResult>> SP_PeliculasEnCarteleraAsync(OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default);
+        Task<List<SP_PeliculasMasVistasResult>> SP_PeliculasMasVistasAsync(DateTime? fecha_inicio, DateTime? fecha_fin, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default);
+        Task<List<SP_PromedioEntradasPorSalaResult>> SP_PromedioEntradasPorSalaAsync(DateTime? fecha_inicio, DateTime? fecha_fin, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default);
+        Task<List<SP_ProximasFuncionesResult>> SP_ProximasFuncionesAsync(OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default);
+        Task<List<SP_RecaudacionTotalResult>> SP_RecaudacionTotalAsync(OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default);
+        Task<List<SP_RecaudacionXPeliculaResult>> SP_RecaudacionXPeliculaAsync(int? pelicula, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default);
+        Task<List<SP_RecaudacónTotalCombosResult>> SP_RecaudacónTotalCombosAsync(DateTime? fecha_inicio, DateTime? fecha_fin, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default);
+        Task<List<SP_TotalClientesRegistradosResult>> SP_TotalClientesRegistradosAsync(OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default);
+        Task<List<SP_TotalEntradasVendidasResult>> SP_TotalEntradasVendidasAsync(OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default);
     }
 }

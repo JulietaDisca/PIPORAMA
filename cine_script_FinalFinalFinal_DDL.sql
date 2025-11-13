@@ -1,10 +1,10 @@
 -- Script SQL Server: CineDB
 -- Todas las PK creadas con CONSTRAINT y con IDENTITY para los id que sean primary key
 
-CREATE DATABASE Piporama_El_Fin;
+CREATE DATABASE PIPORAMA;
 GO
 
-USE Piporama_El_Fin;
+USE PIPORAMA;
 GO
 
 -- TABLAS DE CATEGORIZACIÓN Y REFERENCIA

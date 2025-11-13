@@ -6,9 +6,10 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace TP_ProgramaciónII_PIPORAMA.Data.Models
 {
-    public partial class RecaudacionTotalResult
+    public partial class SP_RecaudacionTotalResult
     {
         [Column("Recaudacion Total")]
-        public double? RecaudacionTotal { get; set; }
+        [StringLength(30)]
+        public string RecaudacionTotal { get; set; }
     }
 }

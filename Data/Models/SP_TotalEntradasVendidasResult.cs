@@ -6,10 +6,9 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace TP_ProgramaciónII_PIPORAMA.Data.Models
 {
-    public partial class PeliculasMasVistasResult
+    public partial class SP_TotalEntradasVendidasResult
     {
-        [StringLength(100)]
-        public string nom_pelicula { get; set; }
-        public int? total_entradas { get; set; }
+        [Column("Entradas Vendidas")]
+        public int? EntradasVendidas { get; set; }
     }
 }

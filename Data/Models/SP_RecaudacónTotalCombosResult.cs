@@ -6,10 +6,11 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace TP_ProgramaciónII_PIPORAMA.Data.Models
 {
-    public partial class FuncionesXHorarioResult
+    public partial class SP_RecaudacónTotalCombosResult
     {
-        [StringLength(9)]
-        public string franja_horaria { get; set; }
-        public int? cantidad_funciones { get; set; }
+        [StringLength(60)]
+        public string nom_combo { get; set; }
+        [StringLength(30)]
+        public string recaudacion_total { get; set; }
     }
 }

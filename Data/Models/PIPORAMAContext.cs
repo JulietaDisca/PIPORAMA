@@ -51,6 +51,8 @@ public partial class PIPORAMAContext : DbContext
 
     public virtual DbSet<Funcione> Funciones { get; set; }
 
+    public virtual DbSet<FuncionesXhorario> FuncionesXhorarios { get; set; }
+
     public virtual DbSet<Genero> Generos { get; set; }
 
     public virtual DbSet<Idioma> Idiomas { get; set; }
@@ -516,6 +518,20 @@ public partial class PIPORAMAContext : DbContext
                 .HasForeignKey(d => d.IdTipoProyeccion)
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK_funciones_tipo_proyeccion");
+        });
+
+        modelBuilder.Entity<FuncionesXhorario>(entity =>
+        {
+            entity
+                .HasNoKey()
+                .ToView("FuncionesXHorario");
+
+            entity.Property(e => e.CantidadFunciones).HasColumnName("cantidad_funciones");
+            entity.Property(e => e.FranjaHoraria)
+                .IsRequired()
+                .HasMaxLength(9)
+                .IsUnicode(false)
+                .HasColumnName("franja_horaria");
         });
 
         modelBuilder.Entity<Genero>(entity =>

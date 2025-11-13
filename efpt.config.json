@@ -152,55 +152,59 @@
          "ObjectType": 0
       },
       {
-         "Name": "[dbo].[ClientesFrecuentes]",
-         "ObjectType": 1
-      },
-      {
-         "Name": "[dbo].[ConsumiblesMasVendidos]",
-         "ObjectType": 1
-      },
-      {
-         "Name": "[dbo].[EntradasRecaudacionXDia]",
-         "ObjectType": 1
-      },
-      {
          "Name": "[dbo].[FuncionesXHorario]",
+         "ObjectType": 3
+      },
+      {
+         "Name": "[dbo].[SP_ClientesFrecuentes]",
          "ObjectType": 1
       },
       {
-         "Name": "[dbo].[PeliculasEnCartelera]",
+         "Name": "[dbo].[SP_ConsumiblesMasVendidos]",
          "ObjectType": 1
       },
       {
-         "Name": "[dbo].[PeliculasMasVistas]",
+         "Name": "[dbo].[SP_EntradasRecaudacionXDia]",
          "ObjectType": 1
       },
       {
-         "Name": "[dbo].[PromedioEntradasPorSala]",
+         "Name": "[dbo].[SP_FuncionesXHorario]",
          "ObjectType": 1
       },
       {
-         "Name": "[dbo].[ProximasFunciones]",
+         "Name": "[dbo].[SP_PeliculasEnCartelera]",
          "ObjectType": 1
       },
       {
-         "Name": "[dbo].[RecaudacionTotal]",
+         "Name": "[dbo].[SP_PeliculasMasVistas]",
          "ObjectType": 1
       },
       {
-         "Name": "[dbo].[RecaudacionXPelicula]",
+         "Name": "[dbo].[SP_PromedioEntradasPorSala]",
          "ObjectType": 1
       },
       {
-         "Name": "[dbo].[RecaudacónTotalCombos]",
+         "Name": "[dbo].[SP_ProximasFunciones]",
          "ObjectType": 1
       },
       {
-         "Name": "[dbo].[TotalClientesRegistrados]",
+         "Name": "[dbo].[SP_RecaudacionTotal]",
          "ObjectType": 1
       },
       {
-         "Name": "[dbo].[TotalEntradasVendidas]",
+         "Name": "[dbo].[SP_RecaudacionXPelicula]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[SP_RecaudacónTotalCombos]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[SP_TotalClientesRegistrados]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[SP_TotalEntradasVendidas]",
          "ObjectType": 1
       }
    ],

@@ -14,7 +14,6 @@ namespace TP_ProgramaciónII_PIPORAMA.Data.Models
 {
     public static class DbContextExtensions
     {
-        [Obsolete("This method is obsolete and will be removed in the future.  Use SqlQueryToListAsync<T> instead when returning results.  Use dbContext.Database.ExecuteSqlRawAsync for calls with no results.")]
         public static async Task<List<T>> SqlQueryAsync<T>(this DbContext db, string sql, object[] parameters = null, CancellationToken? cancellationToken = default)
            where T : class
         {
@@ -29,17 +28,9 @@ namespace TP_ProgramaciónII_PIPORAMA.Data.Models
             }
             else
             {
-                await db.Database.ExecuteSqlRawAsync(sql, parameters, cancellationToken);
+                await db.Database.ExecuteSqlRawAsync(sql, parameters, cancellationToken.Value);
                 return default;
             }
-        }
-        
-        public static async Task<List<T>> SqlQueryToListAsync<T>(this DbContext db, string sql, object[] parameters = null, CancellationToken? cancellationToken = default)
-            where T : class
-        {
-            return await db.Database
-                .SqlQueryRaw<T>(sql, parameters ?? Array.Empty<object>())
-                .ToListAsync(cancellationToken ?? CancellationToken.None);
         }
     }
 

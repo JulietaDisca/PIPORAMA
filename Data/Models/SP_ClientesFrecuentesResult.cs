@@ -6,11 +6,12 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace TP_ProgramaciónII_PIPORAMA.Data.Models
 {
-    public partial class ConsumiblesMasVendidosResult
+    public partial class SP_ClientesFrecuentesResult
     {
         [StringLength(80)]
-        public string nom_consumible { get; set; }
-        public int? total_vendido { get; set; }
-        public int? ingresos_generados { get; set; }
+        public string nom_cliente { get; set; }
+        [StringLength(40)]
+        public string ape_cliente { get; set; }
+        public int? total_compras { get; set; }
     }
 }

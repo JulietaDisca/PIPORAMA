@@ -14,69 +14,69 @@ namespace TP_ProgramaciónII_PIPORAMA.Repositories.Implementations
             _context = context;
         }
 
-        public async Task<IEnumerable<FuncionesXHorarioResult>> GetCantidadFuncionesPorFranjaHoraria()
+        public async Task<IEnumerable<SP_FuncionesXHorarioResult>> GetCantidadFuncionesPorFranjaHoraria()
         {
-            return await _context.Procedures.FuncionesXHorarioAsync();
+            return await _context.Procedures.SP_FuncionesXHorarioAsync();
         }
 
-        public async Task<IEnumerable<ClientesFrecuentesResult>> GetClientesFrecuentes()
+        public async Task<IEnumerable<SP_ClientesFrecuentesResult>> GetClientesFrecuentes(DateTime? fechaInicio, DateTime? fechaFin, int? compra)
         {
-            return await _context.Procedures.ClientesFrecuentesAsync();
+            return await _context.Procedures.SP_ClientesFrecuentesAsync(fechaInicio,fechaFin,compra);
         }
 
-        public async Task<IEnumerable<EntradasRecaudacionXDiaResult>> GetEntradasRecaudaciónXDia()
+        public async Task<IEnumerable<SP_EntradasRecaudacionXDiaResult>> GetEntradasRecaudaciónXDia(DateTime? fechaInicio, DateTime? fechaFin)
         {
-            return await _context.Procedures.EntradasRecaudacionXDiaAsync();
+            return await _context.Procedures.SP_EntradasRecaudacionXDiaAsync(fechaInicio, fechaFin);
         }
 
-        public async Task<IEnumerable<PeliculasEnCarteleraResult>> GetPeliculasEnCartelera()
+        public async Task<IEnumerable<SP_PeliculasEnCarteleraResult>> GetPeliculasEnCartelera()
         {
-            return await _context.Procedures.PeliculasEnCarteleraAsync();
+            return await _context.Procedures.SP_PeliculasEnCarteleraAsync();
         }
 
-        public async Task<IEnumerable<PeliculasMasVistasResult>> GetPelículasMásVistas()
+        public async Task<IEnumerable<SP_PeliculasMasVistasResult>> GetPelículasMásVistas(DateTime? fechaInicio, DateTime? fechaFin)
         {
-            return await _context.Procedures.PeliculasMasVistasAsync();
+            return await _context.Procedures.SP_PeliculasMasVistasAsync(fechaInicio,fechaFin);
         }
 
-        public async Task<IEnumerable<ConsumiblesMasVendidosResult>> GetProductosMásVendidos()
+        public async Task<IEnumerable<SP_ConsumiblesMasVendidosResult>> GetProductosMásVendidos(DateTime? fechaInicio, DateTime? fechaFin)
         {
-            return await _context.Procedures.ConsumiblesMasVendidosAsync();
+            return await _context.Procedures.SP_ConsumiblesMasVendidosAsync(fechaInicio,fechaFin);
         }
 
-        public async Task<IEnumerable<PromedioEntradasPorSalaResult>> GetPromedioEntradasVendidasXSala()
+        public async Task<IEnumerable<SP_PromedioEntradasPorSalaResult>> GetPromedioEntradasVendidasXSala(DateTime? fechaInicio, DateTime? fechaFin)
         {
-            return await _context.Procedures.PromedioEntradasPorSalaAsync();
+            return await _context.Procedures.SP_PromedioEntradasPorSalaAsync(fechaInicio,fechaFin);
         }
 
-        public async Task<IEnumerable<ProximasFuncionesResult>> GetPróximasFunciones()
+        public async Task<IEnumerable<SP_ProximasFuncionesResult>> GetPróximasFunciones()
         {
-            return await _context.Procedures.ProximasFuncionesAsync();
+            return await _context.Procedures.SP_ProximasFuncionesAsync();
         }
 
-        public async Task<IEnumerable<RecaudacionTotalResult>> GetRecaudacionTotal()
+        public async Task<IEnumerable<SP_RecaudacionTotalResult>> GetRecaudacionTotal()
         {
-            return await _context.Procedures.RecaudacionTotalAsync();
+            return await _context.Procedures.SP_RecaudacionTotalAsync();
         }
 
-        public async Task<IEnumerable<RecaudacónTotalCombosResult>> GetRecaudacionTotalCombos()
+        public async Task<IEnumerable<SP_RecaudacónTotalCombosResult>> GetRecaudacionTotalCombos(DateTime? fechaInicio, DateTime? fechaFin)
         {
-            return await _context.Procedures.RecaudacónTotalCombosAsync();
+            return await _context.Procedures.SP_RecaudacónTotalCombosAsync(fechaInicio,fechaFin);
         }
 
-        public async Task<IEnumerable<RecaudacionXPeliculaResult>> GetRecaudaciónTotalXPelícula()
+        public async Task<IEnumerable<SP_RecaudacionXPeliculaResult>> GetRecaudaciónTotalXPelícula(int? pelicula)
         {
-            return await _context.Procedures.RecaudacionXPeliculaAsync();
+            return await _context.Procedures.SP_RecaudacionXPeliculaAsync(pelicula);
         }
 
-        public async Task<IEnumerable<TotalClientesRegistradosResult>> GetTotalClientesRegistrados()
+        public async Task<IEnumerable<SP_TotalClientesRegistradosResult>> GetTotalClientesRegistrados()
         {
-            return await _context.Procedures.TotalClientesRegistradosAsync();
+            return await _context.Procedures.SP_TotalClientesRegistradosAsync();
         }
 
-        public async Task<IEnumerable<TotalEntradasVendidasResult>> GetTotalEntradasVendidas()
+        public async Task<IEnumerable<SP_TotalEntradasVendidasResult>> GetTotalEntradasVendidas()
         {
-            return await _context.Procedures.TotalEntradasVendidasAsync();
+            return await _context.Procedures.SP_TotalEntradasVendidasAsync();
         }
 
 

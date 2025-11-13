@@ -1,34 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Hp 15-Ef2514\\OneDrive\\Escritorio\\PIPORAMA\\",
+  "WorkspaceRootPath": "C:\\Users\\jmtor\\OneDrive\\Escritorio\\Programming\\2025\\ProgII\\PIPORAMA\\PIPORAMA\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|c:\\users\\hp 15-ef2514\\onedrive\\escritorio\\piporama\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|c:\\users\\jmtor\\onedrive\\escritorio\\programming\\2025\\progii\\piporama\\piporama\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|solutionrelative:controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|c:\\users\\hp 15-ef2514\\onedrive\\escritorio\\piporama\\services\\implementations\\additionalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|solutionrelative:services\\implementations\\additionalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|c:\\users\\jmtor\\onedrive\\escritorio\\programming\\2025\\progii\\piporama\\piporama\\repositories\\implementations\\dashboardrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|solutionrelative:repositories\\implementations\\dashboardrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|c:\\users\\hp 15-ef2514\\onedrive\\escritorio\\piporama\\repositories\\implementations\\additionalrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|solutionrelative:repositories\\implementations\\additionalrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|c:\\users\\jmtor\\onedrive\\escritorio\\programming\\2025\\progii\\piporama\\piporama\\repositories\\interfaces\\idashboardrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|solutionrelative:repositories\\interfaces\\idashboardrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|c:\\users\\hp 15-ef2514\\onedrive\\escritorio\\piporama\\repositories\\interfaces\\iadditionalrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|solutionrelative:repositories\\interfaces\\iadditionalrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|c:\\users\\jmtor\\onedrive\\escritorio\\programming\\2025\\progii\\piporama\\piporama\\services\\implementations\\dashboardservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|solutionrelative:services\\implementations\\dashboardservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|c:\\users\\hp 15-ef2514\\onedrive\\escritorio\\piporama\\data\\dtos\\additional\\combodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|solutionrelative:data\\dtos\\additional\\combodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|c:\\users\\jmtor\\onedrive\\escritorio\\programming\\2025\\progii\\piporama\\piporama\\services\\interfaces\\idashboardservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|solutionrelative:services\\interfaces\\idashboardservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|c:\\users\\hp 15-ef2514\\onedrive\\escritorio\\piporama\\services\\interfaces\\iadditionalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|solutionrelative:services\\interfaces\\iadditionalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|c:\\users\\hp 15-ef2514\\onedrive\\escritorio\\piporama\\data\\models\\piporamacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|solutionrelative:data\\models\\piporamacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|c:\\users\\jmtor\\onedrive\\escritorio\\programming\\2025\\progii\\piporama\\piporama\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E7753E92-A35F-4D67-BA75-6DF7502B6A4E}|TP_Programaci\u00F3nII_PIPORAMA.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,97 +34,84 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\jmtor\\OneDrive\\Escritorio\\Programming\\2025\\ProgII\\PIPORAMA\\PIPORAMA\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\jmtor\\OneDrive\\Escritorio\\Programming\\2025\\ProgII\\PIPORAMA\\PIPORAMA\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-13T21:57:34.984Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Hp 15-Ef2514\\OneDrive\\Escritorio\\PIPORAMA\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\Hp 15-Ef2514\\OneDrive\\Escritorio\\PIPORAMA\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAAADcAAAAAAAAAAAAAAA==",
+              "Title": "DashboardController.cs",
+              "DocumentMoniker": "C:\\Users\\jmtor\\OneDrive\\Escritorio\\Programming\\2025\\ProgII\\PIPORAMA\\PIPORAMA\\Controllers\\DashboardController.cs",
+              "RelativeDocumentMoniker": "Controllers\\DashboardController.cs",
+              "ToolTip": "C:\\Users\\jmtor\\OneDrive\\Escritorio\\Programming\\2025\\ProgII\\PIPORAMA\\PIPORAMA\\Controllers\\DashboardController.cs*",
+              "RelativeToolTip": "Controllers\\DashboardController.cs*",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAmwG0AAABuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-12T00:48:29.066Z",
+              "WhenOpened": "2025-11-13T21:54:54.746Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "ComboDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Hp 15-Ef2514\\OneDrive\\Escritorio\\PIPORAMA\\Data\\DTOs\\Additional\\ComboDTO.cs",
-              "RelativeDocumentMoniker": "Data\\DTOs\\Additional\\ComboDTO.cs",
-              "ToolTip": "C:\\Users\\Hp 15-Ef2514\\OneDrive\\Escritorio\\PIPORAMA\\Data\\DTOs\\Additional\\ComboDTO.cs",
-              "RelativeToolTip": "Data\\DTOs\\Additional\\ComboDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAATAAAAAAAAAA==",
+              "Title": "IDashboardService.cs",
+              "DocumentMoniker": "C:\\Users\\jmtor\\OneDrive\\Escritorio\\Programming\\2025\\ProgII\\PIPORAMA\\PIPORAMA\\Services\\Interfaces\\IDashboardService.cs",
+              "RelativeDocumentMoniker": "Services\\Interfaces\\IDashboardService.cs",
+              "ToolTip": "C:\\Users\\jmtor\\OneDrive\\Escritorio\\Programming\\2025\\ProgII\\PIPORAMA\\PIPORAMA\\Services\\Interfaces\\IDashboardService.cs",
+              "RelativeToolTip": "Services\\Interfaces\\IDashboardService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAABlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-12T00:45:10.603Z",
+              "WhenOpened": "2025-11-13T21:50:39.644Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "IAdditionalRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Hp 15-Ef2514\\OneDrive\\Escritorio\\PIPORAMA\\Repositories\\Interfaces\\IAdditionalRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\Interfaces\\IAdditionalRepository.cs",
-              "ToolTip": "C:\\Users\\Hp 15-Ef2514\\OneDrive\\Escritorio\\PIPORAMA\\Repositories\\Interfaces\\IAdditionalRepository.cs",
-              "RelativeToolTip": "Repositories\\Interfaces\\IAdditionalRepository.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAA8wBcAAAAZAAAAAAAAAA==",
+              "Title": "DashboardService.cs",
+              "DocumentMoniker": "C:\\Users\\jmtor\\OneDrive\\Escritorio\\Programming\\2025\\ProgII\\PIPORAMA\\PIPORAMA\\Services\\Implementations\\DashboardService.cs",
+              "RelativeDocumentMoniker": "Services\\Implementations\\DashboardService.cs",
+              "ToolTip": "C:\\Users\\jmtor\\OneDrive\\Escritorio\\Programming\\2025\\ProgII\\PIPORAMA\\PIPORAMA\\Services\\Implementations\\DashboardService.cs",
+              "RelativeToolTip": "Services\\Implementations\\DashboardService.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwCwAAACJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-12T00:44:22.454Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "IAdditionalService.cs",
-              "DocumentMoniker": "C:\\Users\\Hp 15-Ef2514\\OneDrive\\Escritorio\\PIPORAMA\\Services\\Interfaces\\IAdditionalService.cs",
-              "RelativeDocumentMoniker": "Services\\Interfaces\\IAdditionalService.cs",
-              "ToolTip": "C:\\Users\\Hp 15-Ef2514\\OneDrive\\Escritorio\\PIPORAMA\\Services\\Interfaces\\IAdditionalService.cs",
-              "RelativeToolTip": "Services\\Interfaces\\IAdditionalService.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABYAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-12T00:44:18.05Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "PIPORAMAContext.cs",
-              "DocumentMoniker": "C:\\Users\\Hp 15-Ef2514\\OneDrive\\Escritorio\\PIPORAMA\\Data\\Models\\PIPORAMAContext.cs",
-              "RelativeDocumentMoniker": "Data\\Models\\PIPORAMAContext.cs",
-              "ToolTip": "C:\\Users\\Hp 15-Ef2514\\OneDrive\\Escritorio\\PIPORAMA\\Data\\Models\\PIPORAMAContext.cs",
-              "RelativeToolTip": "Data\\Models\\PIPORAMAContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-12T00:44:00.631Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AdditionalRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Hp 15-Ef2514\\OneDrive\\Escritorio\\PIPORAMA\\Repositories\\Implementations\\AdditionalRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\Implementations\\AdditionalRepository.cs",
-              "ToolTip": "C:\\Users\\Hp 15-Ef2514\\OneDrive\\Escritorio\\PIPORAMA\\Repositories\\Implementations\\AdditionalRepository.cs",
-              "RelativeToolTip": "Repositories\\Implementations\\AdditionalRepository.cs",
-              "ViewState": "AgIAAEYAAAAAAAAAAAAcwFUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-12T00:38:38.082Z",
+              "WhenOpened": "2025-11-13T21:38:25.187Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "AdditionalService.cs",
-              "DocumentMoniker": "C:\\Users\\Hp 15-Ef2514\\OneDrive\\Escritorio\\PIPORAMA\\Services\\Implementations\\AdditionalService.cs",
-              "RelativeDocumentMoniker": "Services\\Implementations\\AdditionalService.cs",
-              "ToolTip": "C:\\Users\\Hp 15-Ef2514\\OneDrive\\Escritorio\\PIPORAMA\\Services\\Implementations\\AdditionalService.cs",
-              "RelativeToolTip": "Services\\Implementations\\AdditionalService.cs",
-              "ViewState": "AgIAAGUAAAAAAAAAAAAuwHQAAAAWAAAAAAAAAA==",
+              "Title": "DashboardRepository.cs",
+              "DocumentMoniker": "C:\\Users\\jmtor\\OneDrive\\Escritorio\\Programming\\2025\\ProgII\\PIPORAMA\\PIPORAMA\\Repositories\\Implementations\\DashboardRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\Implementations\\DashboardRepository.cs",
+              "ToolTip": "C:\\Users\\jmtor\\OneDrive\\Escritorio\\Programming\\2025\\ProgII\\PIPORAMA\\PIPORAMA\\Repositories\\Implementations\\DashboardRepository.cs",
+              "RelativeToolTip": "Repositories\\Implementations\\DashboardRepository.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAqwEQAAABUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-12T00:37:11.834Z",
+              "WhenOpened": "2025-11-13T21:35:54.537Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IDashboardRepository.cs",
+              "DocumentMoniker": "C:\\Users\\jmtor\\OneDrive\\Escritorio\\Programming\\2025\\ProgII\\PIPORAMA\\PIPORAMA\\Repositories\\Interfaces\\IDashboardRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\Interfaces\\IDashboardRepository.cs",
+              "ToolTip": "C:\\Users\\jmtor\\OneDrive\\Escritorio\\Programming\\2025\\ProgII\\PIPORAMA\\PIPORAMA\\Repositories\\Interfaces\\IDashboardRepository.cs",
+              "RelativeToolTip": "Repositories\\Interfaces\\IDashboardRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T21:32:14.912Z",
               "EditorCaption": ""
             }
           ]

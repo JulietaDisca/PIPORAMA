@@ -6,16 +6,10 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace TP_ProgramaciónII_PIPORAMA.Data.Models
 {
-    public partial class ProximasFuncionesResult
+    public partial class SP_PeliculasMasVistasResult
     {
         [StringLength(100)]
         public string nom_pelicula { get; set; }
-        [StringLength(40)]
-        public string nom_sala { get; set; }
-        public DateTime? horario { get; set; }
-        [StringLength(20)]
-        public string idioma { get; set; }
-        [StringLength(20)]
-        public string tipo_proyeccion { get; set; }
+        public int? total_entradas { get; set; }
     }
 }

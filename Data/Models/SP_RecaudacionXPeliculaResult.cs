@@ -6,14 +6,12 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace TP_ProgramaciónII_PIPORAMA.Data.Models
 {
-    public partial class PromedioEntradasPorSalaResult
+    public partial class SP_RecaudacionXPeliculaResult
     {
-        [StringLength(40)]
-        public string nom_sala { get; set; }
-        public int? funciones { get; set; }
+        [StringLength(100)]
+        public string pelicula { get; set; }
+        [StringLength(30)]
+        public string recaudacion_total { get; set; }
         public int? entradas_vendidas { get; set; }
-        public int? cant_butacas { get; set; }
-        [Column("ocupacion_promedio", TypeName = "decimal(26,12)")]
-        public decimal? ocupacion_promedio { get; set; }
     }
 }

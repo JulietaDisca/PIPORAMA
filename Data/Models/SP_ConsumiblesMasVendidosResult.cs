@@ -6,11 +6,11 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace TP_ProgramaciónII_PIPORAMA.Data.Models
 {
-    public partial class RecaudacionXPeliculaResult
+    public partial class SP_ConsumiblesMasVendidosResult
     {
-        [StringLength(100)]
-        public string pelicula { get; set; }
-        public double? recaudacion_total { get; set; }
-        public int? entradas_vendidas { get; set; }
+        [StringLength(80)]
+        public string nom_consumible { get; set; }
+        [StringLength(30)]
+        public string total_vendido { get; set; }
     }
 }

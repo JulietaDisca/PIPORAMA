@@ -1,47 +1,70 @@
 ﻿--🎟️ 1. Rendimiento general
 
-use Piporama_El_Fin
-
+use PIPORAMA
+GO
 --1.1 Entradas vendidas por día – Muestra cuántas entradas se vendieron y la recaudación total diaria.
-CREATE PROCEDURE EntradasRecaudacionXDia
+CREATE OR ALTER PROCEDURE SP_EntradasRecaudacionXDia
+@fecha_inicio datetime = NULL,
+@fecha_fin datetime = NULL
 AS
 BEGIN
 SELECT 
-    CAST(f.horario AS date) AS fecha,
+    CAST(fac.fecha AS date) AS fecha,
     COUNT(e.id_entrada) AS entradas_vendidas,
-    SUM(df.precio) AS recaudacion_total
+    CONVERT(VARCHAR, CONVERT(VARCHAR, CAST(SUM(df.precio) AS MONEY), 1)) AS recaudacion_total
 FROM funciones f
 JOIN entradas e ON f.id_funcion = e.id_funcion
 JOIN detalles_factura df ON df.id_entrada = e.id_entrada
-GROUP BY CAST(f.horario AS date)
-ORDER BY fecha DESC;
+join facturas fac on fac.id_factura= df.id_factura
+where
+(@fecha_inicio is null or @fecha_fin is null or fac.fecha between @fecha_inicio and dateadd(day,1,@fecha_fin))
+GROUP BY CAST(fac.fecha AS date)
+ORDER BY fecha ASC;
 END
-
-EXEC dbo.EntradasRecaudacionXDia
+GO
 
 --1.2 Recaudación total por película – Indica qué películas generaron más ingresos.
-CREATE PROCEDURE RecaudacionXPelicula
+CREATE OR ALTER PROCEDURE SP_RecaudacionXPelicula
+@pelicula INT = null
 AS
 BEGIN
-SELECT 
-    p.nom_pelicula AS pelicula,
-    SUM(df.precio) AS recaudacion_total,
-    COUNT(e.id_entrada) AS entradas_vendidas
-FROM peliculas p
-JOIN funciones f ON f.id_pelicula = p.id_pelicula
-JOIN entradas e ON e.id_funcion = f.id_funcion
-JOIN detalles_factura df ON df.id_entrada = e.id_entrada
-WHERE df.id_entrada IS NOT NULL
-GROUP BY p.nom_pelicula
-ORDER BY recaudacion_total DESC
+IF (@pelicula is null)
+begin
+        SELECT 
+            p.nom_pelicula AS pelicula,
+            CONVERT(VARCHAR, CONVERT(VARCHAR, CAST(SUM(df.precio) AS MONEY), 1)) AS recaudacion_total,
+            COUNT(e.id_entrada) AS entradas_vendidas
+        FROM peliculas p
+            JOIN funciones f ON f.id_pelicula = p.id_pelicula
+            JOIN entradas e ON e.id_funcion = f.id_funcion
+            JOIN detalles_factura df ON df.id_entrada = e.id_entrada
+        WHERE df.id_entrada IS NOT NULL
+        GROUP BY p.nom_pelicula
+        ORDER BY recaudacion_total DESC
+end
+else
+begin
+        SELECT 
+            p.nom_pelicula AS pelicula,
+            CONVERT(VARCHAR, CONVERT(VARCHAR, CAST(SUM(df.precio) AS MONEY), 1)) AS recaudacion_total,
+            COUNT(e.id_entrada) AS entradas_vendidas
+        FROM peliculas p
+            JOIN funciones f ON f.id_pelicula = p.id_pelicula
+            JOIN entradas e ON e.id_funcion = f.id_funcion
+            JOIN detalles_factura df ON df.id_entrada = e.id_entrada
+        WHERE df.id_entrada IS NOT NULL and P.id_pelicula = @pelicula
+        GROUP BY p.nom_pelicula
+        ORDER BY recaudacion_total DESC
+end
 END
+GO
 
-EXEC dbo.RecaudacionXPelicula
 
-----------------------------------------PENDIENTEEEEEEE---------------------------------------------------
 --1.3 Promedio de entradas vendidas por función – 
 --Permite ver qué tan ocupadas están las funciones, comparando el promedio de entradas vendidas por función.
-CREATE PROCEDURE PromedioEntradasPorSala
+CREATE OR ALTER PROCEDURE SP_PromedioEntradasPorSala
+@fecha_inicio datetime = NULL,
+@fecha_fin datetime = NULL
 AS
 BEGIN
 SELECT 
@@ -57,14 +80,13 @@ SELECT
 FROM salas s
 LEFT JOIN funciones f ON s.id_sala = f.id_sala
 LEFT JOIN entradas e ON e.id_funcion = f.id_funcion
+WHERE 
+(@fecha_inicio is null or @fecha_fin is null or f.horario between @fecha_inicio and dateadd(day,1,@fecha_fin))
 GROUP BY s.nom_sala, s.cant_butacas
 ORDER BY s.nom_sala;
 END
+GO
 
-EXEC dbo.PromedioEntradasPorSala
-
-select *
-from sala_butacas
 
 --🍿 2. Películas y salas
 
@@ -72,7 +94,9 @@ from sala_butacas
 --Consultas incluidas:
 
 --2.1 Películas más vistas – Muestra las 5 películas con mayor cantidad de entradas vendidas.
-ALTER PROCEDURE PeliculasMasVistas
+CREATE OR ALTER PROCEDURE SP_PeliculasMasVistas
+@fecha_inicio datetime = NULL,
+@fecha_fin datetime = NULL
 as
 begin
 SELECT TOP 5 
@@ -81,23 +105,23 @@ SELECT TOP 5
 FROM peliculas p
 JOIN funciones fu ON p.id_pelicula = fu.id_pelicula
 JOIN entradas en ON en.id_funcion = fu.id_funcion
+where 
+(@fecha_inicio is null or @fecha_fin is null or fu.horario between @fecha_inicio and dateadd(day,1,@fecha_fin))
 GROUP BY p.nom_pelicula
 ORDER BY total_entradas DESC;
 end
-
-exec dbo.PeliculasMasVistas
+GO
 
 --🕒 3. Operaciones y horarios
 
 --Objetivo: Conocer la distribución de funciones y la programación del cine.
 --Consultas incluidas:
 
---3.1 Cantidad de funciones por franja horaria – Muestra cuántas funciones se proyectan en cada parte del día (mañana, tarde, noche, madrugada).
-CREATE OR ALTER PROCEDURE FuncionesXHorario
+
+--Primero creamos una vista
+CREATE OR ALTER VIEW FuncionesXHorario
 AS
-BEGIN
-SELECT 
-    CASE 
+SELECT CASE 
         WHEN DATEPART(HOUR, fu.horario) BETWEEN 10 AND 13 THEN 'Mañana'
         WHEN DATEPART(HOUR, fu.horario) BETWEEN 14 AND 18 THEN 'Tarde'
         WHEN DATEPART(HOUR, fu.horario) BETWEEN 19 AND 23 THEN 'Noche'
@@ -111,14 +135,29 @@ GROUP BY
         WHEN DATEPART(HOUR, fu.horario) BETWEEN 14 AND 18 THEN 'Tarde'
         WHEN DATEPART(HOUR, fu.horario) BETWEEN 19 AND 23 THEN 'Noche'
         ELSE 'Madrugada'
-    END;
-END
-EXEC dbo.FuncionesXHorario
+    END
+GO
 
---Agregar funciones entre las 10 y 13
+--3.1 Cantidad de funciones por franja horaria – Muestra cuántas funciones se proyectan en cada parte del día (mañana, tarde, noche, madrugada).
+CREATE OR ALTER PROCEDURE SP_FuncionesXHorario
+AS
+begin
+SELECT 
+    CASE
+        WHEN franja_horaria = 'Madrugada' THEN 1
+        WHEN franja_horaria = 'Mañana' THEN 2
+        WHEN franja_horaria = 'Tarde' THEN 3
+        ELSE 4
+    END AS orden,
+    vista.franja_horaria,
+    vista.cantidad_funciones
+FROM dbo.FuncionesXHorario as vista
+ORDER BY 1;
+end
+GO
 
 --3.2 Próximas funciones (desde hoy) – Lista todas las funciones programadas desde la fecha actual, incluyendo película, sala, horario, idioma y tipo de proyección.
-CREATE PROCEDURE ProximasFunciones
+CREATE OR ALTER PROCEDURE SP_ProximasFunciones
 AS 
 BEGIN
 SELECT 
@@ -135,14 +174,7 @@ JOIN tipos_proyeccion tp ON tp.id_tipo_proyeccion = fu.id_tipo_proyeccion
 WHERE fu.horario >= GETDATE()
 ORDER BY fu.horario;
 END
-
-
---NO HAY PROXIMAS FUNCIONES
-EXEC dbo.ProximasFunciones
-
---Insertar funciones futuras
-INSERT INTO funciones (id_pelicula, horario, id_sala, id_formato, id_idioma, id_tipo_proyeccion)
-VALUES (1, DATEADD(day, 1, CAST(GETDATE() AS datetime)), 2, 1, 1, 1);
+GO
 
 
 --👥 4. Clientes y comportamiento
@@ -151,40 +183,28 @@ VALUES (1, DATEADD(day, 1, CAST(GETDATE() AS datetime)), 2, 1, 1, 1);
 --Consultas incluidas:
 
 --4.1 Clientes frecuentes – Muestra los clientes que realizaron más de 5 compras de entradas.
-CREATE PROCEDURE ClientesFrecuentes
+CREATE OR ALTER PROCEDURE SP_ClientesFrecuentes
+    @fecha_inicio DATETIME = NULL,
+    @fecha_fin DATETIME = NULL,
+    @compra INT = NULL
 AS
 BEGIN
-SELECT 
-    c.nom_cliente,
-    c.ape_cliente,
-    COUNT(e.id_entrada) AS total_compras
-FROM clientes c
-JOIN facturas f ON f.id_cliente = c.id_cliente
-JOIN detalles_factura df ON df.id_factura = f.id_factura
-JOIN entradas e ON e.id_entrada = df.id_entrada
-GROUP BY c.nom_cliente, c.ape_cliente
-HAVING COUNT(e.id_entrada) > 5
-ORDER BY total_compras DESC;
+    SELECT 
+        c.nom_cliente,
+        c.ape_cliente,
+        COUNT(e.id_entrada) AS total_compras
+    FROM clientes c
+    JOIN facturas f ON f.id_cliente = c.id_cliente
+    JOIN detalles_factura df ON df.id_factura = f.id_factura
+    JOIN entradas e ON e.id_entrada = df.id_entrada
+    WHERE 
+        (@fecha_inicio IS NULL OR @fecha_fin IS NULL OR f.fecha BETWEEN @fecha_inicio AND dateadd(day,1,@fecha_fin))
+    GROUP BY c.nom_cliente, c.ape_cliente
+    HAVING 
+        (@compra IS NULL OR COUNT(e.id_entrada) > @compra)
+    ORDER BY total_compras DESC;
 END
-
-EXEC dbo.ClientesFrecuentes
-
---A
-
-
-
---4.2 Gasto promedio por cliente – Calcula cuánto gasta en promedio cada cliente en sus compras.
-/*SELECT 
-    c.nom_cliente,
-    c.ape_cliente,
-    ROUND(AVG(df.precio), 2) AS gasto_promedio
-FROM clientes c
-JOIN facturas f ON f.id_cliente = c.id_cliente
-JOIN detalles_factura df ON df.id_factura = f.id_factura
-JOIN entradas e ON e.id_entrada = df.id_entrada
-GROUP BY c.nom_cliente, c.ape_cliente
-ORDER BY gasto_promedio DESC;*/
-
+GO
 
 
 --🍔 5. Confitería y combos
@@ -193,40 +213,44 @@ ORDER BY gasto_promedio DESC;*/
 --Consultas incluidas:
 
 --5.1 Productos más vendidos TOP 5 – Indica cuáles son los consumibles con mayor cantidad de ventas y su ingreso total.
-CREATE PROCEDURE ConsumiblesMasVendidos
+CREATE OR ALTER PROCEDURE SP_ConsumiblesMasVendidos
+@fecha_inicio datetime = NULL,
+@fecha_fin datetime = NULL
 AS
 BEGIN
 SELECT TOP 5 
     co.nom_consumible,
-    SUM(dc.cantidad) AS total_vendido,
-    SUM(dc.cantidad * dc.pre_unitario) AS ingresos_generados
-FROM consumibles co
-JOIN detalles_combo dc ON co.id_consumible = dc.id_consumible
+    count(df.id_consumible),
+    CONVERT(VARCHAR, CONVERT(VARCHAR, CAST(sum(df.precio) AS MONEY), 1)) as total_vendido
+FROM detalles_factura df
+join consumibles co on co.id_consumible=df.id_consumible
+join facturas f on f.id_factura=df.id_factura
+where
+(@fecha_inicio is null or @fecha_fin is null or f.fecha between @fecha_inicio and dateadd(day,1,@fecha_fin))
 GROUP BY co.nom_consumible
-ORDER BY total_vendido DESC;
+ORDER BY sum(df.precio) DESC;
 END
-
-EXEC dbo.ConsumiblesMasVendidos
-
-select *
-from consumibles
-
+GO
 
 --5.2 Recaudación total por combos – Muestra los combos que más recaudaron en el período analizado.
-CREATE PROCEDURE RecaudacónTotalCombos
+CREATE OR ALTER PROCEDURE SP_RecaudacónTotalCombos
+@fecha_inicio datetime = NULL,
+@fecha_fin datetime = NULL
 AS 
 BEGIN
-SELECT TOP 3
+SELECT TOP 5
     c.nom_combo,
 	count(df.id_combo),
-    SUM(df.precio) AS recaudacion_total
+    CONVERT(VARCHAR, CONVERT(VARCHAR, CAST(SUM(df.precio) AS MONEY), 1)) AS recaudacion_total
 FROM combos c
 JOIN detalles_factura df ON df.id_combo = c.id_combo
+join facturas f on f.id_factura=df.id_factura
+where
+(@fecha_inicio is null or @fecha_fin is null or f.fecha between @fecha_inicio and dateadd(day,1,@fecha_fin))
 GROUP BY c.nom_combo
 ORDER BY recaudacion_total DESC
 END
-
-EXEC dbo.RecaudacónTotalCombos
+GO
 
 
 --💼 6. KPIs para tarjetas del dashboard
@@ -234,28 +258,26 @@ EXEC dbo.RecaudacónTotalCombos
 --Indicadores sugeridos:
 
 --🎟️ Total de entradas vendidas: Cantidad total de tickets emitidos.
-CREATE PROCEDURE TotalEntradasVendidas
+CREATE OR ALTER PROCEDURE SP_TotalEntradasVendidas
 AS
 BEGIN
 SELECT COUNT(e.id_entrada) 'Entradas Vendidas' 
 FROM entradas e;
 END
-
-EXEC dbo.TotalEntradasVendidas
+GO
 
 --💰 Recaudación total: Suma total de las ventas registradas.
-CREATE PROCEDURE RecaudacionTotal
+CREATE OR ALTER PROCEDURE SP_RecaudacionTotal
 AS
 BEGIN
-SELECT SUM(precio) 'Recaudacion Total'
+SELECT CONVERT(VARCHAR, CONVERT(VARCHAR, CAST(SUM(precio) AS MONEY), 1)) 'Recaudacion Total'
 FROM detalles_factura;
 END
-
-EXEC dbo.RecaudacionTotal
+GO
 
 
 --🎬 Películas activas: Cantidad de películas actualmente en cartelera.
-CREATE PROCEDURE PeliculasEnCartelera
+CREATE OR ALTER PROCEDURE SP_PeliculasEnCartelera
 AS
 BEGIN
 SELECT COUNT(p.id_pelicula) 'Peliculas Cartelera'
@@ -264,17 +286,14 @@ WHERE id_estado_peli = (SELECT ep.id_estado_peli
 						FROM estado_pelicula ep
 						WHERE estado_pelicula = 'En cartelera');
 END
-
-EXEC dbo.PeliculasEnCartelera
+GO
 
 
 --👥 Clientes registrados: Total de clientes en la base de datos.
-CREATE PROCEDURE TotalClientesRegistrados
+CREATE OR ALTER PROCEDURE SP_TotalClientesRegistrados
 AS
 BEGIN
 SELECT COUNT(c.id_cliente) 'Clientes Registrados' 
 FROM clientes c;
 END
-
-EXEC dbo.TotalClientesRegistrados
-
+GO

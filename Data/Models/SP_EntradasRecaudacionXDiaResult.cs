@@ -6,9 +6,11 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace TP_ProgramaciónII_PIPORAMA.Data.Models
 {
-    public partial class PeliculasEnCarteleraResult
+    public partial class SP_EntradasRecaudacionXDiaResult
     {
-        [Column("Peliculas Cartelera")]
-        public int? PeliculasCartelera { get; set; }
+        public DateOnly? fecha { get; set; }
+        public int? entradas_vendidas { get; set; }
+        [StringLength(30)]
+        public string recaudacion_total { get; set; }
     }
 }

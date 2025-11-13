@@ -6,9 +6,11 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace TP_ProgramaciónII_PIPORAMA.Data.Models
 {
-    public partial class TotalClientesRegistradosResult
+    public partial class SP_FuncionesXHorarioResult
     {
-        [Column("Clientes Registrados")]
-        public int? ClientesRegistrados { get; set; }
+        public int orden { get; set; }
+        [StringLength(9)]
+        public string franja_horaria { get; set; }
+        public int? cantidad_funciones { get; set; }
     }
 }

@@ -17,11 +17,11 @@ namespace TP_ProgramaciónII_PIPORAMA.Controllers
 
         //1.1
         [HttpGet("EntradasRecaudacionXDia")]
-        public async Task<IActionResult> GetEntradasRecaudacionXDia()
+        public async Task<IActionResult> GetEntradasRecaudacionXDia(DateTime? fechaInicio, DateTime? fechaFin)
         {
             try
             {
-                var result = await _dashboardService.GetEntradasRecaudaciónXDia();
+                var result = await _dashboardService.GetEntradasRecaudaciónXDia(fechaInicio, fechaFin);
                 return Ok(result);
             }
             catch (Exception ex)
@@ -32,11 +32,11 @@ namespace TP_ProgramaciónII_PIPORAMA.Controllers
 
         //1.2
         [HttpGet("RecaudacionTotalXPelicula")]
-        public async Task<IActionResult> GetRecaudacionTotalXPelicula()
+        public async Task<IActionResult> GetRecaudacionTotalXPelicula(int? pelicula)
         {
             try
             {
-                var result = await _dashboardService.GetRecaudaciónTotalXPelícula();
+                var result = await _dashboardService.GetRecaudaciónTotalXPelícula(pelicula);
                 return Ok(result);
             }
             catch (Exception ex)
@@ -47,11 +47,11 @@ namespace TP_ProgramaciónII_PIPORAMA.Controllers
 
         //1.3
         [HttpGet("PromedioEntradasVendidasXSala")]
-        public async Task<IActionResult> GetPromedioEntradasVendidasXSala()
+        public async Task<IActionResult> GetPromedioEntradasVendidasXSala(DateTime? fechaInicio, DateTime? fechaFin)
         {
             try
             {
-                var result = await _dashboardService.GetPromedioEntradasVendidasXSala();
+                var result = await _dashboardService.GetPromedioEntradasVendidasXSala(fechaInicio, fechaFin);
                 return Ok(result);
             }
             catch (Exception ex)
@@ -62,11 +62,11 @@ namespace TP_ProgramaciónII_PIPORAMA.Controllers
 
         //2.1
         [HttpGet("PeliculasMasVistas")]
-        public async Task<IActionResult> GetPeliculasMasVistas()
+        public async Task<IActionResult> GetPeliculasMasVistas(DateTime? fechaInicio, DateTime? fechaFin)
         {
             try
             {
-                var result = await _dashboardService.GetPelículasMásVistas();
+                var result = await _dashboardService.GetPelículasMásVistas(fechaInicio, fechaFin);
                 return Ok(result);
             }
             catch (Exception ex)
@@ -107,11 +107,11 @@ namespace TP_ProgramaciónII_PIPORAMA.Controllers
 
         //4.1
         [HttpGet("ClientesFrecuentes")]
-        public async Task<IActionResult> GetClientesFrecuentes()
+        public async Task<IActionResult> GetClientesFrecuentes(DateTime? fechaInicio, DateTime? fechaFin, int? compra)
         {
             try
             {
-                var result = await _dashboardService.GetClientesFrecuentes();
+                var result = await _dashboardService.GetClientesFrecuentes(fechaInicio, fechaFin, compra);
                 return Ok(result);
             }
             catch (Exception ex)
@@ -122,11 +122,11 @@ namespace TP_ProgramaciónII_PIPORAMA.Controllers
 
         //5.1
         [HttpGet("ProductosMasVendidos")]
-        public async Task<IActionResult> GetProductosMasVendidos()
+        public async Task<IActionResult> GetProductosMasVendidos(DateTime? fechaInicio, DateTime? fechaFin)
         {
             try
             {
-                var result = await _dashboardService.GetProductosMásVendidos();
+                var result = await _dashboardService.GetProductosMásVendidos(fechaInicio, fechaFin);
                 return Ok(result);
             }
             catch (Exception ex)
@@ -137,11 +137,11 @@ namespace TP_ProgramaciónII_PIPORAMA.Controllers
 
         //5.2
         [HttpGet("RecaudacionTotalCombos")]
-        public async Task<IActionResult> GetRecaudacionTotalCombos()
+        public async Task<IActionResult> GetRecaudacionTotalCombos(DateTime? fechaInicio, DateTime? fechaFin)
         {
             try
             {
-                var result = await _dashboardService.GetRecaudacionTotalCombos();
+                var result = await _dashboardService.GetRecaudacionTotalCombos(fechaInicio, fechaFin);
                 return Ok(result);
             }
             catch (Exception ex)

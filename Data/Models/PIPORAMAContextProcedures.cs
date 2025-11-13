@@ -43,7 +43,7 @@ namespace TP_ProgramaciónII_PIPORAMA.Data.Models
             _context = context;
         }
 
-        public virtual async Task<List<ClientesFrecuentesResult>> ClientesFrecuentesAsync(OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default)
+        public virtual async Task<List<SP_ClientesFrecuentesResult>> SP_ClientesFrecuentesAsync(DateTime? fecha_inicio, DateTime? fecha_fin, int? compra, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default)
         {
             var parameterreturnValue = new SqlParameter
             {
@@ -54,16 +54,34 @@ namespace TP_ProgramaciónII_PIPORAMA.Data.Models
 
             var sqlParameters = new []
             {
+                new SqlParameter
+                {
+                    ParameterName = "fecha_inicio",
+                    Value = fecha_inicio ?? Convert.DBNull,
+                    SqlDbType = System.Data.SqlDbType.DateTime,
+                },
+                new SqlParameter
+                {
+                    ParameterName = "fecha_fin",
+                    Value = fecha_fin ?? Convert.DBNull,
+                    SqlDbType = System.Data.SqlDbType.DateTime,
+                },
+                new SqlParameter
+                {
+                    ParameterName = "compra",
+                    Value = compra ?? Convert.DBNull,
+                    SqlDbType = System.Data.SqlDbType.Int,
+                },
                 parameterreturnValue,
             };
-            var _ = await _context.SqlQueryToListAsync<ClientesFrecuentesResult>("EXEC @returnValue = [dbo].[ClientesFrecuentes]", sqlParameters, cancellationToken);
+            var _ = await _context.SqlQueryAsync<SP_ClientesFrecuentesResult>("EXEC @returnValue = [dbo].[SP_ClientesFrecuentes] @fecha_inicio = @fecha_inicio, @fecha_fin = @fecha_fin, @compra = @compra", sqlParameters, cancellationToken);
 
             returnValue?.SetValue(parameterreturnValue.Value);
 
             return _;
         }
 
-        public virtual async Task<List<ConsumiblesMasVendidosResult>> ConsumiblesMasVendidosAsync(OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default)
+        public virtual async Task<List<SP_ConsumiblesMasVendidosResult>> SP_ConsumiblesMasVendidosAsync(DateTime? fecha_inicio, DateTime? fecha_fin, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default)
         {
             var parameterreturnValue = new SqlParameter
             {
@@ -74,16 +92,28 @@ namespace TP_ProgramaciónII_PIPORAMA.Data.Models
 
             var sqlParameters = new []
             {
+                new SqlParameter
+                {
+                    ParameterName = "fecha_inicio",
+                    Value = fecha_inicio ?? Convert.DBNull,
+                    SqlDbType = System.Data.SqlDbType.DateTime,
+                },
+                new SqlParameter
+                {
+                    ParameterName = "fecha_fin",
+                    Value = fecha_fin ?? Convert.DBNull,
+                    SqlDbType = System.Data.SqlDbType.DateTime,
+                },
                 parameterreturnValue,
             };
-            var _ = await _context.SqlQueryToListAsync<ConsumiblesMasVendidosResult>("EXEC @returnValue = [dbo].[ConsumiblesMasVendidos]", sqlParameters, cancellationToken);
+            var _ = await _context.SqlQueryAsync<SP_ConsumiblesMasVendidosResult>("EXEC @returnValue = [dbo].[SP_ConsumiblesMasVendidos] @fecha_inicio = @fecha_inicio, @fecha_fin = @fecha_fin", sqlParameters, cancellationToken);
 
             returnValue?.SetValue(parameterreturnValue.Value);
 
             return _;
         }
 
-        public virtual async Task<List<EntradasRecaudacionXDiaResult>> EntradasRecaudacionXDiaAsync(OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default)
+        public virtual async Task<List<SP_EntradasRecaudacionXDiaResult>> SP_EntradasRecaudacionXDiaAsync(DateTime? fecha_inicio, DateTime? fecha_fin, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default)
         {
             var parameterreturnValue = new SqlParameter
             {
@@ -94,16 +124,28 @@ namespace TP_ProgramaciónII_PIPORAMA.Data.Models
 
             var sqlParameters = new []
             {
+                new SqlParameter
+                {
+                    ParameterName = "fecha_inicio",
+                    Value = fecha_inicio ?? Convert.DBNull,
+                    SqlDbType = System.Data.SqlDbType.DateTime,
+                },
+                new SqlParameter
+                {
+                    ParameterName = "fecha_fin",
+                    Value = fecha_fin ?? Convert.DBNull,
+                    SqlDbType = System.Data.SqlDbType.DateTime,
+                },
                 parameterreturnValue,
             };
-            var _ = await _context.SqlQueryToListAsync<EntradasRecaudacionXDiaResult>("EXEC @returnValue = [dbo].[EntradasRecaudacionXDia]", sqlParameters, cancellationToken);
+            var _ = await _context.SqlQueryAsync<SP_EntradasRecaudacionXDiaResult>("EXEC @returnValue = [dbo].[SP_EntradasRecaudacionXDia] @fecha_inicio = @fecha_inicio, @fecha_fin = @fecha_fin", sqlParameters, cancellationToken);
 
             returnValue?.SetValue(parameterreturnValue.Value);
 
             return _;
         }
 
-        public virtual async Task<List<FuncionesXHorarioResult>> FuncionesXHorarioAsync(OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default)
+        public virtual async Task<List<SP_FuncionesXHorarioResult>> SP_FuncionesXHorarioAsync(OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default)
         {
             var parameterreturnValue = new SqlParameter
             {
@@ -116,14 +158,14 @@ namespace TP_ProgramaciónII_PIPORAMA.Data.Models
             {
                 parameterreturnValue,
             };
-            var _ = await _context.SqlQueryToListAsync<FuncionesXHorarioResult>("EXEC @returnValue = [dbo].[FuncionesXHorario]", sqlParameters, cancellationToken);
+            var _ = await _context.SqlQueryAsync<SP_FuncionesXHorarioResult>("EXEC @returnValue = [dbo].[SP_FuncionesXHorario]", sqlParameters, cancellationToken);
 
             returnValue?.SetValue(parameterreturnValue.Value);
 
             return _;
         }
 
-        public virtual async Task<List<PeliculasEnCarteleraResult>> PeliculasEnCarteleraAsync(OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default)
+        public virtual async Task<List<SP_PeliculasEnCarteleraResult>> SP_PeliculasEnCarteleraAsync(OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default)
         {
             var parameterreturnValue = new SqlParameter
             {
@@ -136,14 +178,14 @@ namespace TP_ProgramaciónII_PIPORAMA.Data.Models
             {
                 parameterreturnValue,
             };
-            var _ = await _context.SqlQueryToListAsync<PeliculasEnCarteleraResult>("EXEC @returnValue = [dbo].[PeliculasEnCartelera]", sqlParameters, cancellationToken);
+            var _ = await _context.SqlQueryAsync<SP_PeliculasEnCarteleraResult>("EXEC @returnValue = [dbo].[SP_PeliculasEnCartelera]", sqlParameters, cancellationToken);
 
             returnValue?.SetValue(parameterreturnValue.Value);
 
             return _;
         }
 
-        public virtual async Task<List<PeliculasMasVistasResult>> PeliculasMasVistasAsync(OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default)
+        public virtual async Task<List<SP_PeliculasMasVistasResult>> SP_PeliculasMasVistasAsync(DateTime? fecha_inicio, DateTime? fecha_fin, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default)
         {
             var parameterreturnValue = new SqlParameter
             {
@@ -154,16 +196,28 @@ namespace TP_ProgramaciónII_PIPORAMA.Data.Models
 
             var sqlParameters = new []
             {
+                new SqlParameter
+                {
+                    ParameterName = "fecha_inicio",
+                    Value = fecha_inicio ?? Convert.DBNull,
+                    SqlDbType = System.Data.SqlDbType.DateTime,
+                },
+                new SqlParameter
+                {
+                    ParameterName = "fecha_fin",
+                    Value = fecha_fin ?? Convert.DBNull,
+                    SqlDbType = System.Data.SqlDbType.DateTime,
+                },
                 parameterreturnValue,
             };
-            var _ = await _context.SqlQueryToListAsync<PeliculasMasVistasResult>("EXEC @returnValue = [dbo].[PeliculasMasVistas]", sqlParameters, cancellationToken);
+            var _ = await _context.SqlQueryAsync<SP_PeliculasMasVistasResult>("EXEC @returnValue = [dbo].[SP_PeliculasMasVistas] @fecha_inicio = @fecha_inicio, @fecha_fin = @fecha_fin", sqlParameters, cancellationToken);
 
             returnValue?.SetValue(parameterreturnValue.Value);
 
             return _;
         }
 
-        public virtual async Task<List<PromedioEntradasPorSalaResult>> PromedioEntradasPorSalaAsync(OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default)
+        public virtual async Task<List<SP_PromedioEntradasPorSalaResult>> SP_PromedioEntradasPorSalaAsync(DateTime? fecha_inicio, DateTime? fecha_fin, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default)
         {
             var parameterreturnValue = new SqlParameter
             {
@@ -174,16 +228,28 @@ namespace TP_ProgramaciónII_PIPORAMA.Data.Models
 
             var sqlParameters = new []
             {
+                new SqlParameter
+                {
+                    ParameterName = "fecha_inicio",
+                    Value = fecha_inicio ?? Convert.DBNull,
+                    SqlDbType = System.Data.SqlDbType.DateTime,
+                },
+                new SqlParameter
+                {
+                    ParameterName = "fecha_fin",
+                    Value = fecha_fin ?? Convert.DBNull,
+                    SqlDbType = System.Data.SqlDbType.DateTime,
+                },
                 parameterreturnValue,
             };
-            var _ = await _context.SqlQueryToListAsync<PromedioEntradasPorSalaResult>("EXEC @returnValue = [dbo].[PromedioEntradasPorSala]", sqlParameters, cancellationToken);
+            var _ = await _context.SqlQueryAsync<SP_PromedioEntradasPorSalaResult>("EXEC @returnValue = [dbo].[SP_PromedioEntradasPorSala] @fecha_inicio = @fecha_inicio, @fecha_fin = @fecha_fin", sqlParameters, cancellationToken);
 
             returnValue?.SetValue(parameterreturnValue.Value);
 
             return _;
         }
 
-        public virtual async Task<List<ProximasFuncionesResult>> ProximasFuncionesAsync(OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default)
+        public virtual async Task<List<SP_ProximasFuncionesResult>> SP_ProximasFuncionesAsync(OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default)
         {
             var parameterreturnValue = new SqlParameter
             {
@@ -196,14 +262,14 @@ namespace TP_ProgramaciónII_PIPORAMA.Data.Models
             {
                 parameterreturnValue,
             };
-            var _ = await _context.SqlQueryToListAsync<ProximasFuncionesResult>("EXEC @returnValue = [dbo].[ProximasFunciones]", sqlParameters, cancellationToken);
+            var _ = await _context.SqlQueryAsync<SP_ProximasFuncionesResult>("EXEC @returnValue = [dbo].[SP_ProximasFunciones]", sqlParameters, cancellationToken);
 
             returnValue?.SetValue(parameterreturnValue.Value);
 
             return _;
         }
 
-        public virtual async Task<List<RecaudacionTotalResult>> RecaudacionTotalAsync(OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default)
+        public virtual async Task<List<SP_RecaudacionTotalResult>> SP_RecaudacionTotalAsync(OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default)
         {
             var parameterreturnValue = new SqlParameter
             {
@@ -216,14 +282,14 @@ namespace TP_ProgramaciónII_PIPORAMA.Data.Models
             {
                 parameterreturnValue,
             };
-            var _ = await _context.SqlQueryToListAsync<RecaudacionTotalResult>("EXEC @returnValue = [dbo].[RecaudacionTotal]", sqlParameters, cancellationToken);
+            var _ = await _context.SqlQueryAsync<SP_RecaudacionTotalResult>("EXEC @returnValue = [dbo].[SP_RecaudacionTotal]", sqlParameters, cancellationToken);
 
             returnValue?.SetValue(parameterreturnValue.Value);
 
             return _;
         }
 
-        public virtual async Task<List<RecaudacionXPeliculaResult>> RecaudacionXPeliculaAsync(OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default)
+        public virtual async Task<List<SP_RecaudacionXPeliculaResult>> SP_RecaudacionXPeliculaAsync(int? pelicula, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default)
         {
             var parameterreturnValue = new SqlParameter
             {
@@ -234,16 +300,22 @@ namespace TP_ProgramaciónII_PIPORAMA.Data.Models
 
             var sqlParameters = new []
             {
+                new SqlParameter
+                {
+                    ParameterName = "pelicula",
+                    Value = pelicula ?? Convert.DBNull,
+                    SqlDbType = System.Data.SqlDbType.Int,
+                },
                 parameterreturnValue,
             };
-            var _ = await _context.SqlQueryToListAsync<RecaudacionXPeliculaResult>("EXEC @returnValue = [dbo].[RecaudacionXPelicula]", sqlParameters, cancellationToken);
+            var _ = await _context.SqlQueryAsync<SP_RecaudacionXPeliculaResult>("EXEC @returnValue = [dbo].[SP_RecaudacionXPelicula] @pelicula = @pelicula", sqlParameters, cancellationToken);
 
             returnValue?.SetValue(parameterreturnValue.Value);
 
             return _;
         }
 
-        public virtual async Task<List<RecaudacónTotalCombosResult>> RecaudacónTotalCombosAsync(OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default)
+        public virtual async Task<List<SP_RecaudacónTotalCombosResult>> SP_RecaudacónTotalCombosAsync(DateTime? fecha_inicio, DateTime? fecha_fin, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default)
         {
             var parameterreturnValue = new SqlParameter
             {
@@ -254,16 +326,28 @@ namespace TP_ProgramaciónII_PIPORAMA.Data.Models
 
             var sqlParameters = new []
             {
+                new SqlParameter
+                {
+                    ParameterName = "fecha_inicio",
+                    Value = fecha_inicio ?? Convert.DBNull,
+                    SqlDbType = System.Data.SqlDbType.DateTime,
+                },
+                new SqlParameter
+                {
+                    ParameterName = "fecha_fin",
+                    Value = fecha_fin ?? Convert.DBNull,
+                    SqlDbType = System.Data.SqlDbType.DateTime,
+                },
                 parameterreturnValue,
             };
-            var _ = await _context.SqlQueryToListAsync<RecaudacónTotalCombosResult>("EXEC @returnValue = [dbo].[RecaudacónTotalCombos]", sqlParameters, cancellationToken);
+            var _ = await _context.SqlQueryAsync<SP_RecaudacónTotalCombosResult>("EXEC @returnValue = [dbo].[SP_RecaudacónTotalCombos] @fecha_inicio = @fecha_inicio, @fecha_fin = @fecha_fin", sqlParameters, cancellationToken);
 
             returnValue?.SetValue(parameterreturnValue.Value);
 
             return _;
         }
 
-        public virtual async Task<List<TotalClientesRegistradosResult>> TotalClientesRegistradosAsync(OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default)
+        public virtual async Task<List<SP_TotalClientesRegistradosResult>> SP_TotalClientesRegistradosAsync(OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default)
         {
             var parameterreturnValue = new SqlParameter
             {
@@ -276,14 +360,14 @@ namespace TP_ProgramaciónII_PIPORAMA.Data.Models
             {
                 parameterreturnValue,
             };
-            var _ = await _context.SqlQueryToListAsync<TotalClientesRegistradosResult>("EXEC @returnValue = [dbo].[TotalClientesRegistrados]", sqlParameters, cancellationToken);
+            var _ = await _context.SqlQueryAsync<SP_TotalClientesRegistradosResult>("EXEC @returnValue = [dbo].[SP_TotalClientesRegistrados]", sqlParameters, cancellationToken);
 
             returnValue?.SetValue(parameterreturnValue.Value);
 
             return _;
         }
 
-        public virtual async Task<List<TotalEntradasVendidasResult>> TotalEntradasVendidasAsync(OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default)
+        public virtual async Task<List<SP_TotalEntradasVendidasResult>> SP_TotalEntradasVendidasAsync(OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default)
         {
             var parameterreturnValue = new SqlParameter
             {
@@ -296,7 +380,7 @@ namespace TP_ProgramaciónII_PIPORAMA.Data.Models
             {
                 parameterreturnValue,
             };
-            var _ = await _context.SqlQueryToListAsync<TotalEntradasVendidasResult>("EXEC @returnValue = [dbo].[TotalEntradasVendidas]", sqlParameters, cancellationToken);
+            var _ = await _context.SqlQueryAsync<SP_TotalEntradasVendidasResult>("EXEC @returnValue = [dbo].[SP_TotalEntradasVendidas]", sqlParameters, cancellationToken);
 
             returnValue?.SetValue(parameterreturnValue.Value);
 
