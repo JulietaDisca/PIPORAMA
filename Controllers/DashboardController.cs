@@ -32,11 +32,11 @@ namespace TP_ProgramaciónII_PIPORAMA.Controllers
 
         //1.2
         [HttpGet("RecaudacionTotalXPelicula")]
-        public async Task<IActionResult> GetRecaudacionTotalXPelicula(int? pelicula)
+        public async Task<IActionResult> GetRecaudacionTotalXPelicula(DateTime? fechaInicio, DateTime? fechaFin, int? recaudacion)
         {
             try
             {
-                var result = await _dashboardService.GetRecaudaciónTotalXPelícula(pelicula);
+                var result = await _dashboardService.GetRecaudaciónTotalXPelícula(fechaInicio, fechaFin, recaudacion);
                 return Ok(result);
             }
             catch (Exception ex)
@@ -52,21 +52,6 @@ namespace TP_ProgramaciónII_PIPORAMA.Controllers
             try
             {
                 var result = await _dashboardService.GetPromedioEntradasVendidasXSala(fechaInicio, fechaFin);
-                return Ok(result);
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(500, $"Error interno del servidor: {ex.Message}");
-            }
-        }
-
-        //2.1
-        [HttpGet("PeliculasMasVistas")]
-        public async Task<IActionResult> GetPeliculasMasVistas(DateTime? fechaInicio, DateTime? fechaFin)
-        {
-            try
-            {
-                var result = await _dashboardService.GetPelículasMásVistas(fechaInicio, fechaFin);
                 return Ok(result);
             }
             catch (Exception ex)
@@ -127,21 +112,6 @@ namespace TP_ProgramaciónII_PIPORAMA.Controllers
             try
             {
                 var result = await _dashboardService.GetProductosMásVendidos(fechaInicio, fechaFin);
-                return Ok(result);
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(500, $"Error interno del servidor: {ex.Message}");
-            }
-        }
-
-        //5.2
-        [HttpGet("RecaudacionTotalCombos")]
-        public async Task<IActionResult> GetRecaudacionTotalCombos(DateTime? fechaInicio, DateTime? fechaFin)
-        {
-            try
-            {
-                var result = await _dashboardService.GetRecaudacionTotalCombos(fechaInicio, fechaFin);
                 return Ok(result);
             }
             catch (Exception ex)

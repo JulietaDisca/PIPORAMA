@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using TP_ProgramaciónII_PIPORAMA.Data.Models;
+
 using TP_ProgramaciónII_PIPORAMA.Services.Interfaces;
 using TP_ProgramaciónII_PIPORAMA.Data.DTOs.Invoice;
 

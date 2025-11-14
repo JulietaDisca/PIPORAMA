@@ -321,11 +321,11 @@ INSERT INTO promociones (descripcion, vigencia_desde, vigencia_hasta, valor_desc
 ('2x1 Club La Nacion', '2025-01-01', '2025-12-31', 0, 1, 2),
 ('Descuento Estudiante (Jueves)', '2025-03-01', '2025-12-15', 30.00, 1, 1),
 ('Descuento Jubilado (Diario)', '2025-01-01', '2025-12-31', 40.00, 1, 1),
-('$1000 Descuento MODO', '2025-10-01', '2025-10-31', 1000.00, 1, 3),
+('10% OFF MODO', '2025-10-01', '2025-10-31', 10.00, 1, 3),
 ('Combo Especial "Dune 2"', '2025-03-01', '2025-04-01', 0, 0, 4), -- Inactiva
 ('Combo "Inside Out 2" Familiar', '2025-06-15', '2025-08-15', 0, 1, 4),
 ('15% OFF Tarjeta Galicia', '2025-01-01', '2025-12-31', 15.00, 1, 1),
-('500 Puntos CineFan Bienvenida', '2025-01-01', '2025-12-31', 500, 1, 5),
+('5% OFF CineFan Bienvenida', '2025-01-01', '2025-12-31', 5, 1, 5),
 ('Upgrade Pochoclo Socio CineFan', '2025-01-01', '2025-12-31', 0, 1, 5),
 ('20% OFF Salas 4D (Miércoles)', '2025-01-01', '2025-12-31', 20.00, 1, 1),
 ('10% OFF Trasnoche (Viernes y Sábado)', '2025-01-01', '2025-12-31', 10.00, 1, 1),
@@ -333,7 +333,7 @@ INSERT INTO promociones (descripcion, vigencia_desde, vigencia_hasta, valor_desc
 ('20% OFF Pagando con NaranjaX', '2025-10-01', '2025-11-30', 20.00, 1, 1),
 ('Recarga Combo Lunes', '2025-01-01', '2025-12-31', 0, 1, 4),
 ('10% OFF Compra Web (No Socios)', '2025-01-01', '2025-12-31', 10.00, 1, 1),
-('$2000 Descuento AMEX', '2025-11-01', '2025-11-30', 2000.00, 1, 3)
+('20% OFF AMEX', '2025-11-01', '2025-11-30', 20.00, 1, 3)
 GO
 
 -- 800 ENTRADAS PARA 100 FUNCIONES

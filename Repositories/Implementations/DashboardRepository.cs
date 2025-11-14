@@ -1,6 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
-using System.Threading.Tasks;
 using TP_ProgramaciónII_PIPORAMA.Data.Models;
 using TP_ProgramaciónII_PIPORAMA.Repositories.Interfaces;
 
@@ -34,11 +33,6 @@ namespace TP_ProgramaciónII_PIPORAMA.Repositories.Implementations
             return await _context.Procedures.SP_PeliculasEnCarteleraAsync();
         }
 
-        public async Task<IEnumerable<SP_PeliculasMasVistasResult>> GetPelículasMásVistas(DateTime? fechaInicio, DateTime? fechaFin)
-        {
-            return await _context.Procedures.SP_PeliculasMasVistasAsync(fechaInicio,fechaFin);
-        }
-
         public async Task<IEnumerable<SP_ConsumiblesMasVendidosResult>> GetProductosMásVendidos(DateTime? fechaInicio, DateTime? fechaFin)
         {
             return await _context.Procedures.SP_ConsumiblesMasVendidosAsync(fechaInicio,fechaFin);
@@ -59,14 +53,9 @@ namespace TP_ProgramaciónII_PIPORAMA.Repositories.Implementations
             return await _context.Procedures.SP_RecaudacionTotalAsync();
         }
 
-        public async Task<IEnumerable<SP_RecaudacónTotalCombosResult>> GetRecaudacionTotalCombos(DateTime? fechaInicio, DateTime? fechaFin)
+        public async Task<IEnumerable<SP_RecaudacionXPeliculaResult>> GetRecaudaciónTotalXPelícula(DateTime? fechaInicio, DateTime? fechaFin, int? recaudacion)
         {
-            return await _context.Procedures.SP_RecaudacónTotalCombosAsync(fechaInicio,fechaFin);
-        }
-
-        public async Task<IEnumerable<SP_RecaudacionXPeliculaResult>> GetRecaudaciónTotalXPelícula(int? pelicula)
-        {
-            return await _context.Procedures.SP_RecaudacionXPeliculaAsync(pelicula);
+            return await _context.Procedures.SP_RecaudacionXPeliculaAsync(fechaInicio, fechaFin, recaudacion);
         }
 
         public async Task<IEnumerable<SP_TotalClientesRegistradosResult>> GetTotalClientesRegistrados()
