@@ -4,7 +4,7 @@
    "ContextNamespace": null,
    "FilterSchemas": false,
    "IncludeConnectionString": false,
-   "MinimumProductVersion": "2.6.1166",
+   "MinimumProductVersion": "2.6.1130",
    "ModelNamespace": null,
    "OutputContextPath": null,
    "OutputPath": "Data\/Models",
@@ -176,10 +176,6 @@
          "ObjectType": 1
       },
       {
-         "Name": "[dbo].[SP_PeliculasMasVistas]",
-         "ObjectType": 1
-      },
-      {
          "Name": "[dbo].[SP_PromedioEntradasPorSala]",
          "ObjectType": 1
       },
@@ -193,10 +189,6 @@
       },
       {
          "Name": "[dbo].[SP_RecaudacionXPelicula]",
-         "ObjectType": 1
-      },
-      {
-         "Name": "[dbo].[SP_RecaudacónTotalCombos]",
          "ObjectType": 1
       },
       {

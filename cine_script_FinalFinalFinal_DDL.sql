@@ -1,4 +1,4 @@
--- Script SQL Server: CineDB
+-- Script SQL Server: PIPORAMA
 -- Todas las PK creadas con CONSTRAINT y con IDENTITY para los id que sean primary key
 
 CREATE DATABASE PIPORAMA;

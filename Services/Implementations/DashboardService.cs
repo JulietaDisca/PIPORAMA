@@ -17,19 +17,14 @@ namespace TP_ProgramaciónII_PIPORAMA.Services.Implementations
             return await _repository.GetEntradasRecaudaciónXDia(fechaInicio,fechaFin);
         }
 
-        public async Task<IEnumerable<SP_RecaudacionXPeliculaResult>> GetRecaudaciónTotalXPelícula(int? pelicula)
+        public async Task<IEnumerable<SP_RecaudacionXPeliculaResult>> GetRecaudaciónTotalXPelícula(DateTime? fechaInicio, DateTime? fechaFin, int? recaudacion)
         {
-            return await _repository.GetRecaudaciónTotalXPelícula(pelicula); 
+            return await _repository.GetRecaudaciónTotalXPelícula(fechaInicio, fechaFin, recaudacion); 
         }
 
         public async Task<IEnumerable<SP_PromedioEntradasPorSalaResult>> GetPromedioEntradasVendidasXSala(DateTime? fechaInicio, DateTime? fechaFin)
         {
             return await _repository.GetPromedioEntradasVendidasXSala(fechaInicio,fechaFin);
-        }
-
-        public async Task<IEnumerable<SP_PeliculasMasVistasResult>> GetPelículasMásVistas(DateTime? fechaInicio, DateTime? fechaFin)
-        {
-            return await _repository.GetPelículasMásVistas(fechaInicio,fechaFin);
         }
 
         public async Task<IEnumerable<SP_FuncionesXHorarioResult>> GetCantidadFuncionesPorFranjaHoraria()
@@ -50,11 +45,6 @@ namespace TP_ProgramaciónII_PIPORAMA.Services.Implementations
         public async Task<IEnumerable<SP_ConsumiblesMasVendidosResult>> GetProductosMásVendidos(DateTime? fechaInicio, DateTime? fechaFin)
         {
             return await _repository.GetProductosMásVendidos(fechaInicio,fechaFin);
-        }
-
-        public async Task<IEnumerable<SP_RecaudacónTotalCombosResult>> GetRecaudacionTotalCombos(DateTime? fechaInicio, DateTime? fechaFin)
-        {
-            return await _repository.GetRecaudacionTotalCombos(fechaInicio,fechaFin);
         }
 
         public async Task<IEnumerable<SP_TotalEntradasVendidasResult>> GetTotalEntradasVendidas()

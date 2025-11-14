@@ -1,4 +1,5 @@
-﻿using TP_ProgramaciónII_PIPORAMA.Data.Models;
+﻿
+using TP_ProgramaciónII_PIPORAMA.Data.Models;
 
 namespace TP_ProgramaciónII_PIPORAMA.Repositories.Interfaces
 {
@@ -8,13 +9,10 @@ namespace TP_ProgramaciónII_PIPORAMA.Repositories.Interfaces
         Task<IEnumerable<SP_EntradasRecaudacionXDiaResult>> GetEntradasRecaudaciónXDia(DateTime? fechaInicio, DateTime? fechaFin);
 
         //1.2 Recaudación total por película – Indica qué películas generaron más ingresos.
-        Task<IEnumerable<SP_RecaudacionXPeliculaResult>> GetRecaudaciónTotalXPelícula(int? pelicula);
+        Task<IEnumerable<SP_RecaudacionXPeliculaResult>> GetRecaudaciónTotalXPelícula(DateTime? fechaInicio, DateTime? fechaFin, int? recaudacion);
 
         //1.3. Promedio de entradas vendidas por función** – Permite ver qué tan ocupadas están las funciones, comparando el promedio de entradas vendidas por función.
         Task<IEnumerable<SP_PromedioEntradasPorSalaResult>> GetPromedioEntradasVendidasXSala(DateTime? fechaInicio, DateTime? fechaFin);
-
-        //2.1 Películas más vistas – Muestra las 5 películas con mayor cantidad de entradas vendidas.
-        Task<IEnumerable<SP_PeliculasMasVistasResult>> GetPelículasMásVistas(DateTime? fechaInicio, DateTime? fechaFin);
 
         //3.1 Cantidad de funciones por franja horaria – Muestra cuántas funciones se proyectan en cada parte del día (mañana, tarde, noche, madrugada).
         Task<IEnumerable<SP_FuncionesXHorarioResult>> GetCantidadFuncionesPorFranjaHoraria();
@@ -24,12 +22,9 @@ namespace TP_ProgramaciónII_PIPORAMA.Repositories.Interfaces
 
         //4.1 Clientes frecuentes – Muestra los clientes que realizaron más de 5 compras de entradas.
         Task<IEnumerable<SP_ClientesFrecuentesResult>> GetClientesFrecuentes(DateTime? fechaInicio, DateTime? fechaFin, int? compra);
-      
+
         //5.1 Productos más vendidos** – Indica cuáles son los consumibles con mayor cantidad de ventas y su ingreso total.
         Task<IEnumerable<SP_ConsumiblesMasVendidosResult>> GetProductosMásVendidos(DateTime? fechaInicio, DateTime? fechaFin);
-
-        //5.2 Recaudación total por combos** – Muestra los combos que más recaudaron en el período analizado.*/
-        Task<IEnumerable<SP_RecaudacónTotalCombosResult>> GetRecaudacionTotalCombos(DateTime? fechaInicio, DateTime? fechaFin);
 
         //6.1 Total de entradas vendidas: Cantidad total de tickets emitidos.
         Task<IEnumerable<SP_TotalEntradasVendidasResult>> GetTotalEntradasVendidas();
